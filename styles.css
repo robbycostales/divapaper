@@ -1,0 +1,74 @@
+#katex-container {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+
+.katex-html {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+  
+
+.img-invert {
+      filter: invert(1) hue-rotate(180deg) brightness(1.0) contrast(1.2);
+      mix-blend-mode: screen;
+}
+
+
+.highlight-accel {
+  background-color: #002917;
+  margin: -0.25em 0.0em;
+  padding: 0.15em 0.25em;
+  border-radius: 0.25em;
+}
+
+.highlight-dr {
+    background-color: #440021;
+    margin: -0.25em 0.0em;
+    padding: 0.15em 0.25em;
+    border-radius: 0.25em;
+}
+
+.highlight-plr {
+    background-color: #3c2000;
+    margin: -0.25em 0.0em;
+    padding: 0.15em 0.25em;
+    border-radius: 0.25em;
+}
+
+.highlight-diva {
+    background-color: #002a48;
+    margin: -0.25em 0.0em;
+    padding: 0.15em 0.25em;
+    border-radius: 0.25em;
+}
+
+.highlight-diva-plus {
+    background-color: #460700;
+    margin: -0.25em 0.0em;
+    padding: 0.15em 0.25em;
+    border-radius: 0.25em;
+}
+
+.highlight-ods {
+    background-color: #333333;
+    margin: -0.25em 0.0em;
+    padding: 0.15em 0.25em;
+    border-radius: 0.25em;
+}
+
+
+.color-y {
+    color: #f1cd57;
+}
+
+.color-b {
+    color: #6fcae0;
+}
+
+.color-p {
+    color: #ff9fc4;
+}
+
+.color-g {
+    color: #85dc8c;
+}

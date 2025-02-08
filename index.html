@@ -1,0 +1,786 @@
+<!doctype html>
+
+<head>
+  <script src="dist/template.v2.js"></script>
+  <!-- <d-bibliography src="dist/references.json"></d-bibliography> -->
+  <!-- <d-bibliography src="bibliography.bib"></d-bibliography> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- <distill-header>
+  </distill-header> -->
+  <d-front-matter>
+    <script id="distill-front-matter" type="text/json">{
+      "title": "Enabling Adaptive Agent Training in Open-Ended Simulators by Targeting Diversity",
+      "description": "This paper introduces DIVA, a method for generating diverse training tasks in open-ended simulators to train adaptive agents.",
+      "published": "2024-01-15",
+      "arxivUrl": "https://arxiv.org/abs/2401.XXXXX",
+      "codeUrl": "https://github.com/your-username/your-repo",
+      "authors": [
+        {
+          "author": "Robby Costales",
+          "affiliations": [{"name": "USC"}]
+        },
+        {
+          "author": "Stefanos Nikolaidis",
+          "affiliations": [{"name": "USC"}]
+        }
+      ],
+      "katex": { "delimiters": [{"left": "$$", "right": "$$", "display": false}] }
+    }</script>
+
+    <!-- <d-toc></d-toc> -->
+
+  </d-front-matter>
+
+  <d-title>
+    <h1>Enabling <span class="color-b" style="display: inline">Adaptive Agent Training</span> in <span class="color-y" style="display: inline">Open-Ended Simulators</span> by <span class="color-g" style="display: inline">Targeting Diversity</span></h1>
+    <p style="margin-top: 15pt">This work introduces <strong><span class="highlight-diva">DIVA</span></strong> , a method combining quality diversity (QD) optimization and unsupervised environment design (UED) for adaptive agent training in simulation.</p>
+  </d-title>
+
+  <d-article>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+      
+        <p>
+          Despite the broadening application of reinforcement learning (RL)methods to real-world problems
+          <d-cite bibtex-key="Wang2024-wi, Sivamayil2023-zc"></d-cite>, generalization to <em>new scenarios</em>—ones not
+          explicitly supported by the training set—remains a fundamental challenge
+          <d-cite bibtex-key="Kirk2023-if"></d-cite>. Meta-reinforcement learning (meta-RL), an extension of the RL
+          framework, is formulated specifically for training adaptive agents, and is thus well-suited for
+          overcoming these generalization gaps <d-cite bibtex-key="Beck2023-oy"></d-cite>. One recent work has demonstrated
+          that meta-RL agents can be trained at scale to achieve adaptation capabilities on par with human subjects
+          <d-cite bibtex-key="Adaptive_Agent_Team2023-ml"></d-cite>. However, learning this human-like adaptive behavior
+          naturally requires a large amount of data representative of the downstream (or <em>target</em>) distribution.
+          For task distributions approaching real-world complexity—precisely the ones of interest—designing each
+          scenario by hand is prohibitively expensive.
+        </p>
+      
+        <figure>
+          <img class="img-invert" src="figs/pngs/fig_1_cropped-0.png" alt="A conceptual diagram illustrating the challenges in meta-reinforcement learning." />
+          <figcaption>A conceptual diagram illustrating the challenges in meta-reinforcement learning.</figcaption>
+        </figure>
+      
+        <p>
+          Prior works have explored the use of domain randomization ( <strong><span class="highlight-dr">DR</span></strong> ) and procedural generation (PG) techniques to
+          produce diverse training data for learning agents <d-cite bibtex-key="Shaker2016-bp"></d-cite>. Despite eliminating
+          the need for hand-designing each task individually, human labor is still required to carefully design an
+          environment generator that can produce diverse, high-quality tasks. As environments become more complex and
+          open-ended, the ability to hand-design such a robust generator becomes increasingly infeasible. Some methods,
+          like PLR <d-cite bibtex-key="Jiang2020-zr"></d-cite>, attempt to ameliorate this limitation by learning a curriculum
+          over the generated levels, but these works still operate under the assumption that the generator produces
+          meaningfully diverse levels with a high probability.
+        </p>
+      
+        <p>
+          Unsupervised environment design (UED) <d-cite bibtex-key="Dennis2020-kj"></d-cite> approaches use performance-based
+          metrics to adaptively form a curriculum of training levels. <strong><span class="highlight-accel">ACCEL</span></strong>
+          <d-cite bibtex-key="Parker-Holder2022-zs"></d-cite>, a state-of-the-art UED method, uses an evolutionary process to
+          discover more interesting regions of the simulator's parameter space (i.e., appropriately challenging tasks)
+          than can be found by random sampling. While UED approaches are designed to be generally applicable and require
+          little domain knowledge, they implicitly require a very constrained environment generator—one in which all axes
+          of difficulty correspond to meaningful learning potential for the downstream distribution. Moreover, when faced
+          with complex open-ended environments with arbitrary parameterizations, even <span class="highlight-accel">ACCEL</span> is not able to efficiently
+          explore the solution space, as it is still bottlenecked by the speed of agent evaluations.
+        </p>
+      
+        <p>
+          <span class="color-p">In this work, we introduce </span><strong><u><span class="highlight-diva">DIVA</span></u></strong><span class="color-p">, an approach for generating
+          <strong><u>div</u>erse</strong> training tasks in open-ended simulators to train <strong><u>a</u>daptive</strong>
+          agents.</span> By using quality diversity (QD) optimization to efficiently explore the solution space, <span class="highlight-diva">DIVA</span> bypasses
+          the problem of needing to evaluate agents on all generated levels. QD also enables fine-grained control over the
+          axes of diversity to be captured in the training tasks, allowing the flexible integration of task-related prior
+          knowledge from both domain experts and learning approaches. We demonstrate that <span class="highlight-diva">DIVA</span>, with limited supervision
+          in the form of feature samples from the target distribution, significantly outperforms state-of-the-art UED
+          approaches—despite the UED approaches being provided with significantly more interactions. We further show that
+          UED techniques can be integrated into <span class="highlight-diva">DIVA</span>. Preliminary results with this combination (which we call <span class="highlight-diva-plus">DIVA+</span>)
+          are promising and suggest an exciting avenue for future work.
+        </p>
+      </section>
+
+      <section id="preliminaries">
+        <h2>Preliminaries</h2>
+      
+        <h3>Meta-reinforcement learning</h3>
+        <p>
+          We use the meta-reinforcement learning (meta-RL) framework to train adaptive agents, which involves learning
+          an adaptive policy <d-math>\pi_\phi</d-math> over a distribution of tasks <d-math>\mathcal{T}</d-math>. Each
+          <d-math>\mathcal{M}_i \in \mathcal{T}</d-math> is a Markov decision process (MDP) defined by a tuple
+          <d-math>\langle \mathcal{S}, \mathcal{A}, P, R, \gamma, T \rangle</d-math>, where
+          <d-math>\mathcal{S}</d-math> is the set of states, <d-math>\mathcal{A}</d-math> is the set of actions, 
+          <d-math>P(s_{t+1} | s_t, a_t)</d-math> is the transition distribution between states given the current
+          state and action, <d-math>R(s_t, a_t)</d-math> is the reward function, 
+          <d-math>\gamma \in [0, 1]</d-math> is the discount factor, and <d-math>T</d-math> is the horizon.
+          Meta-training involves sampling tasks <d-math>\mathcal{M}_i \sim \mathcal{T}</d-math>, collecting trajectories
+          <d-math>\mathcal{D} = \{ \tau^h \}^H_{h=0}</d-math>—where <d-math>H</d-math> is the number of
+          <em>episodes</em> in each <em>trial</em> <d-math>\tau</d-math> pertaining to the
+          <d-math>\mathcal{M}_i</d-math>—and optimizing policy parameters <d-math>\phi</d-math> to maximize the expected
+          discounted returns across all episodes.
+        </p>
+      
+        <p>
+          VariBAD <d-cite bibtex-key="Zintgraf2019-uo"></d-cite> is a context variable-based meta-RL approach that belongs to
+          the wider class of RNN-based methods <d-cite bibtex-key="Duan2016-ip, Wang2016-tj"></d-cite>. While prior methods
+          <d-cite bibtex-key="Zintgraf2019-sx, Rakelly2019-cz"></d-cite> also use context variables to assist in task
+          adaptation, VariBAD uniquely learns within a belief-augmented MDP (BAMDP)
+          <d-math>\langle \mathcal{S}, \mathcal{A}, \mathcal{Z}, P, R, \gamma, T \rangle</d-math>, where the context
+          variables <d-math>z \in \mathcal{Z}</d-math> encode the agent's uncertainty about the task, promoting Bayesian
+          exploration. VariBAD utilizes an RNN-based variational autoencoder (VAE) to model a posterior belief over
+          possible tasks given the full agent trajectory, permitting efficient updates to prior beliefs.
+        </p>
+
+        <h3>Quality diversity</h3>
+        <p>
+          For a given problem, the quality diversity (QD) optimization framework aims to generate a set of diverse,
+          high-quality solutions. Formally, a problem instance of QD <d-cite bibtex-key="Fontaine2021-lg"></d-cite> specifies
+          an objective function <d-math>J : \mathbb{R}^n \rightarrow \mathbb{R}</d-math> and <d-math>k</d-math> features
+          <d-math>f_i: \mathbb{R}^n \rightarrow \mathbb{R}</d-math>. Let
+          <d-math>S=\bm{f}(\mathbb{R}^n)</d-math> be the feature space formed by the range of
+          <d-math>f</d-math>, where <d-math>{\boldsymbol{f}} : \mathbb{R}^n \rightarrow \mathbb{R}^k</d-math> is the joint
+          feature vector. For each <d-math>{\boldsymbol{s}} \in S</d-math>, the QD objective is to find a solution
+          <d-math>\bm{\theta} \in \mathbb{R}^n</d-math> where <d-math>{\boldsymbol{f}}(\bm{\theta}) = {\boldsymbol{s}}</d-math> and
+          <d-math>J(\bm{\theta})</d-math> is maximized.
+          Since <d-math>\mathbb{R}^k</d-math> is continuous, an algorithm solving the QD problem definition above would
+          require unbounded memory to store all solutions. QD algorithms in the MAP-Elites
+          <d-cite bibtex-key="Mouret2015-zw"></d-cite> family therefore discretize <d-math>S</d-math> via a tessellation
+          method, where <d-math>\mathcal{G}</d-math> is a tessellation of the continuous feature space
+          <d-math>S</d-math> into <d-math>N_\mathcal{G}</d-math> cells. In employing a MAP-Elites algorithm, we relax the
+          QD objective to find a set of solutions <d-math>\bm{\theta}_i, i \in \{1, \ldots, N_\mathcal{G} \}</d-math>,
+          such that each <d-math>\bm{\theta}_i</d-math> occupies one unique cell in <d-math>\mathcal{G}</d-math>. We call
+          the occupants <d-math>\bm{\theta}_i</d-math> of all <d-math>M</d-math> cells, each with its own position
+          <d-math>{\boldsymbol{f}}(\bm{\theta}_i)</d-math> and objective value <d-math>J(\bm{\theta}_i)</d-math>, the
+          <em>archive</em> of solutions.
+        </p>
+      </section>
+
+      <section id="problem-setting">
+        <h2>Problem Setting</h2>
+      
+        <p>
+          One assumption underlying UED methods is that random parameters—or parameter <em>perturbations</em> for 
+          <span style="font-variant: small-caps;"><span class="highlight-accel">ACCEL</span></span>—produce meaningfully different levels to justify the expense of computing 
+          objectives on <em>each</em> newly generated level. However, when the genotype is not 
+          <em>well-behaved</em>—when meaningful diversity is rarely generated through random 
+          sampling or mutations—these algorithms waste significant time evaluating redundant levels. In our work, we 
+          discard the assumption of <em>well-behaved</em> genotypes in favor of making <em>fewer</em>, more realistic 
+          assumptions about complex environment generators. There are several assumptions we make about the simulated 
+          environments <span class="highlight-diva">DIVA</span> has access to.
+        </p>
+      
+        <h3>Genotypes</h3>
+        <p>
+          We assume access to an unstructured environment parameterization function 
+          <d-math>E_U(\bm{\theta})</d-math>, where each <d-math>\bm{\theta}</d-math> is a <em>genotype</em> (corresponding 
+          to the QD solutions <d-math>\bm{\theta}_i</d-math>) describing parameters to be fed into the environment 
+          generator. QD algorithms can support both continuous and discrete genotype spaces, and in this work, we evaluate 
+          on domains with both kinds. Crucially, we make no assumption of the <em>quality</em> of the training tasks 
+          produced by this random generator. We only assume that (1) 
+          There is some nonzero (and for practical purposes, nontrivial) probability that this generator will produce a 
+          <em>valid</em> level for training—one in which success is possible and positive rewards are in reach; and (2) that it is computationally feasible to discover meaningful feature diversity through an intelligent search over the 
+          parameter space—an assumption implicit in all QD applications.
+          </li>
+        </ol>
+      
+        <h3>Features</h3>
+        <p>
+          We assume access to a pre-defined set of features, <d-math>S = {\boldsymbol{f}}(\mathbb{R}^n)</d-math>, that capture 
+          axes of diversity which accurately characterize the diversity to be expected within the downstream task 
+          distribution. It is also possible to learn or select good environment features from a sample of tasks from the 
+          downstream distribution, which we discuss in <a href="#discussion">Discussion</a>. For the sake of simplicity, 
+          we use a <em>grid archive</em> as our tessellation <d-math>\mathcal{G}</d-math>, where the 
+          <d-math>k</d-math> dimensions of the discrete archive correspond to the defined features. The number of bins for 
+          each feature is a hyperparameter and can be learned or adapted over the course of training. We generally find it 
+          to be helpful to use moderately high resolutions to ease the search, since smaller leaps in feature-level 
+          diversity are required to uncover new cells. By default, we use 100 sample feature values across all domains, 
+          but demonstrate in ablation studies that significantly fewer may be used (see 
+          <a href="#appendix">Appendix</a>).
+        </p>
+      </section>
+
+      <section id="method">
+        <h2>DIVA</h2>
+      
+        <p>
+            <span style="font-variant: small-caps;"><span class="highlight-diva">DIVA</span></span> assumes access to a small set of feature samples representative of the target 
+          domain. It does not, however, require access to the underlying levels themselves. This is a key distinction, as 
+          the former is a significantly weaker assumption. Consider the problem of training in-home assistive robots in 
+          simulation with the objective of adapting to real-world houses. It is more likely we have access to publicly 
+          available data describing typical houses—dimensions, stylistic features, etc.—than we have access to 
+          corresponding simulator parameters which produce those exact feature values.
+        </p>
+      
+        <h3>Feature Density Estimation</h3>
+        <p>
+          <span style="font-variant: small-caps;"><span class="highlight-diva">DIVA</span></span> begins by constructing a QD archive with appropriate <em>bounds</em> and 
+          <em>resolution</em>. Given a set of specified <em>features</em> 
+          <d-math>\{f_i\}_{i=1}^k</d-math> and a handful of downstream <em>feature samples</em>, we first infer each 
+          feature's underlying distribution. These can be approximated with kernel density estimation (KDE), or we can 
+          work with certain families of parameterized distributions. For our experiments, we assume each feature is either 
+          (independently) normally or uniformly distributed. We use a statistical test<sup>1</sup> to evaluate the fit of 
+          each distribution family and select the best-fitting. Setting the resolution for discrete feature dimensions is 
+          straightforward, and depends only on the range. For continuous features, the resolution should enable enough 
+          signal for discovering new cells while avoiding practical issues that arise with too many cells.
+          <a href="#evaluation">See Section 6 for domain-specific details</a>.
+        </p>
+        <p>
+          <sup>1</sup>We use a Kolmogorov–Smirnov test for features with continuous values and Chi-squared for discrete.
+        </p>
+
+        <h3>Two-Stage QD Updates</h3>
+        <p>
+          Once the feature-specific target distributions are determined, we can use these to set bounds for each archive 
+          dimension. A naïve approach would be to set the archive ranges for each feature based on the confidence bounds of 
+          the target distribution. However, random samples from 
+          <d-math>E_\textnormal{U}</d-math> may not produce feature values that fall within the target range. We found this 
+          to be a major issue in the <em>Alchemy</em> domain, and for some features in 
+          <em>Racing</em>. We solve this problem by setting the initial archive bounds to include both randomly generated 
+          samples from <d-math>E_\textnormal{U}</d-math>, as well as the full target region. As the updates progress, we 
+          gradually update the <em>sample mask</em>—which is used to inform the sampling of new solutions—towards the 
+          target region. We observe empirically that updating and applying this mask provides an enormous speed-up in 
+          guiding solutions towards the target region. After this first stage, solutions are inserted into a 
+          new archive defined by the proper target bounds. <a href="#appendix">See Appendix A for more specifics</a> 
+          on these two QD update stages.
+        </p>
+
+        <figure>
+          <img class="img-invert"  src="figs/pngs/fig_2_cropped-0_TOP.png" alt="DIVA archive updates on the Alchemy environment" style="max-width: 96% !important;" />
+          <figcaption>
+            <strong><span class="highlight-diva">DIVA</span> Stage 1 updates</strong>. 
+            The <em>first stage</em> (a) begins with bounds
+            that encapsulate initial solutions and the target region. As the first stage progresses (b), and QD discovers
+            more of the solution space, the sampling region for the emitters gradually shrinks towards the target region.
+          </figcaption>
+          <br>
+          <img class="img-invert"  src="figs/pngs/fig_2_cropped-0_BOTTOM.png" alt="DIVA archive updates on the Alchemy environment" />
+          <figcaption>
+            <strong><span class="highlight-diva">DIVA</span> Stage 2 updates</strong>.
+            The <em>second stage</em> begins by redefining the archive bounds to be the target region and including some
+            extra feature dimensions (c). QD fills out just the target region now (d), using sample weights from the
+            target-derived prior (e), the same distribution used to sample levels during meta-training.
+          </figcaption>
+        </figure>
+      
+        <h3>DIVA: An Overview</h3>
+
+        <figure style="text-align: center;">
+          <img class="img-invert" src="figs/pngs/diva-alg.png" alt="DIVA algorithm." style="max-width: 450px !important;" />
+        </figure>
+
+        <figure style="margin-top: -2.0em;">
+          <figcaption><span style="font-variant: small-caps;"><span class="highlight-diva">DIVA</span></span> consists of <strong>three stages</strong>. 
+            <span style="color: orange;">Stage 1</span> (S1) begins by initializing the archive with bounds that include both 
+            the downstream feature samples (the <em>target region</em>) and the initial population generated from 
+            <d-math>E_U(\theta)</d-math>. S1 then proceeds with alternating <em>QD updates</em>, to discover new solutions, 
+            and <em>sample mask updates</em>, to guide the population towards the target region. In 
+            <span style="color: orange;">Stage 2</span> (S2), the archive is reinitialized with existing solutions but is now 
+            bounded by the target region. QD updates continue to further diversify the population, now targeting the 
+            downstream feature values specifically. The last stage is standard 
+            <span style="color: orange;">meta-training</span>, where training task parameters are now drawn from 
+            <d-math>P_\mathcal{G}(\bm{\theta})</d-math>, a distribution over the feature space approximated using the 
+            downstream feature samples, discretized over the archive cells. <a href="#appendix">See Appendix A</a> 
+            for detailed pseudocode.</figcaption>
+        </figure>
+      </section>
+
+      <section id="evaluation" style="margin-top: -1.0em;">
+        <h2>Empirical Results</h2>
+      
+        <h3>Baselines</h3>
+        <p>
+          We implement the following baselines to evaluate their relative performance to 
+          <strong><span class="highlight-diva">DIVA</span></strong>. <strong><span class="highlight-ods">ODS</span></strong> is the "oracle" agent trained over the downstream 
+          environment distribution <d-math>E_\textnormal{S}(\bm{\theta})</d-math>, used for evaluation. 
+          With this baseline, we are benchmarking the upper bound in performance from the perspective of a 
+          learning algorithm that has access to the underlying data distribution.<sup>1</sup> 
+          <strong><span class="highlight-dr">DR</span></strong> is the meta-learner trained over a task distribution defined by performing 
+          domain randomization over the space of valid genotypes, <d-math>\bm{\theta}</d-math>, under the 
+          training parameterization, <d-math>E_\textnormal{U}(\bm{\theta})</d-math>. Robust PLR 
+          (<strong><span class="highlight-plr">PLR<sup>⊥</sup></span></strong>) is the improved and theoretically grounded version of PLR, 
+          where agents' performance-based PLR objectives are evaluated on each level <em>before</em> using 
+          them for training. <strong><span class="highlight-accel">ACCEL</span></strong> is the same as <span class="highlight-plr">PLR<sup>⊥</sup></span> but instead of randomly 
+          sampling over the genotype space to generate levels for evaluation, levels are mutated from existing 
+          solutions. All baselines use VariBAD as their base meta-learner.
+        </p>
+        <p>
+          <sup>1</sup> Technically, reweighting this distribution (e.g., via PLR) may produce a stronger oracle, 
+          but for the purposes of this work, we assume the unaltered downstream distribution can be efficiently 
+          trained over, sans curriculum.
+        </p>
+      
+        <h3>Experimental Setup</h3>
+        <p>
+          The oracle agent (<span class="highlight-ods">ODS</span>) is first trained over each environment's downstream distribution to tune 
+          VariBAD's hyperparameters. These environment-specific VariBAD settings are then fixed while 
+          hyperparameters for <span class="highlight-diva">DIVA</span> and the other baselines are tuned. For fairness of comparison—since 
+          <span class="highlight-diva">DIVA</span> is allowed <d-math>N_\textnormal{QD}</d-math> QD update steps to fill its archive before 
+          meta-training—we allow each UED approach (<span class="highlight-plr">PLR<sup>⊥</sup></span> and <span class="highlight-accel">ACCEL</span>) to use significantly 
+          more environment steps for agent evaluations (details discussed below per environment). All 
+          empirical results were run with 5 seeds unless otherwise specified, and error bars indicate a 
+          95% confidence region for the metric in question. The QD archive parameters were set per 
+          environment, and for <em>Alchemy</em> and <em>Racing</em>, relied on some hand-tuning to find 
+          the right combinations of features and objectives. We leave it to future work to perform a deeper 
+          analysis on what constitutes good archive design, and how to better automate this process.
+        </p>
+      
+        <h3>GridNav</h3>
+        <p>
+          Our first evaluation domain is a modified version of <strong>GridNav</strong>, originally introduced 
+          to motivate and benchmark VariBAD. The agent spawns at the center of the grid at the start of 
+          each episode and receives a slight negative reward (<d-math>r = -0.1</d-math>) each step until it 
+          discovers (inhabits) the goal cell, at which point it also receives a larger positive reward 
+          (<d-math>r = 1.0</d-math>).
+        </p>
+
+        <figure style="text-align: center;">
+          <img class="img-invert" src="figs/pngs/fig_4_cropped-0.png" alt="NAV agent attempting to locate the goal across two episodic rollouts." style="max-width: 450px !important;" />
+          <figcaption style="text-align: left;">
+              <u>Left:</u> A <strong>NAV</strong> agent attempting to locate the goal across two episodic rollouts. 
+              <u>Right:</u> The marginal probability of sampled goals inhabiting each <i>y</i> for different complexities <i>k</i> of <i>E_k(θ)</i>.
+          </figcaption>
+      </figure>
+      
+        <h4>Parameterization</h4>
+        <p>
+          We parameterize the task space (i.e., the goal location) to reduce the likelihood of generating 
+          meaningfully diverse goals. Specifically, each 
+          <d-math>E_{\textnormal{U}_k}</d-math> introduces <d-math>k</d-math> genes to the solution 
+          genotype which together define the final <d-math>y</d-math> location. Each gene 
+          <d-math>j</d-math> can assume the values <d-math>\{-1, 0, 1\}</d-math>, and the final 
+          <d-math>y</d-math> location is determined by summing these values and performing a floor 
+          division to map the bounds back to the original range of the grid. As <d-math>k</d-math> increases, 
+          <d-math>y</d-math> values are increasingly biased towards <d-math>0</d-math>. For more details 
+          on the GridNav domain, <a href="#appendix">see Appendix B.1</a>.
+        </p>
+      
+        <h4>QD Updates</h4>
+        <p>
+          We define the archive features to be the <d-math>x</d-math> and <d-math>y</d-math> coordinates of 
+          the goal location. The objective is set to the current iteration so that newer solutions are 
+          prioritized (additional details in <a href="#appendix">Appendix B.1</a>). <span class="highlight-diva">DIVA</span> is provided 
+          <d-math>N_\textnormal{TRS} = 8.0 \times 10^4</d-math> QD update iterations for filling the 
+          archive. To compensate, <span class="highlight-plr">PLR<sup>⊥</sup></span> and <span class="highlight-accel">ACCEL</span> are each provided with an additional 
+          <d-math>9.6 \times 10^6</d-math> environment steps for evaluating PLR scores, which amounts 
+          to three times as many total interactions—since all methods are provided 
+          <d-math>N_E = 4.8 \times 10^6</d-math> interactions for training. If each "reset" call counts as 
+          one environment step<sup>2</sup>, the UED baselines are effectively granted 2.4× more 
+          <em>additional</em> step data than what <span class="highlight-diva">DIVA</span> additionally receives through its QD updates 
+          (details in <a href="#appendix">Appendix D</a>).
+        </p>
+        <p>
+          <sup>2</sup> In general, rendering the environment (via "reset") is required to compute level features 
+          for <span class="highlight-diva">DIVA</span>.
+        </p>
+      
+        <h4>Results</h4>
+
+        <figure>
+          <img class="img-invert" src="figs/pngs/fig4-full.png"/>
+          <figcaption>
+              <strong>NAV analysis and results.</strong> 
+              (a) Target region coverage produced by Ours and DR over different genotype complexities k. DR represents the <i>average</i> coverage of batches corresponding to the size of the QD archive. DR* represents the <i>total number</i> of unique levels discovered over the course of parameter randomization steps which equal in number to the additional environments RPLR is provided for evaluation. DR* is thus an upper bound on the diversity that RPLR can capture. 500k iterations (QD or otherwise) are used across all results.
+              (b) The diversity produced by PLR⊥ and ACCEL over the course of training (later updates omitted due to no change in trend).
+              (c) Final episode return curves for Ours and baselines.
+              (d) Final method success rates across each episode.
+            </figcaption>
+        </figure>
+
+        <p>
+          From (a), we see that increasing genotype complexity (i.e., larger <d-math>k</d-math>) reduces 
+          goal diversity for <span class="highlight-dr">DR</span>—which is expected given the parameterization defined for 
+          <d-math>E_\textnormal{U}</d-math>. We can also see that <span class="highlight-diva">DIVA</span>, as a result of its QD updates, can 
+          effectively capture goal diversity, even as complexity increases. When we fix the complexity 
+          (<d-math>k=24</d-math>) and train over the <d-math>E_\textnormal{U}</d-math> distribution, we 
+          see that the UED approaches are <em>unable</em> to incidentally discover and capture diversity 
+          over the course of training (b). <span class="highlight-diva">DIVA</span>'s explicit focus on capturing meaningful level diversity 
+          enables it to significantly outperform these baselines in terms of episodic return (c) and 
+          success rate (d).
+        </p>
+
+        <section id="alchemy">
+            <h3>Alchemy</h3>
+            <p>
+              <strong>Alchemy</strong> is an artificial chemistry environment with a combinatorially complex task 
+              distribution. Each task is defined by some <em>latent chemistry</em>, which influences the underlying 
+              dynamics as well as agent observations. To successfully maximize returns over the course of a trial, 
+              the agent must infer and exploit this latent chemistry. At the start of each episode, the agent is 
+              provided a new set of (1-12) <em>potions</em> and (1-3) <em>stones</em>, where each stone has a 
+              <em>latent state</em> defined by a specific vertex of a cube (e.g., <d-math>(\{0, 1\}, \{0, 1\}, \{0, 1\})</d-math>), 
+              and each potion has a <em>latent effect</em>, or specific manner in which it transforms stone latent 
+              states. The agent observes only <em>salient</em> artifacts of this latent information 
+              and must use interactions to identify the ground-truth mechanics. At each step, the agent can apply 
+              any remaining potion to any remaining stone. Each stone's <em>value</em> is maximized the closer its 
+              latent state is to <d-math>(1, 1, 1)</d-math>, and rewards are produced when stones are cast into the 
+              <em>cauldron</em>.
+            </p>
+            <p>
+              To make training feasible on academic resources, we perform evaluations on the 
+              <em>symbolic</em> version of Alchemy, as opposed to the full Unity-based version. Symbolic Alchemy 
+              contains the same mechanistic complexity, minus the visuomotor challenges which are irrelevant to this 
+              project's aims.
+            </p>
+          
+            <h4>Parameterization</h4>
+            <p>
+              <d-math>E_\textnormal{S}(\bm{\theta})</d-math> is the downstream distribution containing maximal stone 
+              diversity. For training, we implement <d-math>E_{\textnormal{U}_{k}}(\bm{\theta})</d-math>, where 
+              <d-math>k</d-math> controls the level of difficulty in generating diverse stones. Specifically, we 
+              introduce a larger set of coordinating genes 
+              <d-math>\bm{\theta}_j \in \{0, 1\}</d-math> that together specify the initial stone latent states, similar 
+              to the mechanism used in GridNav to limit goal diversity. Each stone latent coordinate is specified 
+              with <d-math>k</d-math> genes, and only when all <d-math>k</d-math> <em>genes</em> are set to 1 
+              is the <em>latent coordinate</em> set to 1. When <em>any</em> of the genes are 0, the latent coordinate 
+              is 0. For our experiments, we set <d-math>k=8</d-math>, and henceforth use 
+              <d-math>E_\textnormal{U}</d-math> to signify <d-math>E_{\textnormal{U}_8}</d-math>.
+            </p>
+          
+            <h4>QD Updates</h4>
+            <p>
+              We use features <span style="font-variant: small-caps;">LatentStateDiversity</span> (<span style="font-variant: small-caps;">LSD</span>) and 
+              <span style="font-variant: small-caps;">ManhattanToOptimal</span> (<span style="font-variant: small-caps;">MTO</span>)—both of which target stone latent 
+              state diversity from different angles. See <a href="#appendix">Appendix B.2</a> for more specifics 
+              on these features and other details surrounding Alchemy's archive construction. Like GridNav, the 
+              objective is set to bias new solutions. <span class="highlight-diva">DIVA</span> is provided 
+              <d-math>N_\textnormal{TRS} = 8.0 \times 10^4</d-math> and 
+              <d-math>N_\textnormal{TRS} = 3.0 \times 10^4</d-math> QD update iterations for filling the archive. 
+              <span class="highlight-plr">PLR<sup>⊥</sup></span> and <span class="highlight-accel">ACCEL</span> are compensated such that they receive 3.5× more 
+              <em>additional</em> step data than what <span class="highlight-diva">DIVA</span> receives via QD updates (see 
+              <a href="#appendix">Appendix D</a> for details).
+            </p>
+
+            <figure>
+              <img class="img-invert" src="figs/pngs/fig5-full.png" alt="Alchemy environment and results visualization." />
+              <figcaption>
+                  <strong>Alchemy environment and results.</strong> 
+                  (a) A visual representation of Alchemy's structured stone latent space. <i>P₁</i> and <i>P₂</i> represent <i>potions</i> acting on stones. Only <i>P₁</i> results in a latent state change, because <i>P₂</i> would push the stone outside of the valid latent lattice. 
+                  (b) Marginal feature distributions for <i>E_S</i> (the structured target distribution), Ours, and <i>E_U</i> (the unstructured distribution used directly for DR, and to initialize Ours' archive). 
+                  (c) Final episode return curves for Ours and baselines. 
+                  (d) Number of unique genotypes used by each method over the course of meta-training.
+              </figcaption>
+            </figure>
+          
+            <h4>Results</h4>
+            <p>
+              Our empirical results demonstrate that <span class="highlight-diva">DIVA</span> is able to generate latent stone states with diversity 
+              representative of the target distribution. We see this both quantitatively (b) and qualitatively 
+              (d). In (c), we see this diversity translates to significantly better results on 
+              <d-math>E_\textnormal{S}</d-math> over baselines. Despite generating roughly as many unique 
+              <em>genotypes</em> as <span class="highlight-diva">DIVA</span> (e), <span class="highlight-plr">PLR<sup>⊥</sup></span> and <span class="highlight-accel">ACCEL</span> are unable to generate training 
+              stone sets of significant <em>phenotypical</em> diversity to enable success on the downstream 
+              distribution.
+            </p>
+          
+            <figure>
+              <img class="img-invert"  src="figs/pngs/fig_6_alchemy_level_diversity-0.png" alt="Alchemy Level Diversity" />
+              <figcaption>
+                <strong>Alchemy Level Diversity:</strong> Early on in <span class="highlight-diva">DIVA</span>'s QD updates (left), the levels in the 
+                archive do not possess much latent stone diversity—all are close to (1, 1, 1). As samples begin 
+                populating the target region in later QD updates (right), we see stone diversity is significantly 
+                increased.
+              </figcaption>
+            </figure>
+          </section>
+
+          <section id="racing">
+            <h3>Racing</h3>
+            <p>
+              Lastly, we evaluate <span class="highlight-diva">DIVA</span> on the <strong>Racing</strong> domain introduced by Jiang et al. <d-cite bibtex-key="Jiang2021-ml"></d-cite>. 
+              In this environment, the agent controls a race car via simulated steering and gas pedal mechanisms and is rewarded 
+              for efficiently completing the track, <d-math>\mathcal{M}_i \in \mathcal{T}</d-math>. We adapt this RL environment 
+              to the meta-RL setting by lowering the resolution of the observation space significantly. By increasing the challenge 
+              of perception, even competent agents benefit from multiple episodes to better understand the underlying track.
+              For all of our experiments, we use <d-math>H=2</d-math> episodes per trial and a flattened 15×15 pixel observation 
+              space.
+            </p>
+          
+            <h4>Setup</h4>
+            <p>
+              We use three different parameterizations in our experiments:
+            </p>
+            <ol>
+              <li>
+                <d-math>E_\textnormal{S}(\bm{\theta})</d-math> is the downstream distribution we use for evaluating all methods, 
+                training <span class="highlight-ods">ODS</span>, and setting archive bounds for <span class="highlight-diva">DIVA</span>. Parameters 
+                <d-math>\bm{\theta}</d-math> are used to seed the random generation of <em>control points</em> which in turn 
+                parameterize a sequence of Bézier curves designed to smoothly transition between the control locations. 
+                Track diversity is further enforced by rejecting levels with control points that possess a standard deviation 
+                below a certain threshold.
+              </li>
+              <li>
+                <d-math>E_{\textnormal{U}_{k}}(\bm{\theta})</d-math> is a reparameterization of 
+                <d-math>E_\textnormal{S}(\bm{\theta})</d-math> that makes track diversity harder to generate, with the difficulty 
+                proportional to the value of <d-math>k \in \mathbb{N}</d-math>. For our experiments, we use <d-math>k=32</d-math> 
+                (denoted simply as <d-math>E_\textnormal{U}(\bm{\theta})</d-math>), which roughly means that meaningful diversity is 
+                32× less likely to randomly occur than when <d-math>k=1</d-math> (equivalent to 
+                <d-math>E_\textnormal{S}(\bm{\theta})</d-math>). This is achieved by defining a small region in the center, 
+                32 (or <d-math>k</d-math>) times smaller than the track boundaries, where all points outside the region are 
+                projected onto the unit square and scaled to the track size.
+              </li>
+              <li>
+                <d-math>E_{\textnormal{F1}}(\bm{\theta})</d-math> uses <d-math>\bm{\theta}</d-math> as an RNG seed to select between 
+                a set of 20 hand-crafted levels modeled after official Formula-1 tracks 
+                <d-cite bibtex-key="Jiang2021-ml"></d-cite>, and is used to benchmark <span class="highlight-diva">DIVA</span>'s zero-shot generalization to a new 
+                target distribution.
+              </li>
+            </ol>
+          
+            <h4>QD Updates</h4>
+            <p>
+                We define features <span style="font-variant: small-caps;">TotalAngleChange</span> (<span style="font-variant: small-caps;">TAC</span>) and 
+                <span style="font-variant: small-caps;">CenterOfMassX</span> (<span style="font-variant: small-caps;">CX</span>) for the archive dimensions. Levels from 
+                <d-math>E_\textnormal{U}</d-math> lack curvature (see below), so 
+                <span style="font-variant: small-caps;">TAC</span>, which is defined as the sum of angle changes between track segments, 
+                is useful for directly targeting this desired curvature. 
+                <span style="font-variant: small-caps;">CX</span>, or the average location of the segments, targets diversity in the location 
+                of these high-density (high-curvature) regions. We compute an <em>alignment</em> objective over features 
+                <span style="font-variant: small-caps;">CY</span> and <span style="font-variant: small-caps;">VY</span> to further target 
+                downstream diversity. See <a href="#appendix">Appendix B.3</a> for more details relevant to the archive construction process 
+                for Racing. <span class="highlight-diva">DIVA</span> is provided with <d-math>2.5 \times 10^5</d-math> initial QD updates on Racing. <span class="highlight-plr">PLR<sup>⊥</sup></span> and <span class="highlight-accel">ACCEL</span> 
+                are compensated with 4.0× more <em>additional</em> step data than what <span class="highlight-diva">DIVA</span> receives through QD updates (see 
+                <a href="#appendix">Appendix D</a> for more details).
+            </p>
+
+            <figure>
+              <img class="img-invert" src="figs/pngs/fig7-full.png" alt="Racing features and main results visualization." />
+              <figcaption>
+                  <strong>Racing features and main results.</strong> 
+                  <u>Left:</u> Marginal feature distributions for <i>E_S</i> (the structured target distribution), <i>E_F1</i> (human-designed F1 tracks), Ours, and <i>E_U</i> (the unstructured distribution used for DR, the original levels that Ours evolves). 
+                  <u>Center:</u> Final episode return curves for Ours and baselines on <i>E_S</i>. 
+                  <u>Right:</u> Track completion rates by method, evaluated on <i>E_S</i>.
+              </figcaption>
+          </figure>
+
+            <h4>Main Results</h4>
+            <p>
+              From the results above, we see <span class="highlight-diva">DIVA</span> outperforms all baselines, including the UED approaches, which have access to 
+              three times as many environment interactions. Below, we see that final <span class="highlight-diva">DIVA</span> levels contain significantly 
+              more diversity than randomization over <d-math>E_\textnormal{U}</d-math>.
+            </p>
+
+            <figure>
+              <img class="img-invert" src="figs/pngs/fig8-full.png" alt="Racing level diversity comparison." />
+              <figcaption>
+                  <strong>Racing level diversity.</strong> 
+                  We see that <i>E_U</i> levels, used by DR, and forming the initial population of Ours, are unable to produce qualitatively diverse tracks (left). 
+                  After the two-stage QD-updates, Ours is able to produce tracks of high qualitative diversity (right).
+              </figcaption>
+            </figure>
+          
+            <h4>Transfer to F1 Tracks</h4>
+            <p>
+              Next, we evaluate the ability of these trained policies to zero-shot transfer to human-designed F1 levels 
+              (<d-math>E_\textnormal{F1}</d-math>). Though qualitative differences are apparent (see below), from the figure above 
+              we can additionally see how these levels differ quantitatively. 
+            </p> 
+            
+            <figure style="text-align: center;">
+            <img class="img-invert"  src="figs/pngs/fig_9_f1_levels_cropped-0.png" alt="Racing F1 Transfer Results" style="max-width: 450px !important;" />
+            <img class="img-invert"  src="figs/pngs/fig_9_f1_results-0.png" alt="Racing F1 Transfer Results" style="max-width: 450px !important;"  />
+            <figcaption style="text-align: left;">
+                <strong>Racing F1 Transfer:</strong> Tracks generated by <span class="highlight-diva">DIVA</span> are qualitatively distinct from F1 tracks, yet the 
+                agent achieves significant zero-shot transfer success.
+            </figcaption>
+            </figure>
+
+            <p>
+              Even though <span class="highlight-diva">DIVA</span> uses feature samples from 
+              <d-math>E_\textnormal{S}</d-math> to define its archive, we see from the results above that <span class="highlight-diva">DIVA</span> is not only 
+              able to complete many of these tracks, but is also able to significantly outperform <span class="highlight-ods">ODS</span>. One possible explanation 
+              is that while <span class="highlight-diva">DIVA</span> successfully matches its <em>Total Angle Change</em> distribution to 
+              <d-math>E_\textnormal{S}</d-math>, it produces sharper angles, which is evidently useful for 
+              transferring to (these) human-designed tracks. This hypothesis matches what we see qualitatively from the 
+              <span class="highlight-diva">DIVA</span>-produced levels further up.
+            </p>
+          
+            <h4>Combining DIVA and UED</h4>
+            <p>
+              While <span class="highlight-plr">PLR<sup>⊥</sup></span> and <span class="highlight-accel">ACCEL</span> struggle on our evaluation domains, they still have utility of their own, which 
+              we hypothesize may be <em>compatible with</em> <span class="highlight-diva">DIVA</span>'s. As a preliminary experiment to evaluate the potential of such 
+              a combination, we introduce <strong><span class="highlight-diva-plus">DIVA+</span></strong>, which still uses <span class="highlight-diva">DIVA</span> to generate diverse training samples via 
+              QD, but additionally uses <span class="highlight-plr">PLR<sup>⊥</sup></span> to define a new distribution over these levels based on <em>approximate</em> 
+              learning potential. Instead of randomly sampling levels from <d-math>E_\textnormal{U}</d-math>, the <span class="highlight-plr">PLR<sup>⊥</sup></span> 
+              <em>evaluation</em> mechanism samples levels from the DIVA-induced distribution over the archive. We perform 
+              experiments on two different archives generated by <span class="highlight-diva">DIVA</span>: (1) an archive that is slightly misspecified 
+              (see <a href="#appendix">Appendix B.3</a> for details), and (2) the archive used in our main results. 
+              
+            </p>
+
+
+            <figure style="text-align: center;">
+                <img class="img-invert" src="figs/pngs/fig_10_diva_plus-0.png" alt="DIVA+" style="max-width: 450px !important;" />
+                <figcaption>Combining QD + UED.</figcaption>
+            </figure>
+
+            <p>
+              From the results above, 
+              we see that while performance does not significantly improve for (2), the combination of <span class="highlight-diva">DIVA</span> and <span class="highlight-plr">PLR<sup>⊥</sup></span> 
+              is able to significantly improve performance on (1), and even statistically match the original <span class="highlight-diva">DIVA</span> results. 
+              These results highlight the potential of such hybrid (QD+UED) semi-supervised environment design (SSED) approaches, 
+              a promising area for future work.
+            </p>
+          </section>
+      </section>
+
+      <section id="related-work">
+        <h2>Related Work</h2>
+      
+        <h3>Meta-Reinforcement Learning</h3>
+        <p>
+          Meta-reinforcement learning methods range from gradient-based approaches (e.g., MAML) 
+          <d-cite bibtex-key="Finn2017-rr"></d-cite>, RNN context-based approaches 
+          <d-cite bibtex-key="Wang2016-tj"></d-cite>, <d-cite bibtex-key="Duan2016-ip"></d-cite> 
+          (e.g., RL<sup>2</sup>), and the slew of emerging works utilizing transformers 
+          <d-cite bibtex-key="Melo2022-ky"></d-cite>, 
+          <d-cite bibtex-key="Adaptive_Agent_Team2023-ml"></d-cite>, 
+          <d-cite bibtex-key="Grigsby2023-mz"></d-cite>. 
+          We use VariBAD <d-cite bibtex-key="Zintgraf2019-uo"></d-cite>, a state-of-the-art context 
+          variable-based approach that extends RL<sup>2</sup> by using variational inference to incorporate task 
+          uncertainty into its beliefs. HyperX <d-cite bibtex-key="Zintgraf2020-xt"></d-cite>, an extension 
+          that uses reward bonuses, was not found to improve performance on our domains. In each of these works, the 
+          training distribution is given; none address the problem of generating diverse training scenarios in the 
+          absence of such a distribution.
+        </p>
+      
+        <h3>Procedural Environment Generation</h3>
+        <p>
+          Procedural (content) generation (PCG/PG) <d-cite bibtex-key="Shaker2016-bp"></d-cite> is a vast field. 
+          Many RL and meta-RL domains themselves have PCG baked-in (e.g., ProcGen 
+          <d-cite bibtex-key="Cobbe2019-cm"></d-cite>, Meta-World <d-cite bibtex-key="Yu2019-ef"></d-cite>, 
+          Alchemy <d-cite bibtex-key="Wang2021-jm"></d-cite>, and XLand 
+          <d-cite bibtex-key="Adaptive_Agent_Team2023-ml"></d-cite>). 
+          Each of these works relies on human engineering to produce levels with meaningfully diverse features. A related 
+          stream of works applies scenario generation to robotics—some works essentially perform PCG 
+          <d-cite bibtex-key="Arnold2013-qj"></d-cite>, <d-cite bibtex-key="Fremont2018-ag"></d-cite>, 
+          while others integrate more involved search mechanics 
+          <d-cite bibtex-key="Mullins2018-wv"></d-cite>, 
+          <d-cite bibtex-key="Abeysirigoonawardena2019-yx"></d-cite>, 
+          <d-cite bibtex-key="Gambi2019-eq"></d-cite>, <d-cite bibtex-key="Zhou2020-js"></d-cite>. 
+          One prior work <d-cite bibtex-key="Miconi2023-ly"></d-cite> defines a formal but generic parameterization 
+          for applying PG to generate meta-RL tasks. It is yet to be shown, however, if such an approach can scale to domains 
+          with vastly different dynamics and greater complexity.
+        </p>
+      
+        <h3>Unsupervised Environment Design</h3>
+        <p>
+          UED approaches—which use behavioral metrics to automatically define and adapt a curriculum of suitable tasks for 
+          agent training—form the frontier of research on open-endedness. The recent stream of open-ended agent/environment 
+          co-evolution works (e.g., <d-cite bibtex-key="Gabor2019-og"></d-cite>, 
+          <d-cite bibtex-key="Bossens2021-gq"></d-cite>, 
+          <d-cite bibtex-key="Dharna2020-uu"></d-cite>) was kickstarted by the POET 
+          <d-cite bibtex-key="Wang2019-en"></d-cite>, <d-cite bibtex-key="Wang2020-tw"></d-cite> algorithm. 
+          The "UED" term itself originated in PAIRED <d-cite bibtex-key="Dennis2020-kj"></d-cite>, which uses the 
+          performance of an "antagonist" agent to define the curriculum for the main (protagonist) agent. PLR 
+          <d-cite bibtex-key="Jiang2020-zr"></d-cite> introduces an approach for weighting training levels based on 
+          <em>learning potential</em>, using various proxy metrics to capture this high-level concept. 
+          <d-cite bibtex-key="Jiang2021-ml"></d-cite> introduces <span class="highlight-plr">PLR<sup>⊥</sup></span>, which only trains on levels that 
+          have been previously evaluated, thus enabling certain theoretical robustness guarantees. AdA 
+          <d-cite bibtex-key="Adaptive_Agent_Team2023-ml"></d-cite> uses PLR as a cornerstone of their 
+          approach for generating diverse training levels for adaptive agents in a complex, open-ended task space. 
+          <span class="highlight-accel">ACCEL</span> <d-cite bibtex-key="Parker-Holder2022-zs"></d-cite> borrows <span class="highlight-plr">PLR<sup>⊥</sup></span>'s scoring 
+          procedure, but the best-performing solutions are instead mutated, so the buffer not only collects and prioritizes 
+          levels of higher learning potential but <em>evolves</em> them. We use ACCEL as our main baseline because it has 
+          demonstrated state-of-the-art results on relevant domains, and like <span class="highlight-diva">DIVA</span>, evolves a population of levels. The 
+          main algorithmic differences between ACCEL and <span class="highlight-diva">DIVA</span> are that ACCEL (1) performs additional evaluation rollouts to 
+          produce scores during training and (2) uses a 1-D buffer instead of <span class="highlight-diva">DIVA</span>'s multi-dimensional archive. 
+          <span class="highlight-plr">PLR<sup>⊥</sup></span> serves as a secondary baseline in this work; its non-evolutionary nature makes it a useful 
+          comparison to <span class="highlight-dr">DR</span>.
+        </p>
+      
+        <h3>Scenario Generation via QD</h3>
+        <p>
+          A number of recent works apply QD to simulated environments in order to generate diverse scenarios, with distinct 
+          aims. Some works, like DSAGE <d-cite bibtex-key="Bhatt2022-cu"></d-cite>, use QD to develop diverse levels 
+          for the purpose of probing a pretrained agent for interesting behaviors. Another line of work applies QD to 
+          human-robot interaction (HRI), and ranges from generating diverse scenarios 
+          <d-cite bibtex-key="Gravina2019-qb"></d-cite>, to finding failure modes in shared autonomy systems 
+          <d-cite bibtex-key="Fontaine2020-cl"></d-cite> and human-aware planners 
+          <d-cite bibtex-key="Fontaine2021-re"></d-cite>. <span class="highlight-diva">DIVA</span>'s application of QD is inspired by these approaches, 
+          as they produce meaningfully diverse environment scenarios, but no prior work exists which applies QD to define a 
+          task distribution for agent <em>training</em>, much less <em>adaptive</em> agent training, or overcoming difficult 
+          parameterizations in open-ended environments.
+        </p>
+      </section>
+
+
+      <section id="discussion">
+        <h2>Discussion</h2>
+      
+        <p>
+          The present work enables adaptive agent training on open-ended environment simulators by integrating the 
+          <em>unconstrained</em> nature of unsupervised environment design (UED) approaches with the implicit 
+          <em>supervision</em> baked into procedural generation (PG) and domain randomization (<span class="highlight-dr">DR</span>) methods. Unlike PG and <span class="highlight-dr">DR</span>, 
+          which require domain knowledge to be carefully incorporated into the environment generation process, <span class="highlight-diva">DIVA</span> is able 
+          to <em>flexibly</em> incorporate domain knowledge and can discover <em>new</em> levels representative of the downstream 
+          distribution. Instead of relying on behavioral metrics to infer a general, ungrounded form of “learning potential” 
+          like UED—which becomes increasingly unconstrained and therefore less useful as environments become more complex and 
+          open-ended—<span class="highlight-diva">DIVA</span> is able to <em>directly</em> incorporate downstream feature samples to target specific, 
+          <em>meaningful</em> axes of diversity. With only a handful of downstream feature samples to set the parameters of the 
+          QD archive, our <a href="#evaluation">experiments</a> demonstrate <span class="highlight-diva">DIVA</span>’s ability to outperform 
+          competitive baselines compensated with three times as many environment steps during training.
+        </p>
+      
+        <p>
+          In its current form, the most obvious limitation of <span class="highlight-diva">DIVA</span> is that, in addition to assuming access to downstream feature 
+          samples, the axes of diversity themselves must be specified. However, we imagine these axes of diversity could be learned 
+          automatically from a set of sample levels or selected from a larger set of candidate features. It may be possible to adapt 
+          existing QD works to automate this process in related settings 
+          <d-cite bibtex-key="Grillotti2022-vm"></d-cite>. The present work also lacks a more thorough analysis of what 
+          constitutes good archive design. While some heuristic decision-making is unavoidable when applying learning algorithms to 
+          specific domains, a promising future direction would be to study how to approach <span class="highlight-diva">DIVA</span>’s archive design from a more 
+          algorithmic perspective.
+        </p>
+      
+        <p>
+          <span class="highlight-diva">DIVA</span> currently performs QD iterations over the environment parameter space defined by 
+          <d-math>E_U(\bm{\theta})</d-math>, where each component of the genotype <d-math>\bm{\theta}</d-math> represents some 
+          <em>salient</em> input parameter to the simulator. Prior works in other domains 
+          (e.g., <d-cite bibtex-key="Khalifa_Bontrager_Earle_Togelius_2020"></d-cite>) have demonstrated QD’s ability to 
+          explore the latent space of generative models. One natural direction for future work would therefore be to apply <span class="highlight-diva">DIVA</span> to 
+          <em>neural</em> environment generators (rather than <em>algorithmic</em> generators), where <d-math>\bm{\theta}</d-math> would 
+          instead correspond to the latent input space of the generative model. If the latent space of these models is more convenient 
+          to work with than the raw environment parameters—e.g., due to greater smoothness with respect to meaningful axes of 
+          diversity—this may help QD more efficiently discover samples within the target region. Conversely, <span class="highlight-diva">DIVA</span>’s ability to 
+          discover useful regions of the parameter space means these neural environment generators do not need to be “well-behaved” 
+          or match a specific target distribution. Since these generative models are also likely to be differentiable, <span class="highlight-diva">DIVA</span> can 
+          additionally incorporate gradient-based QD works (e.g., DQD <d-cite bibtex-key="Fontaine2021-lg"></d-cite>) to 
+          accelerate its search.
+        </p>
+      
+        <p>
+          Preliminary results with <span class="highlight-diva-plus">DIVA+</span> demonstrate the additional potential of combining UED and <span class="highlight-diva">DIVA</span> approaches. The F1 transfer 
+          results (i.e., <span class="highlight-diva">DIVA</span> outperforming <span class="highlight-ods">ODS</span> trained directly on <d-math>E_\textnormal{S}</d-math>) further suggest that agents 
+          benefit from flexible incorporation of downstream knowledge. In future work, we hope to study more principled integrations 
+          of UED and <span class="highlight-diva">DIVA</span>-like approaches and to more generally explore this exciting new area of semi-supervised environment design 
+          (SSED).
+        </p>
+      
+        <p>
+          More broadly, now equipped with <span class="highlight-diva">DIVA</span>, researchers can develop more general-purpose, open-ended simulators without 
+          concerning themselves with constructing convenient, well-behaved parameterizations. Evaluations in this work required 
+          constructing our own contrived parameterizations since domains are rarely released without carefully designed 
+          parameterizations. It is no longer necessary to accommodate the assumption made by <span class="highlight-dr">DR</span>, PG, and UED approaches—that either 
+          randomization over the parameter space should produce meaningful diversity or that all forms of level difficulty ought to 
+          correspond to meaningful learning potential. So long as diverse tasks are <em>possible</em> to generate, even if sparsely 
+          distributed within the parameter space, QD may be used to discover these regions and exploit them for agent training. Based 
+          on the promising empirical results presented in this work, we are hopeful that <span class="highlight-diva">DIVA</span> will enable future works to tackle even 
+          more complicated domains and assist researchers in designing more capable and behaviorally interesting adaptive agents.
+        </p>
+      </section>  
+
+      <hr>
+
+      <p id="appendix"><em>See our full PDF (<a href="https://arxiv.org/abs/2411.04466">ArXiv</a>) for the Appendix, which includes additional details and results.</em></p>
+  </d-article>
+
+  <d-appendix>
+  
+    <d-bibliography src="bibliography.bib"></d-bibliography>
+  
+  </d-appendix>
+
+  <!-- <distill-footer></distill-footer> -->
+
+</body>

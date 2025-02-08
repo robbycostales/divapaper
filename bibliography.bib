@@ -1,0 +1,2924 @@
+@INCOLLECTION{Arnold2013-qj,
+  title     = "Testing autonomous robot control software using procedural
+               content generation",
+  author    = "Arnold, James and Alexander, Rob",
+  booktitle = "Lecture Notes in Computer Science",
+  publisher = "Springer Berlin Heidelberg",
+  address   = "Berlin, Heidelberg",
+  pages     = "33--44",
+  series    = "Lecture notes in computer science",
+  year      =  "2013"
+}
+
+@ARTICLE{Mullins2018-wv,
+  title     = "Adaptive generation of challenging scenarios for testing and
+               evaluation of autonomous vehicles",
+  author    = "Mullins, Galen E and Stankiewicz, Paul G and Hawthorne, R Chad
+               and Gupta, Satyandra K",
+  journal   = "J. Syst. Softw.",
+  publisher = "Elsevier BV",
+  volume    =  "137",
+  pages     = "197--215",
+  abstract  = "In this paper we propose a new method for generating test
+               scenarios for black-box autonomous systems that demonstrate
+               critical transitions in performance modes. This method provides a
+               test engineer with key insights into the software’s
+               decision-making engine and how those decisions affect transitions
+               between performance modes. We achieve this via adaptive,
+               simulation-based testing of the autonomous system where each
+               sample represents a simulated scenario. The test scenario, i.e
+               the system input, represents a given configuration of
+               environmental or mission parameters and the resulting outputs are
+               the system’s performance based on high-level success criteria.
+               For realistic testing scenarios, the dimensionality of the
+               configuration space and the computational expense of
+               high-fidelity simulations precludes exhaustive or uniform
+               sampling. Thus, we have developed specialized adaptive search
+               algorithms designed to discover performance boundaries of the
+               autonomy using a minimal number of samples. Further, unsupervised
+               clustering techniques are presented that can group test scenarios
+               by the resulting performance modes and sort them by those which
+               are most effective at diagnosing changes in the autonomous
+               system’s behavior. The result is a testing framework that gives
+               the test engineer a set of diverse scenarios that exercises the
+               decision boundaries of the autonomous system under test.",
+  month     =  "mar",
+  year      =  "2018",
+  language  = "en"
+}
+
+@INPROCEEDINGS{Abeysirigoonawardena2019-yx,
+  title     = "Generating adversarial driving scenarios in high-fidelity
+               simulators",
+  author    = "Abeysirigoonawardena, Yasasa and Shkurti, Florian and Dudek,
+               Gregory",
+  booktitle = "2019 International Conference on Robotics and Automation (ICRA)",
+  publisher = "IEEE",
+  pages     = "8271--8277",
+  month     =  "may",
+  year      =  "2019"
+}
+
+@INPROCEEDINGS{Rocklage2017-gc,
+  title     = "Automated scenario generation for regression testing of
+               autonomous vehicles",
+  author    = "Rocklage, Elias and Kraft, Heiko and Karatas, Abdullah and
+               Seewig, Jorg",
+  booktitle = "2017 IEEE 20th International Conference on Intelligent
+               Transportation Systems (ITSC)",
+  publisher = "IEEE",
+  pages     = "476--483",
+  month     =  "oct",
+  year      =  "2017"
+}
+
+@INPROCEEDINGS{Gambi2019-eq,
+  title     = "Automatically testing self-driving cars with search-based
+               procedural content generation",
+  author    = "Gambi, Alessio and Mueller, Marc and Fraser, Gordon",
+  booktitle = "Proceedings of the 28th ACM SIGSOFT International Symposium on
+               Software Testing and Analysis",
+  publisher = "ACM",
+  address   = "New York, NY, USA",
+  abstract  = "Self-driving cars rely on software which needs to be thoroughly
+               tested. Testing self-driving car software in real traffic is not
+               only expensive but also dangerous, and has already caused
+               fatalities. Virtual tests, in which self-driving car software is
+               tested in computer simulations, offer a more efficient and safer
+               alternative compared to naturalistic field operational tests.
+               However, creating suitable test scenarios is laborious and
+               difficult. In this paper we combine procedural content
+               generation, a technique commonly employed in modern video games,
+               and search-based testing, a testing technique proven to be
+               effective in many domains, in order to automatically create
+               challenging virtual scenarios for testing self-driving car soft-
+               ware. Our AsFault prototype implements this approach to generate
+               virtual roads for testing lane keeping, one of the defining
+               features of autonomous driving. Evaluation on two different
+               self-driving car software systems demonstrates that AsFault can
+               generate effective virtual road networks that succeed in
+               revealing software failures, which manifest as cars departing
+               their lane. Compared to random testing AsFault was not only more
+               efficient, but also caused up to twice as many lane departures.",
+  month     =  jul,
+  year      =  "2019"
+}
+
+@ARTICLE{Sadigh2019-id,
+  title     = "Verifying robustness of human-aware autonomous cars",
+  author    = "Sadigh, Dorsa and Sastry, S Shankar and Seshia, Sanjit A",
+  journal   = "IFAC-PapersOnLine",
+  publisher = "Elsevier BV",
+  volume    =  "51",
+  number    =  "34",
+  pages     = "131--138",
+  year      =  "2019",
+  language  = "en"
+}
+
+@inproceedings{Fremont2018-ag,
+  author = {Fremont, Daniel J. and Dreossi, Tommaso and Ghosh, Shromona and Yue, Xiangyu and Sangiovanni-Vincentelli, Alberto L. and Seshia, Sanjit A.},
+  title = {Scenic: a language for scenario specification and scene generation},
+  year = {2019},
+  isbn = {9781450367127},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3314221.3314633},
+  doi = {10.1145/3314221.3314633},
+  abstract = {We propose a new probabilistic programming language for the design and analysis of perception systems, especially those based on machine learning. Specifically, we consider the problems of training a perception system to handle rare events, testing its performance under different conditions, and debugging failures. We show how a probabilistic programming language can help address these problems by specifying distributions encoding interesting types of inputs and sampling these to generate specialized training and test sets. More generally, such languages can be used for cyber-physical systems and robotics to write environment models, an essential prerequisite to any formal analysis. In this paper, we focus on systems like autonomous cars and robots, whose environment is a scene, a configuration of physical objects and agents. We design a domain-specific language, Scenic, for describing scenarios that are distributions over scenes. As a probabilistic programming language, Scenic allows assigning distributions to features of the scene, as well as declaratively imposing hard and soft constraints over the scene. We develop specialized techniques for sampling from the resulting distribution, taking advantage of the structure provided by Scenic's domain-specific syntax. Finally, we apply Scenic in a case study on a convolutional neural network designed to detect cars in road images, improving its performance beyond that achieved by state-of-the-art synthetic data generation methods.},
+  booktitle = {Proceedings of the 40th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+  pages = {63–78},
+  numpages = {16},
+  keywords = {synthetic data, scenario description language, probabilistic programming, fuzz testing, deep learning, automatic test generation},
+  location = {Phoenix, AZ, USA},
+  series = {PLDI 2019}
+}
+
+@InProceedings{Zhou2020-js,
+  title = 	 {RoCUS: Robot Controller Understanding via Sampling},
+  author =       {Zhou, Yilun and Booth, Serena and Figueroa, Nadia and Shah, Julie},
+  booktitle = 	 {Proceedings of the 5th Conference on Robot Learning},
+  pages = 	 {850--860},
+  year = 	 {2022},
+  editor = 	 {Faust, Aleksandra and Hsu, David and Neumann, Gerhard},
+  volume = 	 {164},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {08--11 Nov},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v164/zhou22a/zhou22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v164/zhou22a.html},
+  abstract = 	 {As robots are deployed in complex situations, engineers and end users must develop a holistic understanding of their behaviors, capabilities, and limitations. Some behaviors are directly optimized by the objective function. They often include success rate, completion time or energy consumption. Other behaviors – e.g., collision avoidance, trajectory smoothness or motion legibility – are typically emergent but equally important for safe and trustworthy deployment. Designing an objective which optimizes every aspect of robot behavior is hard. In this paper, we advocate for systematic analysis of a wide array of behaviors for holistic understanding of robot controllers and, to this end, propose a framework, RoCUS, which uses Bayesian posterior sampling to find situations where the robot controller exhibits user-specified behaviors, such as highly jerky motions. We use RoCUS to analyze three controller classes (deep learning models, rapidly exploring random trees and dynamical system formulations) on two domains (2D navigation and a 7 degree-of-freedom arm reaching), and uncover insights to further our understanding of these controllers and ultimately improve their designs. }
+}
+
+
+
+% POET [1, 2]
+
+@ARTICLE{Wang2019-en,
+  title         = "Paired Open-Ended Trailblazer ({POET}): Endlessly generating
+                   increasingly complex and diverse learning environments and
+                   their solutions",
+  author        = "Wang, Rui and Lehman, Joel and Clune, Jeff and Stanley,
+                   Kenneth O",
+  journal       = "arXiv [cs.NE]",
+  abstract      = "While the history of machine learning so far largely
+                   encompasses a series of problems posed by researchers and
+                   algorithms that learn their solutions, an important question
+                   is whether the problems themselves can be generated by the
+                   algorithm at the same time as they are being solved. Such a
+                   process would in effect build its own diverse and expanding
+                   curricula, and the solutions to problems at various stages
+                   would become stepping stones towards solving even more
+                   challenging problems later in the process. The Paired
+                   Open-Ended Trailblazer (POET) algorithm introduced in this
+                   paper does just that: it pairs the generation of
+                   environmental challenges and the optimization of agents to
+                   solve those challenges. It simultaneously explores many
+                   different paths through the space of possible problems and
+                   solutions and, critically, allows these stepping-stone
+                   solutions to transfer between problems if better, catalyzing
+                   innovation. The term open-ended signifies the intriguing
+                   potential for algorithms like POET to continue to create
+                   novel and increasingly complex capabilities without bound.
+                   Our results show that POET produces a diverse range of
+                   sophisticated behaviors that solve a wide range of
+                   environmental challenges, many of which cannot be solved by
+                   direct optimization alone, or even through a direct-path
+                   curriculum-building control algorithm introduced to highlight
+                   the critical role of open-endedness in solving ambitious
+                   challenges. The ability to transfer solutions from one
+                   environment to another proves essential to unlocking the full
+                   potential of the system as a whole, demonstrating the
+                   unpredictable nature of fortuitous stepping stones. We hope
+                   that POET will inspire a new push towards open-ended
+                   discovery across many domains, where algorithms like POET can
+                   blaze a trail through their interesting possible
+                   manifestations and solutions.",
+  month         =  "jan",
+  year          =  "2019",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.NE"
+}
+
+@InProceedings{Wang2020-tw,
+  title = 	 {Enhanced {POET}: Open-ended Reinforcement Learning through Unbounded Invention of Learning Challenges and their Solutions},
+  author =       {Wang, Rui and Lehman, Joel and Rawal, Aditya and Zhi, Jiale and Li, Yulun and Clune, Jeffrey and Stanley, Kenneth},
+  booktitle = 	 {Proceedings of the 37th International Conference on Machine Learning},
+  pages = 	 {9940--9951},
+  year = 	 {2020},
+  editor = 	 {III, Hal Daumé and Singh, Aarti},
+  volume = 	 {119},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {13--18 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v119/wang20l/wang20l.pdf},
+  url = 	 {https://proceedings.mlr.press/v119/wang20l.html},
+  abstract = 	 {Creating open-ended algorithms, which generate their own never-ending stream of novel and appropriately challenging learning opportunities, could help to automate and accelerate progress in machine learning. A recent step in this direction is the Paired Open-Ended Trailblazer (POET), an algorithm that generates and solves its own challenges, and allows solutions to goal-switch between challenges to avoid local optima. However, the original POET was unable to demonstrate its full creative potential because of limitations of the algorithm itself and because of external issues including a limited problem space and lack of a universal progress measure. Importantly, both limitations pose impediments not only for POET, but for the pursuit of open-endedness in general. Here we introduce and empirically validate two new innovations to the original algorithm, as well as two external innovations designed to help elucidate its full potential. Together, these four advances enable the most open-ended algorithmic demonstration to date. The algorithmic innovations are (1) a domain-general measure of how meaningfully novel new challenges are, enabling the system to potentially create and solve interesting challenges endlessly, and (2) an efficient heuristic for determining when agents should goal-switch from one problem to another (helping open-ended search better scale). Outside the algorithm itself, to enable a more definitive demonstration of open-endedness, we introduce (3) a novel, more flexible way to encode environmental challenges, and (4) a generic measure of the extent to which a system continues to exhibit open-ended innovation. Enhanced POET produces a diverse range of sophisticated behaviors that solve a wide range of environmental challenges, many of which cannot be solved through other means.}
+}
+
+
+
+77-79, 5 co-ev algs
+
+@INPROCEEDINGS{Gabor2019-og,
+  title     = "Scenario co-evolution for reinforcement learning on a grid world
+               smart factory domain",
+  author    = "Gabor, Thomas and Sedlmeier, Andreas and Kiermeier, Marie and
+               Phan, Thomy and Henrich, Marcel and Pichlmair, Monika and
+               Kempter, Bernhard and Klein, Cornel and Sauer, Horst and Ag,
+               Reiner Schmidsiemens and Wieghardt, Jan",
+  booktitle = "Proceedings of the Genetic and Evolutionary Computation
+               Conference",
+  publisher = "ACM",
+  address   = "New York, NY, USA",
+  month     =  "jul",
+  year      =  "2019"
+}
+
+@ARTICLE{Bossens2021-gq,
+  title     = "{QED}: Using quality-environment-diversity to evolve resilient
+               robot swarms",
+  author    = "Bossens, David M and Tarapore, Danesh",
+  journal   = "IEEE Trans. Evol. Comput.",
+  publisher = "Institute of Electrical and Electronics Engineers (IEEE)",
+  volume    =  "25",
+  number    =  "2",
+  pages     = "346--357",
+  month     =  "apr",
+  year      =  "2021"
+}
+
+@inproceedings{Dharna2020-uu,
+author = {Dharna, Aaron and Togelius, Julian and Soros, L. B.},
+title = {Co-generation of game levels and game-playing agents},
+year = {2020},
+isbn = {978-1-57735-849-7},
+publisher = {AAAI Press},
+abstract = {Open-endedness, a longstanding cornerstone of artificial life research, is the ability of systems to generate potentially unbounded ontologies of increasing novelty and complexity. Engineering generative systems displaying at least some degree of this ability is a goal with clear applications to procedural content generation in games. The Paired Open-Ended Trailblazer (POET) algorithm, heretofore explored only in a biped walking domain, is a coevolutionary system that simultaneously generates environments and agents that can solve them. This paper introduces a POET-Inspired Neuroevolu-tionary System for KreativitY (PINSKY) in games, which co-generates levels for multiple video games and agents that play them. This system leverages the General Video Game Artificial Intelligence (GVGAI) framework to enable co-generation of levels and agents for the 2D Atari-style games Zelda and Solar Fox. Results demonstrate the ability of PIN-SKY to generate curricula of game levels, opening up a promising new avenue for research at the intersection of procedural content generation and artificial life. At the same time, results in these challenging game domains highlight the limitations of the current algorithm and opportunities for improvement.},
+booktitle = {Proceedings of the Sixteenth AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment},
+articleno = {29},
+numpages = {7},
+series = {AIIDE'20}
+}
+
+@article{Dharna2022-on,
+  title={Transfer dynamics in emergent evolutionary curricula},
+  author={Dharna, Aaron and Hoover, Amy K and Togelius, Julian and Soros, Lisa B},
+  journal={IEEE Transactions on Games},
+  volume={15},
+  number={2},
+  pages={157--170},
+  year={2022},
+  publisher={IEEE}
+}
+
+
+%%%%%%%%%
+
+@INPROCEEDINGS{Gravina2019-qb,
+  title     = "Procedural Content Generation through Quality Diversity",
+  author    = "Gravina, Daniele and Khalifa, Ahmed and Liapis, Antonios and
+               Togelius, Julian and Yannakakis, Georgios N",
+  booktitle = "2019 IEEE Conference on Games (CoG)",
+  publisher = "ieeexplore.ieee.org",
+  pages     = "1--8",
+  abstract  = "Quality-diversity (QD) algorithms search for a set of good
+               solutions which cover a space as defined by behavior metrics.
+               This simultaneous focus on quality and diversity with explicit
+               metrics sets QD algorithms apart from standard single- and
+               multi-objective evolutionary algorithms, as well as from
+               diversity preservation approaches such as niching. These
+               properties open up new avenues for artificial intelligence in
+               games, in particular for procedural content generation. Creating
+               multiple systematically varying solutions allows new approaches
+               to creative human-AI interaction as well as adaptivity. In the
+               last few years, a handful of applications of QD to procedural
+               content generation and game playing have been proposed; we
+               discuss these and propose challenges for future work.",
+  month     =  "aug",
+  year      =  "2019",
+  keywords  = "Sociology;Statistics;Games;Search problems;Partitioning
+               algorithms;Extraterrestrial measurements;Procedural Content
+               Generation;Quality Diversity;Evolutionary
+               Computation;Expressivity"
+}
+
+
+@ARTICLE{Beck2023-oy,
+  title         = "A Survey of Meta-Reinforcement Learning",
+  author        = "Beck, Jacob and Vuorio, Risto and Liu, Evan Zheran and Xiong,
+                   Zheng and Zintgraf, Luisa and Finn, Chelsea and Whiteson,
+                   Shimon",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "While deep reinforcement learning (RL) has fueled multiple
+                   high-profile successes in machine learning, it is held back
+                   from more widespread adoption by its often poor data
+                   efficiency and the limited generality of the policies it
+                   produces. A promising approach for alleviating these
+                   limitations is to cast the development of better RL
+                   algorithms as a machine learning problem itself in a process
+                   called meta-RL. Meta-RL is most commonly studied in a problem
+                   setting where, given a distribution of tasks, the goal is to
+                   learn a policy that is capable of adapting to any new task
+                   from the task distribution with as little data as possible.
+                   In this survey, we describe the meta-RL problem setting in
+                   detail as well as its major variations. We discuss how, at a
+                   high level, meta-RL research can be clustered based on the
+                   presence of a task distribution and the learning budget
+                   available for each individual task. Using these clusters, we
+                   then survey meta-RL algorithms and applications. We conclude
+                   by presenting the open problems on the path to making meta-RL
+                   part of the standard toolbox for a deep RL practitioner.",
+  month         =  "jan",
+  year          =  "2023",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG"
+}
+
+
+@ARTICLE{Sivamayil2023-zc,
+  title     = "A systematic study on Reinforcement Learning based applications",
+  author    = "Sivamayil, Keerthana and Rajasekar, Elakkiya and Aljafari,
+               Belqasem and Nikolovski, Srete and Vairavasundaram,
+               Subramaniyaswamy and Vairavasundaram, Indragandhi",
+  journal   = "Energies",
+  publisher = "MDPI AG",
+  volume    =  "16",
+  number    =  "3",
+  pages     =  "1512",
+  abstract  = "We have analyzed 127 publications for this review paper, which
+               discuss applications of Reinforcement Learning (RL) in marketing,
+               robotics, gaming, automated cars, natural language processing
+               (NLP), internet of things security, recommendation systems,
+               finance, and energy management. The optimization of energy use is
+               critical in today’s environment. We mainly focus on the RL
+               application for energy management. Traditional rule-based systems
+               have a set of predefined rules. As a result, they may become
+               rigid and unable to adjust to changing situations or unforeseen
+               events. RL can overcome these drawbacks. RL learns by exploring
+               the environment randomly and based on experience, it continues to
+               expand its knowledge. Many researchers are working on RL-based
+               energy management systems (EMS). RL is utilized in energy
+               applications such as optimizing energy use in smart buildings,
+               hybrid automobiles, smart grids, and managing renewable energy
+               resources. RL-based energy management in renewable energy
+               contributes to achieving net zero carbon emissions and a
+               sustainable environment. In the context of energy management
+               technology, RL can be utilized to optimize the regulation of
+               energy systems, such as building heating, ventilation, and air
+               conditioning (HVAC) systems, to reduce energy consumption while
+               maintaining a comfortable atmosphere. EMS can be accomplished by
+               teaching an RL agent to make judgments based on sensor data, such
+               as temperature and occupancy, to modify the HVAC system settings.
+               RL has proven beneficial in lowering energy usage in buildings
+               and is an active research area in smart buildings. RL can be used
+               to optimize energy management in hybrid electric vehicles (HEVs)
+               by learning an optimal control policy to maximize battery life
+               and fuel efficiency. RL has acquired a remarkable position in
+               robotics, automated cars, and gaming applications. The majority
+               of security-related applications operate in a simulated
+               environment. The RL-based recommender systems provide good
+               suggestions accuracy and diversity. This article assists the
+               novice in comprehending the foundations of reinforcement learning
+               and its applications.",
+  month     =  "feb",
+  year      =  "2023",
+  language  = "en"
+}
+
+
+@ARTICLE{Kirk2023-if,
+  title     = "A Survey of Zero-shot Generalisation in Deep Reinforcement
+               Learning",
+  author    = "Kirk, Robert and Zhang, Amy and Grefenstette, Edward and
+               Rocktäschel, Tim",
+  journal   = "jair",
+  publisher = "jair.org",
+  volume    =  76,
+  pages     = "201--264",
+  abstract  = "The study of zero-shot generalisation (ZSG) in deep Reinforcement
+               Learning (RL) aims to produce RL algorithms whose policies
+               generalise well to novel unseen situations at deployment time,
+               avoiding overfitting to their training environments. Tackling
+               this is vital if we are to deploy reinforcement learning
+               algorithms in real world scenarios, where the environment will be
+               diverse, dynamic and unpredictable. This survey is an overview of
+               this nascent field. We rely on a unifying formalism and
+               terminology for discussing different ZSG problems, building upon
+               previous works. We go on to categorise existing benchmarks for
+               ZSG, as well as current methods for tackling these problems.
+               Finally, we provide a critical discussion of the current state of
+               the field, including recommendations for future work. Among other
+               conclusions, we argue that taking a purely procedural content
+               generation approach to benchmark design is not conducive to
+               progress in ZSG, we suggest fast online adaptation and tackling
+               RL-specific problems as some areas for future work on methods for
+               ZSG, and we recommend building benchmarks in underexplored
+               problem settings such as offline RL ZSG and reward-function
+               variation.",
+  month     =  jan,
+  year      =  "2023",
+  keywords  = "reinforcement learning; neural networks",
+  language  = "en"
+}
+
+
+@ARTICLE{Wang2024-wi,
+  title     = "Deep reinforcement learning: A survey",
+  author    = "Wang, Xu and Wang, Sen and Liang, Xingxing and Zhao, Dawei and
+               Huang, Jincai and Xu, Xin and Dai, Bin and Miao, Qiguang",
+  journal   = "IEEE Trans. Neural Netw. Learn. Syst.",
+  publisher = "Institute of Electrical and Electronics Engineers (IEEE)",
+  volume    =  "35",
+  number    =  "4",
+  pages     = "5064--5078",
+  abstract  = "Deep reinforcement learning (DRL) integrates the feature
+               representation ability of deep learning with the decision-making
+               ability of reinforcement learning so that it can achieve powerful
+               end-to-end learning control capabilities. In the past decade, DRL
+               has made substantial advances in many tasks that require
+               perceiving high-dimensional input and making optimal or
+               near-optimal decisions. However, there are still many challenging
+               problems in the theory and applications of DRL, especially in
+               learning control tasks with limited samples, sparse rewards, and
+               multiple agents. Researchers have proposed various solutions and
+               new theories to solve these problems and promote the development
+               of DRL. In addition, deep learning has stimulated the further
+               development of many subfields of reinforcement learning, such as
+               hierarchical reinforcement learning (HRL), multiagent
+               reinforcement learning, and imitation learning. This article
+               gives a comprehensive overview of the fundamental theories, key
+               algorithms, and primary research domains of DRL. In addition to
+               value-based and policy-based DRL algorithms, the advances in
+               maximum entropy-based DRL are summarized. The future research
+               topics of DRL are also analyzed and discussed.",
+  month     =  apr,
+  year      =  2024,
+  language  = "en"
+}
+
+
+@ARTICLE{Grillotti2022-vm,
+  title     = "Unsupervised Behavior Discovery With Quality-Diversity
+               Optimization",
+  author    = "Grillotti, L and Cully, A",
+  journal   = "IEEE Trans. Evol. Comput.",
+  publisher = "ieeexplore.ieee.org",
+  abstract  = "… BD, it succeeds to build a container of diverse behaviors. We
+               also show that AURORA can be used, like any QD algorithm, to
+               optimize the quality of the discovered behaviors. The …",
+  year      =  "2022"
+}
+
+@article{Ren2022-wq,
+  author        = {Allen Z. Ren and
+                   Anirudha Majumdar},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/ral/RenM22.bib},
+  doi           = {10.1109/LRA.2021.3139949},
+  journal       = {{IEEE} Robotics Autom. Lett.},
+  number        = {2},
+  pages         = {1379--1386},
+  timestamp     = {Sun, 25 Dec 2022 00:00:00 +0100},
+  title         = {{D}istributionally {R}obust {P}olicy {L}earning via {A}dversarial {E}nvironment {G}eneration},
+  url           = {https://doi.org/10.1109/LRA.2021.3139949},
+  volume        = {7},
+  year          = {2022}
+}
+
+@inproceedings{Jiang2020-zr,
+  author        = {Minqi Jiang and
+                   Edward Grefenstette and
+                   Tim Rockt{\"{a}}schel},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/JiangGR21.bib},
+  booktitle     = {Proceedings of the 38th International Conference on Machine Learning,
+                   {ICML} 2021, 18-24 July 2021, Virtual Event},
+  editor        = {Marina Meila and
+                   Tong Zhang},
+  pages         = {4940--4950},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Wed, 25 Aug 2021 01:00:00 +0200},
+  title         = {{P}rioritized {L}evel {R}eplay},
+  url           = {http://proceedings.mlr.press/v139/jiang21b.html},
+  volume        = {139},
+  year          = {2021}
+}
+
+@inproceedings{Anand2021-rw,
+  author        = {Ankesh Anand and
+                   Jacob C. Walker and
+                   Yazhe Li and
+                   Eszter V{\'{e}}rtes and
+                   Julian Schrittwieser and
+                   Sherjil Ozair and
+                   Theophane Weber and
+                   Jessica B. Hamrick},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iclr/AnandWLVSOWH22.bib},
+  booktitle     = {The Tenth International Conference on Learning Representations, {ICLR}
+                   2022, Virtual Event, April 25-29, 2022},
+  publisher     = {OpenReview.net},
+  timestamp     = {Sat, 20 Aug 2022 01:00:00 +0200},
+  title         = {{P}rocedural generalization by planning with self-supervised world models},
+  url           = {https://openreview.net/forum?id=FmBegXJToY},
+  year          = {2022}
+}
+
+@article{Fu2022-ai,
+  author        = {Haotian Fu and
+                   Shangqun Yu and
+                   Saket Tiwari and
+                   George Dimitri Konidaris and
+                   Michael Littman},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2206-03597.bib},
+  doi           = {10.48550/ARXIV.2206.03597},
+  eprint        = {2206.03597},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Mon, 09 Oct 2023 01:00:00 +0200},
+  title         = {{M}eta-Learning {T}ransferable {P}arameterized {S}kills},
+  url           = {https://doi.org/10.48550/arXiv.2206.03597},
+  volume        = {abs/2206.03597},
+  year          = {2022}
+}
+
+@article{Benjamins2021-cv,
+  author        = {Carolin Benjamins and
+                   Theresa Eimer and
+                   Frederik Schubert and
+                   Andr{\'{e}} Biedenkapp and
+                   Bodo Rosenhahn and
+                   Frank Hutter and
+                   Marius Lindauer},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2110-02102.bib},
+  eprint        = {2110.02102},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Sun, 02 Oct 2022 01:00:00 +0200},
+  title         = {{CARL:} {A} {B}enchmark for {C}ontextual and {A}daptive {R}einforcement {L}earning},
+  url           = {https://arxiv.org/abs/2110.02102},
+  volume        = {abs/2110.02102},
+  year          = {2021}
+}
+
+@article{Doya2002-ep,
+  author        = {Kenji Doya},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/nn/Doya02.bib},
+  doi           = {10.1016/S0893-6080(02)00044-8},
+  journal       = {Neural Networks},
+  number        = {4-6},
+  pages         = {495--506},
+  timestamp     = {Wed, 14 Nov 2018 00:00:00 +0100},
+  title         = {{M}etalearning and neuromodulation},
+  url           = {https://doi.org/10.1016/S0893-6080(02)00044-8},
+  volume        = {15},
+  year          = {2002}
+}
+
+@article{Schweighofer2003-oz,
+  author        = {Nicolas Schweighofer and
+                   Kenji Doya},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/nn/SchweighoferD03.bib},
+  doi           = {10.1016/S0893-6080(02)00228-9},
+  journal       = {Neural Networks},
+  number        = {1},
+  pages         = {5--9},
+  timestamp     = {Mon, 05 Feb 2024 00:00:00 +0100},
+  title         = {{M}eta-learning in {R}einforcement {L}earning},
+  url           = {https://doi.org/10.1016/S0893-6080(02)00228-9},
+  volume        = {16},
+  year          = {2003}
+}
+
+@article{Stadie2018-er,
+  author        = {Bradly C. Stadie and
+                   Ge Yang and
+                   Rein Houthooft and
+                   Xi Chen and
+                   Yan Duan and
+                   Yuhuai Wu and
+                   Pieter Abbeel and
+                   Ilya Sutskever},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-1803-01118.bib},
+  eprint        = {1803.01118},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Fri, 07 May 2021 01:00:00 +0200},
+  title         = {{S}ome {C}onsiderations on {L}earning to {E}xplore via {M}eta-Reinforcement {L}earning},
+  url           = {http://arxiv.org/abs/1803.01118},
+  volume        = {abs/1803.01118},
+  year          = {2018}
+}
+
+@inproceedings{Beaulieu2020-pf,
+  author        = {Shawn Beaulieu and
+                   Lapo Frati and
+                   Thomas Miconi and
+                   Joel Lehman and
+                   Kenneth O. Stanley and
+                   Jeff Clune and
+                   Nick Cheney},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/ecai/BeaulieuFMLSCC20.bib},
+  booktitle     = {{ECAI} 2020 - 24th European Conference on Artificial Intelligence,
+                   29 August-8 September 2020, Santiago de Compostela, Spain, August
+                   29 - September 8, 2020 - Including 10th Conference on Prestigious
+                   Applications of Artificial Intelligence {(PAIS} 2020)},
+  doi           = {10.3233/FAIA200193},
+  editor        = {Giuseppe De Giacomo and
+                   Alejandro Catal{\'{a}} and
+                   Bistra Dilkina and
+                   Michela Milano and
+                   Sen{\'{e}}n Barro and
+                   Alberto Bugar{\'{\i}}n and
+                   J{\'{e}}r{\^{o}}me Lang},
+  pages         = {992--1001},
+  publisher     = {{IOS} Press},
+  series        = {Frontiers in Artificial Intelligence and Applications},
+  timestamp     = {Fri, 09 Apr 2021 18:50:05 +0200},
+  title         = {{L}earning to {C}ontinually {L}earn},
+  url           = {https://doi.org/10.3233/FAIA200193},
+  volume        = {325},
+  year          = {2020}
+}
+
+@article{Vecoven2020-tq,
+  author        = {Nicolas Vecoven and
+                   Damien Ernst and
+                   Guillaume Drion},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-1812-09113.bib},
+  eprint        = {1812.09113},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Wed, 02 Jan 2019 00:00:00 +0100},
+  title         = {{I}ntroducing {N}euromodulation in {D}eep {N}eural {N}etworks to {L}earn {A}daptive {B}ehaviours},
+  url           = {http://arxiv.org/abs/1812.09113},
+  volume        = {abs/1812.09113},
+  year          = {2018}
+}
+
+@inproceedings{Zintgraf2019-sx,
+  title={Fast context adaptation via meta-learning},
+  author={Zintgraf, Luisa and Shiarli, Kyriacos and Kurin, Vitaly and Hofmann, Katja and Whiteson, Shimon},
+  booktitle={International Conference on Machine Learning},
+  pages={7693--7702},
+  year={2019},
+  organization={PMLR}
+}
+
+@article{noauthor_undated-pk,
+  author        = {Tony Z. Zhao and
+                   Anusha Nagabandi and
+                   Kate Rakelly and
+                   Chelsea Finn and
+                   Sergey Levine},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2010-13957.bib},
+  eprint        = {2010.13957},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Mon, 02 Nov 2020 00:00:00 +0100},
+  title         = {{MELD:} {M}eta-Reinforcement {L}earning from {I}mages via {L}atent {S}tate {M}odels},
+  url           = {https://arxiv.org/abs/2010.13957},
+  volume        = {abs/2010.13957},
+  year          = {2020}
+}
+
+@inproceedings{Sarafian2021-ig,
+  author        = {Elad Sarafian and
+                   Shai Keynan and
+                   Sarit Kraus},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/SarafianKK21.bib},
+  booktitle     = {Proceedings of the 38th International Conference on Machine Learning,
+                   {ICML} 2021, 18-24 July 2021, Virtual Event},
+  editor        = {Marina Meila and
+                   Tong Zhang},
+  pages         = {9301--9312},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Wed, 25 Aug 2021 01:00:00 +0200},
+  title         = {{R}ecomposing the {R}einforcement {L}earning {B}uilding {B}locks with {H}ypernetworks},
+  url           = {http://proceedings.mlr.press/v139/sarafian21a.html},
+  volume        = {139},
+  year          = {2021}
+}
+
+@inproceedings{Ha2016-wu,
+  author        = {David Ha and
+                   Andrew M. Dai and
+                   Quoc V. Le},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iclr/HaDL17.bib},
+  booktitle     = {5th International Conference on Learning Representations, {ICLR} 2017,
+                   Toulon, France, April 24-26, 2017, Conference Track Proceedings},
+  publisher     = {OpenReview.net},
+  timestamp     = {Thu, 25 Jul 2019 01:00:00 +0200},
+  title         = {{H}yper{N}etworks},
+  url           = {https://openreview.net/forum?id=rkpACe1lx},
+  year          = {2017}
+}
+
+@article{Vithayathil_Varghese2020-qc,
+  abstract      = {Driven by the recent technological advancements within the field
+                   of artificial intelligence research, deep learning has emerged
+                   as a promising representation learning technique across all of
+                   the machine learning classes, especially within the
+                   reinforcement learning arena. This new direction has given rise
+                   to the evolution of a new technological domain named deep
+                   reinforcement learning, which combines the representational
+                   learning power of deep learning with existing reinforcement
+                   learning methods. Undoubtedly, the inception of deep
+                   reinforcement learning has played a vital role in optimizing the
+                   performance of reinforcement learning-based intelligent agents
+                   with model-free based approaches. Although these methods could
+                   improve the performance of agents to a greater extent, they were
+                   mainly limited to systems that adopted reinforcement learning
+                   algorithms focused on learning a single task. At the same
+                   moment, the aforementioned approach was found to be relatively
+                   data-inefficient, particularly when reinforcement learning
+                   agents needed to interact with more complex and rich data
+                   environments. This is primarily due to the limited applicability
+                   of deep reinforcement learning algorithms to many scenarios
+                   across related tasks from the same environment. The objective of
+                   this paper is to survey the research challenges associated with
+                   multi-tasking within the deep reinforcement arena and present
+                   the state-of-the-art approaches by comparing and contrasting
+                   recent solutions, namely DISTRAL (DIStill \& TRAnsfer Learning),
+                   IMPALA(Importance Weighted Actor-Learner Architecture) and
+                   PopArt that aim to address core challenges such as scalability,
+                   distraction dilemma, partial observability, catastrophic
+                   forgetting and negative knowledge transfer.},
+  author        = {Vithayathil Varghese, Nelson and Mahmoud, Qusay H},
+  journal       = {Electronics},
+  language      = {en},
+  month         = aug,
+  number        = {9},
+  pages         = {1363},
+  publisher     = {Multidisciplinary Digital Publishing Institute},
+  title         = {{A} {S}urvey of {Multi-Task} {D}eep {R}einforcement {L}earning},
+  volume        = {9},
+  year          = {2020}
+}
+
+@inproceedings{Zheng2022-gc,
+  author        = {Qinqing Zheng and
+                   Amy Zhang and
+                   Aditya Grover},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/ZhengZG22.bib},
+  booktitle     = {International Conference on Machine Learning, {ICML} 2022, 17-23 July
+                   2022, Baltimore, Maryland, {USA}},
+  editor        = {Kamalika Chaudhuri and
+                   Stefanie Jegelka and
+                   Le Song and
+                   Csaba Szepesv{\'{a}}ri and
+                   Gang Niu and
+                   Sivan Sabato},
+  pages         = {27042--27059},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Mon, 10 Oct 2022 01:00:00 +0200},
+  title         = {{O}nline {D}ecision {T}ransformer},
+  url           = {https://proceedings.mlr.press/v162/zheng22c.html},
+  volume        = {162},
+  year          = {2022}
+}
+
+@inproceedings{Lee2022-ya,
+  author        = {Kuang{-}Huei Lee and
+                   Ofir Nachum and
+                   Mengjiao Yang and
+                   Lisa Lee and
+                   Daniel Freeman and
+                   Sergio Guadarrama and
+                   Ian Fischer and
+                   Winnie Xu and
+                   Eric Jang and
+                   Henryk Michalewski and
+                   Igor Mordatch},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/LeeNYLFGFXJMM22.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 35: Annual Conference
+                   on Neural Information Processing Systems 2022, NeurIPS 2022, New Orleans,
+                   LA, USA, November 28 - December 9, 2022},
+  editor        = {Sanmi Koyejo and
+                   S. Mohamed and
+                   A. Agarwal and
+                   Danielle Belgrave and
+                   K. Cho and
+                   A. Oh},
+  timestamp     = {Mon, 08 Jan 2024 00:00:00 +0100},
+  title         = {{M}ulti-Game {D}ecision {T}ransformers},
+  url           = {http://papers.nips.cc/paper\_files/paper/2022/hash/b2cac94f82928a85055987d9fd44753f-Abstract-Conference.html},
+  year          = {2022}
+}
+
+@inproceedings{Chen2021-ag,
+  author        = {Lili Chen and
+                   Kevin Lu and
+                   Aravind Rajeswaran and
+                   Kimin Lee and
+                   Aditya Grover and
+                   Michael Laskin and
+                   Pieter Abbeel and
+                   Aravind Srinivas and
+                   Igor Mordatch},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/ChenLRLGLASM21.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 34: Annual Conference
+                   on Neural Information Processing Systems 2021, NeurIPS 2021, December
+                   6-14, 2021, virtual},
+  editor        = {Marc'Aurelio Ranzato and
+                   Alina Beygelzimer and
+                   Yann N. Dauphin and
+                   Percy Liang and
+                   Jennifer Wortman Vaughan},
+  pages         = {15084--15097},
+  timestamp     = {Tue, 03 May 2022 01:00:00 +0200},
+  title         = {{D}ecision {T}ransformer: {R}einforcement {L}earning via {S}equence {M}odeling},
+  url           = {https://proceedings.neurips.cc/paper/2021/hash/7f489f642a0ddb10272b5c31057f0663-Abstract.html},
+  year          = {2021}
+}
+
+@article{Duan2016-ip,
+  abstract      = {Deep reinforcement learning (deep RL) has been successful in
+                   learning sophisticated behaviors automatically; however, the
+                   learning process requires a huge number of trials. In contrast,
+                   animals can learn new tasks in just a few trials, benefiting from
+                   their prior knowledge about the world. This paper seeks to bridge
+                   this gap. Rather than designing a ``fast'' reinforcement learning
+                   algorithm, we propose to represent it as a recurrent neural
+                   network (RNN) and learn it from data. In our proposed method,
+                   RL$^2$, the algorithm is encoded in the weights of the RNN, which
+                   are learned slowly through a general-purpose (``slow'') RL
+                   algorithm. The RNN receives all information a typical RL
+                   algorithm would receive, including observations, actions,
+                   rewards, and termination flags; and it retains its state across
+                   episodes in a given Markov Decision Process (MDP). The
+                   activations of the RNN store the state of the ``fast'' RL
+                   algorithm on the current (previously unseen) MDP. We evaluate
+                   RL$^2$ experimentally on both small-scale and large-scale
+                   problems. On the small-scale side, we train it to solve randomly
+                   generated multi-arm bandit problems and finite MDPs. After RL$^2$
+                   is trained, its performance on new MDPs is close to
+                   human-designed algorithms with optimality guarantees. On the
+                   large-scale side, we test RL$^2$ on a vision-based navigation
+                   task and show that it scales up to high-dimensional problems.},
+  author        = {Duan, Yan and Schulman, John and Chen, Xi and Bartlett, Peter L
+                   and Sutskever, Ilya and Abbeel, Pieter},
+  journal       = {arXiv:1611.02779 [cs, stat]},
+  month         = nov,
+  title         = {{RL$^2$}: {F}ast {R}einforcement {L}earning via {S}low {R}einforcement {L}earning},
+  year          = {2016}
+}
+
+@inproceedings{Wang2016-tj,
+  author        = {Jane Wang and
+                   Zeb Kurth{-}Nelson and
+                   Hubert Soyer and
+                   Joel Z. Leibo and
+                   Dhruva Tirumala and
+                   R{\'{e}}mi Munos and
+                   Charles Blundell and
+                   Dharshan Kumaran and
+                   Matt M. Botvinick},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/cogsci/WangKSLTMBKB17.bib},
+  booktitle     = {Proceedings of the 39th Annual Meeting of the Cognitive Science Society,
+                   CogSci 2017, London, UK, 16-29 July 2017},
+  editor        = {Glenn Gunzelmann and
+                   Andrew Howes and
+                   Thora Tenbrink and
+                   Eddy J. Davelaar},
+  publisher     = {cognitivesciencesociety.org},
+  timestamp     = {Wed, 17 Apr 2024 12:43:29 +0200},
+  title         = {{L}earning to reinforcement learn},
+  url           = {https://mindmodeling.org/cogsci2017/papers/0252/index.html},
+  year          = {2017}
+}
+
+@inproceedings{Finn2017-rr,
+  author        = {Chelsea Finn and
+                   Pieter Abbeel and
+                   Sergey Levine},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/FinnAL17.bib},
+  booktitle     = {Proceedings of the 34th International Conference on Machine Learning,
+                   {ICML} 2017, Sydney, NSW, Australia, 6-11 August 2017},
+  editor        = {Doina Precup and
+                   Yee Whye Teh},
+  pages         = {1126--1135},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Thu, 21 Jan 2021 00:00:00 +0100},
+  title         = {{M}odel-Agnostic {M}eta-Learning for {F}ast {A}daptation of {D}eep {N}etworks},
+  url           = {http://proceedings.mlr.press/v70/finn17a.html},
+  volume        = {70},
+  year          = {2017}
+}
+
+@inproceedings{Perez2020-ts,
+  author        = {Christian F. Perez and
+                   Felipe Petroski Such and
+                   Theofanis Karaletsos},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/aaai/PerezSK20.bib},
+  booktitle     = {The Thirty-Fourth {AAAI} Conference on Artificial Intelligence, {AAAI}
+                   2020, The Thirty-Second Innovative Applications of Artificial Intelligence
+                   Conference, {IAAI} 2020, The Tenth {AAAI} Symposium on Educational
+                   Advances in Artificial Intelligence, {EAAI} 2020, New York, NY, USA,
+                   February 7-12, 2020},
+  doi           = {10.1609/AAAI.V34I04.5989},
+  pages         = {5403--5411},
+  publisher     = {{AAAI} Press},
+  timestamp     = {Mon, 04 Sep 2023 12:29:24 +0200},
+  title         = {{G}eneralized {H}idden {P}arameter {M}{D}{P}s: {T}ransferable {M}odel-Based {RL} in a {H}andful of {T}rials},
+  url           = {https://doi.org/10.1609/aaai.v34i04.5989},
+  year          = {2020}
+}
+
+@inproceedings{Rakelly2019-cz,
+  author        = {Kate Rakelly and
+                   Aurick Zhou and
+                   Chelsea Finn and
+                   Sergey Levine and
+                   Deirdre Quillen},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/RakellyZFLQ19.bib},
+  booktitle     = {Proceedings of the 36th International Conference on Machine Learning,
+                   {ICML} 2019, 9-15 June 2019, Long Beach, California, {USA}},
+  editor        = {Kamalika Chaudhuri and
+                   Ruslan Salakhutdinov},
+  pages         = {5331--5340},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Tue, 11 Jun 2019 15:37:38 +0200},
+  title         = {{E}fficient {O}ff-Policy {M}eta-Reinforcement {L}earning via {P}robabilistic {C}ontext {V}ariables},
+  url           = {http://proceedings.mlr.press/v97/rakelly19a.html},
+  volume        = {97},
+  year          = {2019}
+}
+
+@inproceedings{Yu2019-ef,
+  author        = {Tianhe Yu and
+                   Deirdre Quillen and
+                   Zhanpeng He and
+                   Ryan Julian and
+                   Karol Hausman and
+                   Chelsea Finn and
+                   Sergey Levine},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/corl/YuQHJHFL19.bib},
+  booktitle     = {3rd Annual Conference on Robot Learning, CoRL 2019, Osaka, Japan,
+                   October 30 - November 1, 2019, Proceedings},
+  editor        = {Leslie Pack Kaelbling and
+                   Danica Kragic and
+                   Komei Sugiura},
+  pages         = {1094--1100},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Mon, 25 May 2020 12:12:52 +0200},
+  title         = {{M}eta-{W}orld: {A} {B}enchmark and {E}valuation for {M}ulti-Task and {M}eta {R}einforcement {L}earning},
+  url           = {http://proceedings.mlr.press/v100/yu20a.html},
+  volume        = {100},
+  year          = {2019}
+}
+
+@inproceedings{Vaswani2017-ev,
+  author        = {Ashish Vaswani and
+                   Noam Shazeer and
+                   Niki Parmar and
+                   Jakob Uszkoreit and
+                   Llion Jones and
+                   Aidan N. Gomez and
+                   Lukasz Kaiser and
+                   Illia Polosukhin},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/VaswaniSPUJGKP17.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 30: Annual Conference
+                   on Neural Information Processing Systems 2017, December 4-9, 2017,
+                   Long Beach, CA, {USA}},
+  editor        = {Isabelle Guyon and
+                   Ulrike von Luxburg and
+                   Samy Bengio and
+                   Hanna M. Wallach and
+                   Rob Fergus and
+                   S. V. N. Vishwanathan and
+                   Roman Garnett},
+  pages         = {5998--6008},
+  timestamp     = {Thu, 21 Jan 2021 13:58:27 +0100},
+  title         = {{A}ttention is {A}ll you {N}eed},
+  url           = {https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html},
+  year          = {2017}
+}
+
+@inproceedings{Khalifa2020-ub,
+  author        = {Ahmed Khalifa and
+                   Philip Bontrager and
+                   Sam Earle and
+                   Julian Togelius},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/aiide/KhalifaBET20.bib},
+  booktitle     = {Proceedings of the Sixteenth {AAAI} Conference on Artificial Intelligence
+                   and Interactive Digital Entertainment, {AIIDE} 2020, virtual, October
+                   19-23, 2020},
+  editor        = {Levi Lelis and
+                   David Thue},
+  pages         = {95--101},
+  publisher     = {{AAAI} Press},
+  timestamp     = {Thu, 22 Dec 2022 00:00:00 +0100},
+  title         = {{PCGRL:} {P}rocedural {C}ontent {G}eneration via {R}einforcement {L}earning},
+  url           = {https://ojs.aaai.org/index.php/AIIDE/article/view/7416},
+  year          = {2020}
+}
+
+@article{Dorfman2020-ei,
+  author        = {Ron Dorfman and
+                   Aviv Tamar},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2008-02598.bib},
+  eprint        = {2008.02598},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Fri, 07 Aug 2020 01:00:00 +0200},
+  title         = {{O}ffline {M}eta {R}einforcement {L}earning},
+  url           = {https://arxiv.org/abs/2008.02598},
+  volume        = {abs/2008.02598},
+  year          = {2020}
+}
+
+@inproceedings{Oh2017-xp,
+  author        = {Junhyuk Oh and
+                   Satinder Singh and
+                   Honglak Lee and
+                   Pushmeet Kohli},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/OhSLK17.bib},
+  booktitle     = {Proceedings of the 34th International Conference on Machine Learning,
+                   {ICML} 2017, Sydney, NSW, Australia, 6-11 August 2017},
+  editor        = {Doina Precup and
+                   Yee Whye Teh},
+  pages         = {2661--2670},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Tue, 19 Apr 2022 01:00:00 +0200},
+  title         = {{Z}ero-Shot {T}ask {G}eneralization with {M}ulti-Task {D}eep {R}einforcement {L}earning},
+  url           = {http://proceedings.mlr.press/v70/oh17a.html},
+  volume        = {70},
+  year          = {2017}
+}
+
+@article{Li2020-vp,
+  author        = {Lanqing Li and
+                   Rui Yang and
+                   Dijun Luo},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2010-01112.bib},
+  eprint        = {2010.01112},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Fri, 12 May 2023 01:00:00 +0200},
+  title         = {{E}fficient {F}ully-Offline {M}eta-Reinforcement {L}earning via {D}istance {M}etric {L}earning and {B}ehavior {R}egularization},
+  url           = {https://arxiv.org/abs/2010.01112},
+  volume        = {abs/2010.01112},
+  year          = {2020}
+}
+
+@inproceedings{Fu2020-ic,
+  author        = {Haotian Fu and
+                   Hongyao Tang and
+                   Jianye Hao and
+                   Chen Chen and
+                   Xidong Feng and
+                   Dong Li and
+                   Wulong Liu},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/aaai/FuTHCFLL21.bib},
+  booktitle     = {Thirty-Fifth {AAAI} Conference on Artificial Intelligence, {AAAI}
+                   2021, Thirty-Third Conference on Innovative Applications of Artificial
+                   Intelligence, {IAAI} 2021, The Eleventh Symposium on Educational Advances
+                   in Artificial Intelligence, {EAAI} 2021, Virtual Event, February 2-9,
+                   2021},
+  doi           = {10.1609/AAAI.V35I8.16914},
+  pages         = {7457--7465},
+  publisher     = {{AAAI} Press},
+  timestamp     = {Mon, 26 Feb 2024 00:00:00 +0100},
+  title         = {{T}owards {E}ffective {C}ontext for {M}eta-Reinforcement {L}earning: an {A}pproach based on {C}ontrastive {L}earning},
+  url           = {https://doi.org/10.1609/aaai.v35i8.16914},
+  year          = {2021}
+}
+
+@inproceedings{Barreto2016-is,
+  author        = {Andr{\'{e}} Barreto and
+                   Will Dabney and
+                   R{\'{e}}mi Munos and
+                   Jonathan J. Hunt and
+                   Tom Schaul and
+                   David Silver and
+                   Hado van Hasselt},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/BarretoDMHSSH17.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 30: Annual Conference
+                   on Neural Information Processing Systems 2017, December 4-9, 2017,
+                   Long Beach, CA, {USA}},
+  editor        = {Isabelle Guyon and
+                   Ulrike von Luxburg and
+                   Samy Bengio and
+                   Hanna M. Wallach and
+                   Rob Fergus and
+                   S. V. N. Vishwanathan and
+                   Roman Garnett},
+  pages         = {4055--4065},
+  timestamp     = {Mon, 10 Jan 2022 00:00:00 +0100},
+  title         = {{S}uccessor {F}eatures for {T}ransfer in {R}einforcement {L}earning},
+  url           = {https://proceedings.neurips.cc/paper/2017/hash/350db081a661525235354dd3e19b8c05-Abstract.html},
+  year          = {2017}
+}
+
+@inproceedings{Cobbe2019-cm,
+  author        = {Karl Cobbe and
+                   Christopher Hesse and
+                   Jacob Hilton and
+                   John Schulman},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/CobbeHHS20.bib},
+  booktitle     = {Proceedings of the 37th International Conference on Machine Learning,
+                   {ICML} 2020, 13-18 July 2020, Virtual Event},
+  pages         = {2048--2056},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Tue, 15 Dec 2020 00:00:00 +0100},
+  title         = {{L}everaging {P}rocedural {G}eneration to {B}enchmark {R}einforcement {L}earning},
+  url           = {http://proceedings.mlr.press/v119/cobbe20a.html},
+  volume        = {119},
+  year          = {2020}
+}
+
+@inproceedings{Wang2021-jm,
+  title={Alchemy: A benchmark and analysis toolkit for meta-reinforcement learning agents},
+  author={Wang, Jane X and King, Michael and Porcel, Nicolas Pierre Mickael and Kurth-Nelson, Zeb and Zhu, Tina and Deck, Charlie and Choy, Peter and Cassin, Mary and Reynolds, Malcolm and Song, H Francis and others},
+  booktitle={Thirty-fifth Conference on Neural Information Processing Systems Datasets and Benchmarks Track (Round 2)},
+  year={2021}
+}
+
+@inproceedings{noauthor_undated-ob,
+  author        = {Abhishek Gupta and
+                   Russell Mendonca and
+                   Yuxuan Liu and
+                   Pieter Abbeel and
+                   Sergey Levine},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/GuptaMLAL18.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 31: Annual Conference
+                   on Neural Information Processing Systems 2018, NeurIPS 2018, December
+                   3-8, 2018, Montr{\'{e}}al, Canada},
+  editor        = {Samy Bengio and
+                   Hanna M. Wallach and
+                   Hugo Larochelle and
+                   Kristen Grauman and
+                   Nicol{\`{o}} Cesa{-}Bianchi and
+                   Roman Garnett},
+  pages         = {5307--5316},
+  timestamp     = {Mon, 16 May 2022 15:41:51 +0200},
+  title         = {{M}eta-Reinforcement {L}earning of {S}tructured {E}xploration {S}trategies},
+  url           = {https://proceedings.neurips.cc/paper/2018/hash/4de754248c196c85ee4fbdcee89179bd-Abstract.html},
+  year          = {2018}
+}
+
+@inproceedings{Dehghani2018-tm,
+  author        = {Mostafa Dehghani and
+                   Stephan Gouws and
+                   Oriol Vinyals and
+                   Jakob Uszkoreit and
+                   Lukasz Kaiser},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iclr/DehghaniGVUK19.bib},
+  booktitle     = {7th International Conference on Learning Representations, {ICLR} 2019,
+                   New Orleans, LA, USA, May 6-9, 2019},
+  publisher     = {OpenReview.net},
+  timestamp     = {Thu, 25 Jul 2019 13:03:15 +0200},
+  title         = {{U}niversal {T}ransformers},
+  url           = {https://openreview.net/forum?id=HyzdRiR9Y7},
+  year          = {2019}
+}
+
+@inproceedings{Sodhani2021-ij,
+  author        = {Shagun Sodhani and
+                   Amy Zhang and
+                   Joelle Pineau},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/Sodhani0P21.bib},
+  booktitle     = {Proceedings of the 38th International Conference on Machine Learning,
+                   {ICML} 2021, 18-24 July 2021, Virtual Event},
+  editor        = {Marina Meila and
+                   Tong Zhang},
+  pages         = {9767--9779},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Wed, 25 Aug 2021 01:00:00 +0200},
+  title         = {{M}ulti-Task {R}einforcement {L}earning with {C}ontext-based {R}epresentations},
+  url           = {http://proceedings.mlr.press/v139/sodhani21a.html},
+  volume        = {139},
+  year          = {2021}
+}
+
+@article{Ma2020-zg,
+  author        = {Chen Ma and
+                   Dylan R. Ashley and
+                   Junfeng Wen and
+                   Yoshua Bengio},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2001-04025.bib},
+  eprint        = {2001.04025},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Thu, 14 Oct 2021 01:00:00 +0200},
+  title         = {{U}niversal {S}uccessor {F}eatures for {T}ransfer {R}einforcement {L}earning},
+  url           = {https://arxiv.org/abs/2001.04025},
+  volume        = {abs/2001.04025},
+  year          = {2020}
+}
+
+@inproceedings{Jabri2019-mb,
+  author        = {Allan Jabri and
+                   Kyle Hsu and
+                   Abhishek Gupta and
+                   Ben Eysenbach and
+                   Sergey Levine and
+                   Chelsea Finn},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/JabriH0ELF19.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 32: Annual Conference
+                   on Neural Information Processing Systems 2019, NeurIPS 2019, December
+                   8-14, 2019, Vancouver, BC, Canada},
+  editor        = {Hanna M. Wallach and
+                   Hugo Larochelle and
+                   Alina Beygelzimer and
+                   Florence d'Alch{\'{e}}{-}Buc and
+                   Emily B. Fox and
+                   Roman Garnett},
+  pages         = {10519--10530},
+  timestamp     = {Mon, 16 May 2022 15:41:51 +0200},
+  title         = {{U}nsupervised {C}urricula for {V}isual {M}eta-Reinforcement {L}earning},
+  url           = {https://proceedings.neurips.cc/paper/2019/hash/d5a28f81834b6df2b6db6d3e5e2635c7-Abstract.html},
+  year          = {2019}
+}
+
+@inproceedings{Fakoor2019-gu,
+  author        = {Rasool Fakoor and
+                   Pratik Chaudhari and
+                   Stefano Soatto and
+                   Alexander J. Smola},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iclr/FakoorCSS20.bib},
+  booktitle     = {8th International Conference on Learning Representations, {ICLR} 2020,
+                   Addis Ababa, Ethiopia, April 26-30, 2020},
+  publisher     = {OpenReview.net},
+  timestamp     = {Thu, 07 May 2020 17:11:47 +0200},
+  title         = {{M}eta-{Q}-Learning},
+  url           = {https://openreview.net/forum?id=SJeD3CEFPH},
+  year          = {2020}
+}
+
+@inproceedings{Lan2019-ny,
+  author        = {Lin Lan and
+                   Zhenguo Li and
+                   Xiaohong Guan and
+                   Pinghui Wang},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/ijcai/LanLGW19.bib},
+  booktitle     = {Proceedings of the Twenty-Eighth International Joint Conference on
+                   Artificial Intelligence, {IJCAI} 2019, Macao, China, August 10-16,
+                   2019},
+  doi           = {10.24963/IJCAI.2019/387},
+  editor        = {Sarit Kraus},
+  pages         = {2794--2800},
+  publisher     = {ijcai.org},
+  timestamp     = {Tue, 20 Aug 2019 16:18:18 +0200},
+  title         = {{M}eta {R}einforcement {L}earning with {T}ask {E}mbedding and {S}hared {P}olicy},
+  url           = {https://doi.org/10.24963/ijcai.2019/387},
+  year          = {2019}
+}
+
+@article{Khetarpal2020-ql,
+  abstract      = {In this article, we aim to provide a literature review of
+                   different formulations and approaches to continual reinforcement
+                   learning (RL), also known as lifelong or non-stationary RL. We
+                   begin by discussing our perspective on why RL is a natural fit
+                   for studying continual …},
+  author        = {Khetarpal, K and Riemer, M and Rish, I and Precup, D},
+  journal       = {arXiv preprint arXiv:2012.13490},
+  keywords      = {Current projects/PCG-MetaRL Project},
+  publisher     = {arxiv.org},
+  title         = {{T}owards continual reinforcement learning: {A} review and perspectives},
+  year          = {2020}
+}
+
+@article{Kirk2021-jx,
+  author        = {Robert Kirk and
+                   Amy Zhang and
+                   Edward Grefenstette and
+                   Tim Rockt{\"{a}}schel},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2111-09794.bib},
+  eprint        = {2111.09794},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Mon, 22 Nov 2021 00:00:00 +0100},
+  title         = {{A} {S}urvey of {G}eneralisation in {D}eep {R}einforcement {L}earning},
+  url           = {https://arxiv.org/abs/2111.09794},
+  volume        = {abs/2111.09794},
+  year          = {2021}
+}
+
+@inproceedings{Fontaine2021-re,
+  author        = {Matthew C. Fontaine and
+                   Ya{-}Chuan Hsu and
+                   Yulun Zhang and
+                   Bryon Tjanaka and
+                   Stefanos Nikolaidis},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/rss/FontaineHZTN21.bib},
+  booktitle     = {Robotics: Science and Systems XVII, Virtual Event, July 12-16, 2021},
+  doi           = {10.15607/RSS.2021.XVII.038},
+  editor        = {Dylan A. Shell and
+                   Marc Toussaint and
+                   M. Ani Hsieh},
+  timestamp     = {Sun, 12 Nov 2023 00:00:00 +0100},
+  title         = {{O}n the {I}mportance of {E}nvironments in {H}uman-Robot {C}oordination},
+  url           = {https://doi.org/10.15607/RSS.2021.XVII.038},
+  year          = {2021}
+}
+
+@inproceedings{noauthor_undated-ma,
+  author        = {Majid Abdolshah and
+                   Hung Le and
+                   Thommen George Karimpanal and
+                   Sunil Gupta and
+                   Santu Rana and
+                   Svetha Venkatesh},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/AbdolshahLK0RV21.bib},
+  booktitle     = {Proceedings of the 38th International Conference on Machine Learning,
+                   {ICML} 2021, 18-24 July 2021, Virtual Event},
+  editor        = {Marina Meila and
+                   Tong Zhang},
+  pages         = {1--9},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Wed, 25 Aug 2021 01:00:00 +0200},
+  title         = {{A} {N}ew {R}epresentation of {S}uccessor {F}eatures for {T}ransfer across {D}issimilar {E}nvironments},
+  url           = {http://proceedings.mlr.press/v139/abdolshah21a.html},
+  volume        = {139},
+  year          = {2021}
+}
+
+@inproceedings{Zintgraf2020-xt,
+  author        = {Luisa M. Zintgraf and
+                   Leo Feng and
+                   Cong Lu and
+                   Maximilian Igl and
+                   Kristian Hartikainen and
+                   Katja Hofmann and
+                   Shimon Whiteson},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/ZintgrafFLIHHW21.bib},
+  booktitle     = {Proceedings of the 38th International Conference on Machine Learning,
+                   {ICML} 2021, 18-24 July 2021, Virtual Event},
+  editor        = {Marina Meila and
+                   Tong Zhang},
+  pages         = {12991--13001},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Wed, 25 Aug 2021 01:00:00 +0200},
+  title         = {{E}xploration in {A}pproximate {H}yper-State {S}pace for {M}eta {R}einforcement {L}earning},
+  url           = {http://proceedings.mlr.press/v139/zintgraf21a.html},
+  volume        = {139},
+  year          = {2021}
+}
+
+@inproceedings{Hessel2019-hw,
+  author        = {Matteo Hessel and
+                   Hubert Soyer and
+                   Lasse Espeholt and
+                   Wojciech Czarnecki and
+                   Simon Schmitt and
+                   Hado van Hasselt},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/aaai/HesselSE0SH19.bib},
+  booktitle     = {The Thirty-Third {AAAI} Conference on Artificial Intelligence, {AAAI}
+                   2019, The Thirty-First Innovative Applications of Artificial Intelligence
+                   Conference, {IAAI} 2019, The Ninth {AAAI} Symposium on Educational
+                   Advances in Artificial Intelligence, {EAAI} 2019, Honolulu, Hawaii,
+                   USA, January 27 - February 1, 2019},
+  doi           = {10.1609/AAAI.V33I01.33013796},
+  pages         = {3796--3803},
+  publisher     = {{AAAI} Press},
+  timestamp     = {Mon, 04 Sep 2023 12:29:24 +0200},
+  title         = {{M}ulti-Task {D}eep {R}einforcement {L}earning with {P}op{A}rt},
+  url           = {https://doi.org/10.1609/aaai.v33i01.33013796},
+  year          = {2019}
+}
+
+@inproceedings{Zintgraf2019-uo,
+  author        = {Luisa M. Zintgraf and
+                   Kyriacos Shiarlis and
+                   Maximilian Igl and
+                   Sebastian Schulze and
+                   Yarin Gal and
+                   Katja Hofmann and
+                   Shimon Whiteson},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iclr/ZintgrafSISGHW20.bib},
+  booktitle     = {8th International Conference on Learning Representations, {ICLR} 2020,
+                   Addis Ababa, Ethiopia, April 26-30, 2020},
+  publisher     = {OpenReview.net},
+  timestamp     = {Thu, 07 May 2020 17:11:47 +0200},
+  title         = {{V}ari{B}{A}{D}: {A} {V}ery {G}ood {M}ethod for {B}ayes-Adaptive {D}eep {RL} via {M}eta-Learning},
+  url           = {https://openreview.net/forum?id=Hkl9JlBYvr},
+  year          = {2020}
+}
+
+@inproceedings{Hafner2019-wn,
+  author        = {Danijar Hafner and
+                   Timothy P. Lillicrap and
+                   Jimmy Ba and
+                   Mohammad Norouzi},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iclr/HafnerLB020.bib},
+  booktitle     = {8th International Conference on Learning Representations, {ICLR} 2020,
+                   Addis Ababa, Ethiopia, April 26-30, 2020},
+  publisher     = {OpenReview.net},
+  timestamp     = {Thu, 07 May 2020 17:11:47 +0200},
+  title         = {{D}ream to {C}ontrol: {L}earning {B}ehaviors by {L}atent {I}magination},
+  url           = {https://openreview.net/forum?id=S1lOTC4tDS},
+  year          = {2020}
+}
+
+@inproceedings{Kirsch2019-bu,
+  author        = {Louis Kirsch and
+                   Sjoerd van Steenkiste and
+                   J{\"{u}}rgen Schmidhuber},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iclr/KirschSS20.bib},
+  booktitle     = {8th International Conference on Learning Representations, {ICLR} 2020,
+                   Addis Ababa, Ethiopia, April 26-30, 2020},
+  publisher     = {OpenReview.net},
+  timestamp     = {Thu, 07 May 2020 17:11:47 +0200},
+  title         = {{I}mproving {G}eneralization in {M}eta {R}einforcement {L}earning using {L}earned {O}bjectives},
+  url           = {https://openreview.net/forum?id=S1evHerYPr},
+  year          = {2020}
+}
+
+@inproceedings{Hiraoka2020-bc,
+  author        = {Takuya Hiraoka and
+                   Takahisa Imagawa and
+                   Voot Tangkaratt and
+                   Takayuki Osa and
+                   Takashi Onishi and
+                   Yoshimasa Tsuruoka},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/acml/HiraokaITOOT21.bib},
+  booktitle     = {Asian Conference on Machine Learning, {ACML} 2021, 17-19 November
+                   2021, Virtual Event},
+  editor        = {Vineeth N. Balasubramanian and
+                   Ivor W. Tsang},
+  pages         = {129--144},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Tue, 07 May 2024 20:11:56 +0200},
+  title         = {{M}eta-{M}odel-Based {M}eta-Policy {O}ptimization},
+  url           = {https://proceedings.mlr.press/v157/hiraoka21a.html},
+  volume        = {157},
+  year          = {2021}
+}
+
+@article{noauthor_undated-yt,
+  author        = {Jin Zhang and
+                   Jianhao Wang and
+                   Hao Hu and
+                   Yingfeng Chen and
+                   Changjie Fan and
+                   Chongjie Zhang},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2006-08170.bib},
+  eprint        = {2006.08170},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Mon, 05 Dec 2022 00:00:00 +0100},
+  title         = {{L}earn to {E}ffectively {E}xplore in {C}ontext-Based {M}eta-{R}{L}},
+  url           = {https://arxiv.org/abs/2006.08170},
+  volume        = {abs/2006.08170},
+  year          = {2020}
+}
+
+@inproceedings{Nagabandi2018-zd,
+  author        = {Anusha Nagabandi and
+                   Chelsea Finn and
+                   Sergey Levine},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iclr/NagabandiFL19.bib},
+  booktitle     = {7th International Conference on Learning Representations, {ICLR} 2019,
+                   New Orleans, LA, USA, May 6-9, 2019},
+  publisher     = {OpenReview.net},
+  timestamp     = {Thu, 25 Jul 2019 13:03:15 +0200},
+  title         = {{D}eep {O}nline {L}earning {V}ia {M}eta-{L}earning: {C}ontinual {A}daptation for {M}odel-Based {RL}},
+  url           = {https://openreview.net/forum?id=HyxAfnA5tm},
+  year          = {2019}
+}
+
+@inproceedings{Racaniere2017-no,
+  author        = {S{\'{e}}bastien Racani{\`{e}}re and
+                   Theophane Weber and
+                   David P. Reichert and
+                   Lars Buesing and
+                   Arthur Guez and
+                   Danilo Jimenez Rezende and
+                   Adri{\`{a}} Puigdom{\`{e}}nech Badia and
+                   Oriol Vinyals and
+                   Nicolas Heess and
+                   Yujia Li and
+                   Razvan Pascanu and
+                   Peter W. Battaglia and
+                   Demis Hassabis and
+                   David Silver and
+                   Daan Wierstra},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/RacaniereWRBGRB17.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 30: Annual Conference
+                   on Neural Information Processing Systems 2017, December 4-9, 2017,
+                   Long Beach, CA, {USA}},
+  editor        = {Isabelle Guyon and
+                   Ulrike von Luxburg and
+                   Samy Bengio and
+                   Hanna M. Wallach and
+                   Rob Fergus and
+                   S. V. N. Vishwanathan and
+                   Roman Garnett},
+  pages         = {5690--5701},
+  timestamp     = {Sat, 02 Dec 2023 00:00:00 +0100},
+  title         = {{I}magination-Augmented {A}gents for {D}eep {R}einforcement {L}earning},
+  url           = {https://proceedings.neurips.cc/paper/2017/hash/9e82757e9a1c12cb710ad680db11f6f1-Abstract.html},
+  year          = {2017}
+}
+
+@inproceedings{Wan2021-pk,
+  author        = {Michael Wan and
+                   Jian Peng and
+                   Tanmay Gangwani},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iclr/Wan0G22.bib},
+  booktitle     = {The Tenth International Conference on Learning Representations, {ICLR}
+                   2022, Virtual Event, April 25-29, 2022},
+  publisher     = {OpenReview.net},
+  timestamp     = {Sat, 20 Aug 2022 01:00:00 +0200},
+  title         = {{H}indsight {F}oresight {R}elabeling for {M}eta-Reinforcement {L}earning},
+  url           = {https://openreview.net/forum?id=P7OVkHEoHOZ},
+  year          = {2022}
+}
+
+@article{Kingma2021-ug,
+  author        = {Diederik P. Kingma and
+                   Tim Salimans and
+                   Ben Poole and
+                   Jonathan Ho},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2107-00630.bib},
+  eprint        = {2107.00630},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Wed, 07 Jul 2021 01:00:00 +0200},
+  title         = {{V}ariational {D}iffusion {M}odels},
+  url           = {https://arxiv.org/abs/2107.00630},
+  volume        = {abs/2107.00630},
+  year          = {2021}
+}
+
+@article{Liu2021-nz,
+  abstract      = {The goal of meta-reinforcement learning (meta-RL) is to build
+                   agents that can quickly learn new tasks by leveraging prior
+                   experience on related tasks. Learning a new task often …},
+  author        = {Liu, E Z and Raghunathan, A and Liang, P and {others}},
+  journal       = {on Machine Learning},
+  keywords      = {dozens;Current projects/PCG-MetaRL Project},
+  publisher     = {proceedings.mlr.press},
+  title         = {{D}ecoupling exploration and exploitation for meta-reinforcement learning without sacrifices},
+  year          = {2021}
+}
+
+@article{Risi2020-pz,
+  author        = {Sebastian Risi and
+                   Julian Togelius},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/natmi/RisiT20.bib},
+  doi           = {10.1038/S42256-020-0208-Z},
+  journal       = {Nat. Mach. Intell.},
+  number        = {8},
+  pages         = {428--436},
+  timestamp     = {Wed, 15 Dec 2021 00:00:00 +0100},
+  title         = {{I}ncreasing generality in machine learning through procedural content generation},
+  url           = {https://doi.org/10.1038/s42256-020-0208-z},
+  volume        = {2},
+  year          = {2020}
+}
+
+@article{Humplik2019-jp,
+  author        = {Jan Humplik and
+                   Alexandre Galashov and
+                   Leonard Hasenclever and
+                   Pedro A. Ortega and
+                   Yee Whye Teh and
+                   Nicolas Heess},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-1905-06424.bib},
+  eprint        = {1905.06424},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Tue, 28 May 2019 01:00:00 +0200},
+  title         = {{M}eta reinforcement learning as task inference},
+  url           = {http://arxiv.org/abs/1905.06424},
+  volume        = {abs/1905.06424},
+  year          = {2019}
+}
+
+@inproceedings{Yu2019-rf,
+  author        = {Lantao Yu and
+                   Tianhe Yu and
+                   Chelsea Finn and
+                   Stefano Ermon},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/YuYFE19.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 32: Annual Conference
+                   on Neural Information Processing Systems 2019, NeurIPS 2019, December
+                   8-14, 2019, Vancouver, BC, Canada},
+  editor        = {Hanna M. Wallach and
+                   Hugo Larochelle and
+                   Alina Beygelzimer and
+                   Florence d'Alch{\'{e}}{-}Buc and
+                   Emily B. Fox and
+                   Roman Garnett},
+  pages         = {11749--11760},
+  timestamp     = {Mon, 16 May 2022 15:41:51 +0200},
+  title         = {{M}eta-Inverse {R}einforcement {L}earning with {P}robabilistic {C}ontext {V}ariables},
+  url           = {https://proceedings.neurips.cc/paper/2019/hash/30de24287a6d8f07b37c716ad51623a7-Abstract.html},
+  year          = {2019}
+}
+
+@inproceedings{Dorfman2021-ro,
+  author        = {Ron Dorfman and
+                   Idan Shenfeld and
+                   Aviv Tamar},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/DorfmanST21.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 34: Annual Conference
+                   on Neural Information Processing Systems 2021, NeurIPS 2021, December
+                   6-14, 2021, virtual},
+  editor        = {Marc'Aurelio Ranzato and
+                   Alina Beygelzimer and
+                   Yann N. Dauphin and
+                   Percy Liang and
+                   Jennifer Wortman Vaughan},
+  pages         = {4607--4618},
+  timestamp     = {Tue, 03 May 2022 01:00:00 +0200},
+  title         = {{O}ffline {M}eta {R}einforcement {L}earning - {I}dentifiability {C}hallenges and {E}ffective {D}ata {C}ollection {S}trategies},
+  url           = {https://proceedings.neurips.cc/paper/2021/hash/248024541dbda1d3fd75fe49d1a4df4d-Abstract.html},
+  year          = {2021}
+}
+
+@inproceedings{Ajay2022-bk,
+  author        = {Anurag Ajay and
+                   Abhishek Gupta and
+                   Dibya Ghosh and
+                   Sergey Levine and
+                   Pulkit Agrawal},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/Ajay0GLA22.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 35: Annual Conference
+                   on Neural Information Processing Systems 2022, NeurIPS 2022, New Orleans,
+                   LA, USA, November 28 - December 9, 2022},
+  editor        = {Sanmi Koyejo and
+                   S. Mohamed and
+                   A. Agarwal and
+                   Danielle Belgrave and
+                   K. Cho and
+                   A. Oh},
+  timestamp     = {Sat, 25 May 2024 01:00:00 +0200},
+  title         = {{D}istributionally {A}daptive {M}eta {R}einforcement {L}earning},
+  url           = {http://papers.nips.cc/paper\_files/paper/2022/hash/a60c43ba078b723d3d517d28c50ded4c-Abstract-Conference.html},
+  year          = {2022}
+}
+
+@inproceedings{Beck2022-fv,
+  author        = {Jacob Beck and
+                   Matthew Thomas Jackson and
+                   Risto Vuorio and
+                   Shimon Whiteson},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/corl/BeckJVW22.bib},
+  booktitle     = {Conference on Robot Learning, CoRL 2022, 14-18 December 2022, Auckland,
+                   New Zealand},
+  editor        = {Karen Liu and
+                   Dana Kulic and
+                   Jeffrey Ichnowski},
+  pages         = {1478--1487},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Wed, 15 Mar 2023 00:00:00 +0100},
+  title         = {{H}ypernetworks in {M}eta-Reinforcement {L}earning},
+  url           = {https://proceedings.mlr.press/v205/beck23a.html},
+  volume        = {205},
+  year          = {2022}
+}
+
+@article{Mehta2020-hr,
+  author        = {Bhairav Mehta and
+                   Tristan Deleu and
+                   Sharath Chandra Raparthy and
+                   Christopher J. Pal and
+                   Liam Paull},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2002-07956.bib},
+  eprint        = {2002.07956},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Mon, 02 Mar 2020 00:00:00 +0100},
+  title         = {{C}urriculum in {G}radient-Based {M}eta-Reinforcement {L}earning},
+  url           = {https://arxiv.org/abs/2002.07956},
+  volume        = {abs/2002.07956},
+  year          = {2020}
+}
+
+@book{Shaker2016-bp,
+  author        = {Noor Shaker and
+                   Julian Togelius and
+                   Mark J. Nelson},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/books/daglib/0034882.bib},
+  doi           = {10.1007/978-3-319-42716-4},
+  isbn          = {978-3-319-42714-0},
+  publisher     = {Springer},
+  series        = {Computational Synthesis and Creative Systems},
+  timestamp     = {Sun, 02 Jun 2019 01:00:00 +0200},
+  title         = {{P}rocedural {C}ontent {G}eneration in {G}ames},
+  url           = {https://doi.org/10.1007/978-3-319-42716-4},
+  year          = {2016}
+}
+
+@misc{Ren2019-go,
+  abstract      = {… In the setting of meta - RL , we assume the tasks are
+                   represented as a mixture of ``base tasks'', … We start in
+                   Section 2 to introduce recent advances in context-based meta
+                   - RL , then we …},
+  author        = {Ren, Hongyu and Garg, Animesh and Anandkumar, Anima},
+  howpublished  = {\url{https://skillsworkshop.ai/uploads/1/2/1/5/121527312/meta-rl.pdf}},
+  keywords      = {Current projects/PCG-MetaRL Project},
+  note          = {Accessed: 2023-1-9},
+  publisher     = {skillsworkshop.ai},
+  title         = {{C}ontext-based meta-reinforcement learning with structured latent space},
+  year          = {2019}
+}
+
+@inproceedings{Yun2022-zc,
+  author        = {Won Joon Yun and
+                   Jihong Park and
+                   Joongheon Kim},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/aaai/YunPK23.bib},
+  booktitle     = {Thirty-Seventh {AAAI} Conference on Artificial Intelligence, {AAAI}
+                   2023, Thirty-Fifth Conference on Innovative Applications of Artificial
+                   Intelligence, {IAAI} 2023, Thirteenth Symposium on Educational Advances
+                   in Artificial Intelligence, {EAAI} 2023, Washington, DC, USA, February
+                   7-14, 2023},
+  doi           = {10.1609/AAAI.V37I9.26313},
+  editor        = {Brian Williams and
+                   Yiling Chen and
+                   Jennifer Neville},
+  pages         = {11087--11095},
+  publisher     = {{AAAI} Press},
+  timestamp     = {Mon, 05 Feb 2024 00:00:00 +0100},
+  title         = {{Q}uantum {M}ulti-Agent {M}eta {R}einforcement {L}earning},
+  url           = {https://doi.org/10.1609/aaai.v37i9.26313},
+  year          = {2023}
+}
+
+@inproceedings{Borsa2018-ep,
+  author        = {Diana Borsa and
+                   Andr{\'{e}} Barreto and
+                   John Quan and
+                   Daniel J. Mankowitz and
+                   Hado van Hasselt and
+                   R{\'{e}}mi Munos and
+                   David Silver and
+                   Tom Schaul},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iclr/BorsaBQMHMSS19.bib},
+  booktitle     = {7th International Conference on Learning Representations, {ICLR} 2019,
+                   New Orleans, LA, USA, May 6-9, 2019},
+  publisher     = {OpenReview.net},
+  timestamp     = {Mon, 10 Jan 2022 00:00:00 +0100},
+  title         = {{U}niversal {S}uccessor {F}eatures {A}pproximators},
+  url           = {https://openreview.net/forum?id=S1VWjiRcKX},
+  year          = {2019}
+}
+
+@inproceedings{Lee2021-yn,
+  author        = {Suyoung Lee and
+                   Sae{-}Young Chung},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/LeeC21.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 34: Annual Conference
+                   on Neural Information Processing Systems 2021, NeurIPS 2021, December
+                   6-14, 2021, virtual},
+  editor        = {Marc'Aurelio Ranzato and
+                   Alina Beygelzimer and
+                   Yann N. Dauphin and
+                   Percy Liang and
+                   Jennifer Wortman Vaughan},
+  pages         = {27222--27235},
+  timestamp     = {Tue, 03 May 2022 01:00:00 +0200},
+  title         = {{I}mproving {G}eneralization in {M}eta-{R}{L} with {I}maginary {T}asks from {L}atent {D}ynamics {M}ixture},
+  url           = {https://proceedings.neurips.cc/paper/2021/hash/e48e13207341b6bffb7fb1622282247b-Abstract.html},
+  year          = {2021}
+}
+
+@article{Arulkumaran2022-no,
+  author        = {Kai Arulkumaran and
+                   Dylan R. Ashley and
+                   J{\"{u}}rgen Schmidhuber and
+                   Rupesh Kumar Srivastava},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2202-11960.bib},
+  eprint        = {2202.11960},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Wed, 02 Mar 2022 00:00:00 +0100},
+  title         = {{A}ll {Y}ou {N}eed {I}s {S}upervised {L}earning: {F}rom {I}mitation {L}earning to {M}eta-{R}{L} {W}ith {U}pside {D}own {RL}},
+  url           = {https://arxiv.org/abs/2202.11960},
+  volume        = {abs/2202.11960},
+  year          = {2022}
+}
+
+@article{Imagawa2022-bb,
+  author        = {Takahisa Imagawa and
+                   Takuya Hiraoka and
+                   Yoshimasa Tsuruoka},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/access/ImagawaHT22.bib},
+  doi           = {10.1109/ACCESS.2022.3170582},
+  journal       = {{IEEE} Access},
+  pages         = {49494--49507},
+  timestamp     = {Thu, 02 Jun 2022 01:00:00 +0200},
+  title         = {{O}ff-Policy {M}eta-Reinforcement {L}earning {W}ith {B}elief-Based {T}ask {I}nference},
+  url           = {https://doi.org/10.1109/ACCESS.2022.3170582},
+  volume        = {10},
+  year          = {2022}
+}
+
+@article{Li2021-df,
+  abstract      = {Meta-learning for offline reinforcement learning (OMRL) is
+                   an understudied problem with tremendous potential impact by
+                   enabling RL algorithms in many real-world applications. A
+                   popular solution to the problem is to infer task identity as
+                   augmented state using a context-based encoder, for which
+                   efficient learning of robust task representations remains an
+                   open challenge. In this work, we provably improve upon one
+                   of the SOTA OMRL algorithms, FOCAL, by incorporating
+                   intra-task attention mechanism and inter-task contrastive
+                   learning objectives, to robustify task representation
+                   learning against sparse reward and distribution shift.
+                   Theoretical analysis and experiments are presented to
+                   demonstrate the superior performance and robustness of our
+                   end-to-end and model-free framework compared to prior
+                   algorithms across multiple meta-RL benchmarks.},
+  archiveprefix = {arXiv},
+  author        = {Li, Lanqing and Huang, Yuanhao and Chen, Mingzhe and Luo,
+                   Siteng and Luo, Dijun and Huang, Junzhou},
+  eprint        = {2102.10774},
+  keywords      = {Current projects/PCG-MetaRL Project},
+  month         = feb,
+  primaryclass  = {cs.LG},
+  title         = {{P}rovably {I}mproved {Context-Based} {O}ffline {Meta-RL} with {A}ttention and {C}ontrastive {L}earning},
+  year          = {2021}
+}
+
+@inproceedings{Mandi2022-tf,
+  author        = {Mandi Zhao and
+                   Pieter Abbeel and
+                   Stephen James},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/ZhaoAJ22.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 35: Annual Conference
+                   on Neural Information Processing Systems 2022, NeurIPS 2022, New Orleans,
+                   LA, USA, November 28 - December 9, 2022},
+  editor        = {Sanmi Koyejo and
+                   S. Mohamed and
+                   A. Agarwal and
+                   Danielle Belgrave and
+                   K. Cho and
+                   A. Oh},
+  timestamp     = {Mon, 08 Jan 2024 00:00:00 +0100},
+  title         = {{O}n the {E}ffectiveness of {F}ine-tuning {V}ersus {M}eta-reinforcement {L}earning},
+  url           = {http://papers.nips.cc/paper\_files/paper/2022/hash/a951f595184aec1bb885ce165b47209a-Abstract-Conference.html},
+  year          = {2022}
+}
+
+@article{Ben-Iwhiwhu2022-hh,
+  author        = {Eseoghene Ben{-}Iwhiwhu and
+                   Jeffery Dick and
+                   Nicholas A. Ketz and
+                   Praveen K. Pilly and
+                   Andrea Soltoggio},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/nn/Ben-IwhiwhuDKPS22.bib},
+  doi           = {10.1016/J.NEUNET.2022.04.003},
+  journal       = {Neural Networks},
+  pages         = {70--79},
+  timestamp     = {Mon, 28 Aug 2023 01:00:00 +0200},
+  title         = {{C}ontext meta-reinforcement learning via neuromodulation},
+  url           = {https://doi.org/10.1016/j.neunet.2022.04.003},
+  volume        = {152},
+  year          = {2022}
+}
+
+@inproceedings{Melo2022-ky,
+  abstract      = {The transformer architecture and variants presented a remarkable
+                   success across many machine learning tasks in recent years. This
+                   success is intrinsically related to the capability of handling
+                   long sequences and the presence of context-dependent weights
+                   from the attention mechanism. We argue that these capabilities
+                   suit the central role of a Meta-Reinforcement Learning
+                   algorithm. Indeed, a meta-RL agent needs to infer the task from
+                   a sequence of trajectories. Furthermore, it requires a fast
+                   adaptation strategy to adapt its policy for a new task - which
+                   can be achieved using the self-attention mechanism. In this
+                   work, we present TrMRL (Transformers for Meta-Reinforcement
+                   Learning), a meta-RL agent that mimics the memory reinstatement
+                   mechanism using the transformer architecture. It associates the
+                   recent past of working memories to build an episodic memory
+                   recursively through the transformer layers. We show that the
+                   self-attention computes a consensus representation that
+                   minimizes the Bayes Risk at each layer and provides meaningful
+                   features to compute the best actions. We conducted experiments
+                   in high-dimensional continuous control environments for
+                   locomotion and dexterous manipulation. Results show that TrMRL
+                   presents comparable or superior asymptotic performance, sample
+                   efficiency, and out-of-distribution generalization compared to
+                   the baselines in these environments.},
+  author        = {Melo, Luckeciano C},
+  booktitle     = {Proceedings of the 39th International Conference on Machine
+                   Learning},
+  editor        = {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and
+                   Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  keywords      = {Current projects/PCG-MetaRL Project},
+  pages         = {15340--15359},
+  publisher     = {PMLR},
+  series        = {Proceedings of Machine Learning Research},
+  title         = {{T}ransformers are {Meta-Reinforcement} {L}earners},
+  volume        = {162},
+  year          = {2022}
+}
+
+@article{Akuzawa2021-bi,
+  author        = {Kei Akuzawa and
+                   Yusuke Iwasawa and
+                   Yutaka Matsuo},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2105-06660.bib},
+  eprint        = {2105.06660},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Tue, 18 May 2021 01:00:00 +0200},
+  title         = {{E}stimating {D}isentangled {B}elief about {H}idden {S}tate and {H}idden {T}ask for {M}eta-{R}{L}},
+  url           = {https://arxiv.org/abs/2105.06660},
+  volume        = {abs/2105.06660},
+  year          = {2021}
+}
+
+@article{Han2022-dp,
+  author        = {Xu Han and
+                   Feng Wu},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2207-14723.bib},
+  doi           = {10.48550/ARXIV.2207.14723},
+  eprint        = {2207.14723},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Tue, 02 Aug 2022 01:00:00 +0200},
+  title         = {{M}eta {R}einforcement {L}earning with {S}uccessor {F}eature {B}ased {C}ontext},
+  url           = {https://doi.org/10.48550/arXiv.2207.14723},
+  volume        = {abs/2207.14723},
+  year          = {2022}
+}
+
+@article{Peng2021-sv,
+  author        = {Matt Peng and
+                   Banghua Zhu and
+                   Jiantao Jiao},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2101-04750.bib},
+  eprint        = {2101.04750},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Fri, 22 Jan 2021 00:00:00 +0100},
+  title         = {{L}inear {R}epresentation {M}eta-Reinforcement {L}earning for {I}nstant {A}daptation},
+  url           = {https://arxiv.org/abs/2101.04750},
+  volume        = {abs/2101.04750},
+  year          = {2021}
+}
+
+@inproceedings{Pong2022-el,
+  author        = {Vitchyr H. Pong and
+                   Ashvin Nair and
+                   Laura M. Smith and
+                   Catherine Huang and
+                   Sergey Levine},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/PongNSHL22.bib},
+  booktitle     = {International Conference on Machine Learning, {ICML} 2022, 17-23 July
+                   2022, Baltimore, Maryland, {USA}},
+  editor        = {Kamalika Chaudhuri and
+                   Stefanie Jegelka and
+                   Le Song and
+                   Csaba Szepesv{\'{a}}ri and
+                   Gang Niu and
+                   Sivan Sabato},
+  pages         = {17811--17829},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Tue, 30 Jan 2024 00:00:00 +0100},
+  title         = {{O}ffline {M}eta-Reinforcement {L}earning with {O}nline {S}elf-Supervision},
+  url           = {https://proceedings.mlr.press/v162/pong22a.html},
+  volume        = {162},
+  year          = {2022}
+}
+
+@inproceedings{Nam2022-ho,
+  author        = {Taewook Nam and
+                   Shao{-}Hua Sun and
+                   Karl Pertsch and
+                   Sung Ju Hwang and
+                   Joseph J. Lim},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iclr/NamSPHL22.bib},
+  booktitle     = {The Tenth International Conference on Learning Representations, {ICLR}
+                   2022, Virtual Event, April 25-29, 2022},
+  publisher     = {OpenReview.net},
+  timestamp     = {Sat, 20 Aug 2022 01:00:00 +0200},
+  title         = {{S}kill-based {M}eta-Reinforcement {L}earning},
+  url           = {https://openreview.net/forum?id=jeLW-Fh9bV},
+  year          = {2022}
+}
+
+@article{Mu2022-rc,
+  author        = {Yao Mu and
+                   Yuzheng Zhuang and
+                   Fei Ni and
+                   Bin Wang and
+                   Jianyu Chen and
+                   Jianye Hao and
+                   Ping Luo},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2210-04209.bib},
+  doi           = {10.48550/ARXIV.2210.04209},
+  eprint        = {2210.04209},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Tue, 14 Mar 2023 00:00:00 +0100},
+  title         = {{D}ecomposed {M}utual {I}nformation {O}ptimization for {G}eneralized {C}ontext in {M}eta-Reinforcement {L}earning},
+  url           = {https://doi.org/10.48550/arXiv.2210.04209},
+  volume        = {abs/2210.04209},
+  year          = {2022}
+}
+
+@article{Pinon2022-sg,
+  author        = {Brieuc Pinon and
+                   Jean{-}Charles Delvenne and
+                   Rapha{\"{e}}l M. Jungers},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2208-11535.bib},
+  doi           = {10.48550/ARXIV.2208.11535},
+  eprint        = {2208.11535},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Tue, 30 Aug 2022 01:00:00 +0200},
+  title         = {{A} model-based approach to meta-Reinforcement {L}earning: {T}ransformers and tree search},
+  url           = {https://doi.org/10.48550/arXiv.2208.11535},
+  volume        = {abs/2208.11535},
+  year          = {2022}
+}
+
+@inproceedings{Rimon2022-dr,
+  author        = {Zohar Rimon and
+                   Aviv Tamar and
+                   Gilad Adler},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/RimonTA22.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 35: Annual Conference
+                   on Neural Information Processing Systems 2022, NeurIPS 2022, New Orleans,
+                   LA, USA, November 28 - December 9, 2022},
+  editor        = {Sanmi Koyejo and
+                   S. Mohamed and
+                   A. Agarwal and
+                   Danielle Belgrave and
+                   K. Cho and
+                   A. Oh},
+  timestamp     = {Mon, 08 Jan 2024 00:00:00 +0100},
+  title         = {{M}eta {R}einforcement {L}earning with {F}inite {T}raining {T}asks - a {D}ensity {E}stimation {A}pproach},
+  url           = {http://papers.nips.cc/paper\_files/paper/2022/hash/5833b4daf5b076dd1cdb362b163dff0c-Abstract-Conference.html},
+  year          = {2022}
+}
+
+@inproceedings{Razavi_Rohani2022-bc,
+  author        = {Seyed Roozbeh Razavi Rohani and
+                   Saeed Hedayatian and
+                   Mahdieh Soleymani Baghshah},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iros/RohaniHB22.bib},
+  booktitle     = {{IEEE/RSJ} International Conference on Intelligent Robots and Systems,
+                   {IROS} 2022, Kyoto, Japan, October 23-27, 2022},
+  doi           = {10.1109/IROS47612.2022.9981250},
+  pages         = {9048--9053},
+  publisher     = {{IEEE}},
+  timestamp     = {Tue, 03 Jan 2023 14:18:21 +0100},
+  title         = {{BIMRL:} {B}rain {I}nspired {M}eta {R}einforcement {L}earning},
+  url           = {https://doi.org/10.1109/IROS47612.2022.9981250},
+  year          = {2022}
+}
+
+@inproceedings{Fu2022-cx,
+  author        = {Haotian Fu and
+                   Shangqun Yu and
+                   Michael Littman and
+                   George Konidaris},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/FuYL022.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 35: Annual Conference
+                   on Neural Information Processing Systems 2022, NeurIPS 2022, New Orleans,
+                   LA, USA, November 28 - December 9, 2022},
+  editor        = {Sanmi Koyejo and
+                   S. Mohamed and
+                   A. Agarwal and
+                   Danielle Belgrave and
+                   K. Cho and
+                   A. Oh},
+  timestamp     = {Mon, 08 Jan 2024 00:00:00 +0100},
+  title         = {{M}odel-based {L}ifelong {R}einforcement {L}earning with {B}ayesian {E}xploration},
+  url           = {http://papers.nips.cc/paper\_files/paper/2022/hash/d0cf89927acd9136d27ebf08f9e8a888-Abstract-Conference.html},
+  year          = {2022}
+}
+
+@inproceedings{Mu2022-xj,
+  author        = {Yao Mu and
+                   Yuzheng Zhuang and
+                   Fei Ni and
+                   Bin Wang and
+                   Jianyu Chen and
+                   Jianye Hao and
+                   Ping Luo},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/MuZNWCHL22.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 35: Annual Conference
+                   on Neural Information Processing Systems 2022, NeurIPS 2022, New Orleans,
+                   LA, USA, November 28 - December 9, 2022},
+  editor        = {Sanmi Koyejo and
+                   S. Mohamed and
+                   A. Agarwal and
+                   Danielle Belgrave and
+                   K. Cho and
+                   A. Oh},
+  timestamp     = {Mon, 08 Jan 2024 00:00:00 +0100},
+  title         = {{DOMINO:} {D}ecomposed {M}utual {I}nformation {O}ptimization for {G}eneralized {C}ontext in {M}eta-Reinforcement {L}earning},
+  url           = {http://papers.nips.cc/paper\_files/paper/2022/hash/b0b1cfc8ede53f452cabf8b9cf4eef76-Abstract-Conference.html},
+  year          = {2022}
+}
+
+@inproceedings{Xie2021-qq,
+  author        = {Annie Xie and
+                   James Harrison and
+                   Chelsea Finn},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/XieHF21.bib},
+  booktitle     = {Proceedings of the 38th International Conference on Machine Learning,
+                   {ICML} 2021, 18-24 July 2021, Virtual Event},
+  editor        = {Marina Meila and
+                   Tong Zhang},
+  pages         = {11393--11403},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Wed, 25 Aug 2021 01:00:00 +0200},
+  title         = {{D}eep {R}einforcement {L}earning amidst {C}ontinual {S}tructured {N}on-Stationarity},
+  url           = {http://proceedings.mlr.press/v139/xie21c.html},
+  volume        = {139},
+  year          = {2021}
+}
+
+@article{Sajid2021-fh,
+  author        = {Noor Sajid and
+                   Philip J. Ball and
+                   Thomas Parr and
+                   Karl J. Friston},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/neco/SajidBPF21.bib},
+  doi           = {10.1162/NECO\_A\_01357},
+  journal       = {Neural Comput.},
+  number        = {3},
+  pages         = {674--712},
+  timestamp     = {Fri, 04 Jun 2021 01:00:00 +0200},
+  title         = {{A}ctive {I}nference: {D}emystified and {C}ompared},
+  url           = {https://doi.org/10.1162/neco\_a\_01357},
+  volume        = {33},
+  year          = {2021}
+}
+
+@inproceedings{Singh2020-cx,
+  author        = {Avi Singh and
+                   Huihan Liu and
+                   Gaoyue Zhou and
+                   Albert Yu and
+                   Nicholas Rhinehart and
+                   Sergey Levine},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/iclr/SinghLZYRL21.bib},
+  booktitle     = {9th International Conference on Learning Representations, {ICLR} 2021,
+                   Virtual Event, Austria, May 3-7, 2021},
+  publisher     = {OpenReview.net},
+  timestamp     = {Wed, 28 Jun 2023 01:00:00 +0200},
+  title         = {{P}arrot: {D}ata-Driven {B}ehavioral {P}riors for {R}einforcement {L}earning},
+  url           = {https://openreview.net/forum?id=Ysuv-WOFeKR},
+  year          = {2021}
+}
+
+@inproceedings{Ball2021-ac,
+  author        = {Philip J. Ball and
+                   Cong Lu and
+                   Jack Parker{-}Holder and
+                   Stephen J. Roberts},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/BallLPR21.bib},
+  booktitle     = {Proceedings of the 38th International Conference on Machine Learning,
+                   {ICML} 2021, 18-24 July 2021, Virtual Event},
+  editor        = {Marina Meila and
+                   Tong Zhang},
+  pages         = {619--629},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Wed, 25 Aug 2021 01:00:00 +0200},
+  title         = {{A}ugmented {W}orld {M}odels {F}acilitate {Z}ero-Shot {D}ynamics {G}eneralization {F}rom a {S}ingle {O}ffline {E}nvironment},
+  url           = {http://proceedings.mlr.press/v139/ball21a.html},
+  volume        = {139},
+  year          = {2021}
+}
+
+@inproceedings{Zintgraf2021-rq,
+  author        = {Luisa M. Zintgraf and
+                   Sam Devlin and
+                   Kamil Ciosek and
+                   Shimon Whiteson and
+                   Katja Hofmann},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/atal/ZintgrafDCWH21.bib},
+  booktitle     = {{AAMAS} '21: 20th International Conference on Autonomous Agents and
+                   Multiagent Systems, Virtual Event, United Kingdom, May 3-7, 2021},
+  doi           = {10.5555/3463952.3464210},
+  editor        = {Frank Dignum and
+                   Alessio Lomuscio and
+                   Ulle Endriss and
+                   Ann Now{\'{e}}},
+  pages         = {1712--1714},
+  publisher     = {{ACM}},
+  timestamp     = {Wed, 20 Jul 2022 17:03:47 +0200},
+  title         = {{D}eep {I}nteractive {B}ayesian {R}einforcement {L}earning via {M}eta-Learning},
+  url           = {https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1712.pdf},
+  year          = {2021}
+}
+
+@phdthesis{Retyk2021-be,
+  abstract      = {Meta-reinforcement learning has the potential to enable
+                   artificial agents to master new skills with improved
+                   sample-efficiency by leveraging previous learning experience in
+                   tasks that are diverse but share common structure. Our focus is
+                   to study the application of such algorithms to task
+                   distributions where the function that controls the dynamics of
+                   the environment is the main factor of variation. We start by
+                   providing an introductory background for related fields,
+                   including deep reinforcement learning, variational inference,
+                   and meta-learning. Then, we conduct a non-systematic review of
+                   the state-of-the-art algorithms for meta-reinforcement learning
+                   and perform an empirical investigation of PEARL, a method that
+                   combines soft actor-critic with latent task variables. Based on
+                   our review, we propose and implement two algorithmic
+                   modifications for PEARL: one that aims to improve the
+                   meta-training sample complexity by automatically adjusting a
+                   critical hyperparameter, and a second one focused on improving
+                   the meta-testing asymptotic performance by fine-tuning the
+                   policy during adaptation. Using a new multi-task environment
+                   suite for simulated robotics continuous control tasks, we
+                   compare the original version of PEARL and our proposed
+                   modifications, obtaining favourable results. Finally, we ponder
+                   our findings and suggest future research directions.},
+  author        = {Retyk, Federico},
+  keywords      = {meta-aprenentatge; aprenentatge per refor{\c c}; off-policy;
+                   aprenentatge profund; infer{\`e}ncia variacional; locomoci{\'o}
+                   rob{\`o}tica; meta-learning; reinforcement learning; deep
+                   learning; variational inference; robotic locomotion; Master
+                   thesis;Current projects/PCG-MetaRL Project},
+  language      = {en},
+  month         = apr,
+  publisher     = {Universitat Polit{\`e}cnica de Catalunya},
+  title         = {{O}n {Meta-Reinforcement} {L}earning in task distributions with varying dynamics},
+  year          = {2021}
+}
+
+@phdthesis{Zintgraf2022-ws,
+  abstract      = {Reinforcement Learning (RL) is a way to train artificial agents
+                   to autonomously interact with the world. In practice however, RL
+                   still has limitations that prohibit the deployment of RL agents
+                   in many real world settings. This is because RL takes long,
+                   typically requires human oversight, and produces specialised
+                   agents that can behave unexpected in unfamiliar situations. This
+                   thesis is motivated by the goal of making RL agents more
+                   flexible, robust, and safe to deploy in the real world. We
+                   develop agents capable of Fast Adaptation, i.e., agents that can
+                   learn new tasks efficiently. To this end, we use Meta
+                   Reinforcement Learning (Meta-RL), where we teach agents not only
+                   to act autonomously, but to learn autonomously. We propose four
+                   novel Meta-RL methods based on the intuition that adapting fast
+                   can be divided into ``task inference'' (understanding the task)
+                   and ``task solving'' (solving the task). We hypothesise that
+                   this split can simplify optimisation and thus improve
+                   performance, and is more amenable to downstream tasks. To
+                   implement this, we propose a context-based approach, where the
+                   agent conditions on a context that represents its current
+                   knowledge about the task. The agent can then use this to decide
+                   whether to learn more about the task, or try and solve it. In
+                   Chapter 5, we use a deterministic context and establish that
+                   this can indeed improve performance and adequately captures the
+                   task. In the subsequent chapters, we then introduce Bayesian
+                   reasoning over the context, to enable decision-making under task
+                   uncertainty. By combining Meta-RL, context-based learning, and
+                   approximate variational inference, we develop methods to compute
+                   approximately Bayes-optimal agents for single-agent settings
+                   (Chapter 6) and multi-agent settings (Chapter 7). Finally,
+                   Chapter 8 addresses the challenge of meta-learning with sparse
+                   rewards, which is an important setting for many real-world
+                   applications. We observe that existing Meta-RL methods can fail
+                   entirely if rewards are sparse, and propose a way to overcome
+                   this by encouraging the agent to explore during meta-training.
+                   We conclude the thesis with a reflection on the work presented
+                   in the context of current developments, and a discussion of open
+                   questions. In summary, the contributions in this thesis
+                   significantly advance the field of Fast Adaptation via Meta-RL.
+                   The agents develop in this thesis can adapt faster than any
+                   previous methods across a variety of tasks, and we can compute
+                   approximately Bayes-optimal policies for much more complex task
+                   distributions than previously possible. We hope that this helps
+                   drive forward Meta-RL research and, in the long term, using RL
+                   to address important real world challenges.},
+  author        = {Zintgraf, L},
+  keywords      = {Current projects/PCG-MetaRL Project},
+  language      = {en},
+  publisher     = {ora.ox.ac.uk},
+  school        = {University of Oxford},
+  title         = {{F}ast adaptation via meta reinforcement learning},
+  year          = {2022}
+}
+
+@article{Kwon2022-nq,
+  author        = {Jeongyeol Kwon and
+                   Yonathan Efroni and
+                   Constantine Caramanis and
+                   Shie Mannor},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-2210-02594.bib},
+  doi           = {10.48550/ARXIV.2210.02594},
+  eprint        = {2210.02594},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Fri, 07 Oct 2022 01:00:00 +0200},
+  title         = {{R}eward-Mixing {M}{D}{P}s with a {F}ew {L}atent {C}ontexts are {L}earnable},
+  url           = {https://doi.org/10.48550/arXiv.2210.02594},
+  volume        = {abs/2210.02594},
+  year          = {2022}
+}
+
+@inproceedings{Guez2012-gz,
+  author        = {Arthur Guez and
+                   David Silver and
+                   Peter Dayan},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/GuezSD12.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 25: 26th Annual
+                   Conference on Neural Information Processing Systems 2012. Proceedings
+                   of a meeting held December 3-6, 2012, Lake Tahoe, Nevada, United States},
+  editor        = {Peter L. Bartlett and
+                   Fernando C. N. Pereira and
+                   Christopher J. C. Burges and
+                   L{\'{e}}on Bottou and
+                   Kilian Q. Weinberger},
+  pages         = {1034--1042},
+  timestamp     = {Mon, 16 May 2022 15:41:51 +0200},
+  title         = {{E}fficient {B}ayes-Adaptive {R}einforcement {L}earning using {S}ample-Based {S}earch},
+  url           = {https://proceedings.neurips.cc/paper/2012/hash/35051070e572e47d2c26c241ab88307f-Abstract.html},
+  year          = {2012}
+}
+
+@inproceedings{Agarwal2021-pb,
+  author        = {Rishabh Agarwal and
+                   Max Schwarzer and
+                   Pablo Samuel Castro and
+                   Aaron C. Courville and
+                   Marc G. Bellemare},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/AgarwalSCCB21.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 34: Annual Conference
+                   on Neural Information Processing Systems 2021, NeurIPS 2021, December
+                   6-14, 2021, virtual},
+  editor        = {Marc'Aurelio Ranzato and
+                   Alina Beygelzimer and
+                   Yann N. Dauphin and
+                   Percy Liang and
+                   Jennifer Wortman Vaughan},
+  pages         = {29304--29320},
+  timestamp     = {Tue, 03 May 2022 01:00:00 +0200},
+  title         = {{D}eep {R}einforcement {L}earning at the {E}dge of the {S}tatistical {P}recipice},
+  url           = {https://proceedings.neurips.cc/paper/2021/hash/f514cec81cb148559cf475e7426eed5e-Abstract.html},
+  year          = {2021}
+}
+
+@article{Bhatt2022-cu,
+  title={Deep surrogate assisted generation of environments},
+  author={Bhatt, Varun and Tjanaka, Bryon and Fontaine, Matthew and Nikolaidis, Stefanos},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={37762--37777},
+  year={2022}
+}
+
+@article{Liu2021-rw,
+  author        = {Jialin Liu and
+                   Sam Snodgrass and
+                   Ahmed Khalifa and
+                   Sebastian Risi and
+                   Georgios N. Yannakakis and
+                   Julian Togelius},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/nca/LiuSKRYT21.bib},
+  doi           = {10.1007/S00521-020-05383-8},
+  journal       = {Neural Comput. Appl.},
+  number        = {1},
+  pages         = {19--37},
+  timestamp     = {Tue, 21 Mar 2023 00:00:00 +0100},
+  title         = {{D}eep learning for procedural content generation},
+  url           = {https://doi.org/10.1007/s00521-020-05383-8},
+  volume        = {33},
+  year          = {2021}
+}
+
+@inproceedings{Okada2021-bk,
+  author        = {Masashi Okada and
+                   Tadahiro Taniguchi},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icra/OkadaT21.bib},
+  booktitle     = {{IEEE} International Conference on Robotics and Automation, {ICRA}
+                   2021, Xi'an, China, May 30 - June 5, 2021},
+  doi           = {10.1109/ICRA48506.2021.9560734},
+  pages         = {4209--4215},
+  publisher     = {{IEEE}},
+  timestamp     = {Fri, 22 Oct 2021 19:54:31 +0200},
+  title         = {{D}reaming: {M}odel-based {R}einforcement {L}earning by {L}atent {I}magination without {R}econstruction},
+  url           = {https://doi.org/10.1109/ICRA48506.2021.9560734},
+  year          = {2021}
+}
+
+@inproceedings{Packer2021-jx,
+  author        = {Charles Packer and
+                   Pieter Abbeel and
+                   Joseph E. Gonzalez},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/PackerAG21.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 34: Annual Conference
+                   on Neural Information Processing Systems 2021, NeurIPS 2021, December
+                   6-14, 2021, virtual},
+  editor        = {Marc'Aurelio Ranzato and
+                   Alina Beygelzimer and
+                   Yann N. Dauphin and
+                   Percy Liang and
+                   Jennifer Wortman Vaughan},
+  pages         = {2466--2477},
+  timestamp     = {Tue, 03 May 2022 01:00:00 +0200},
+  title         = {{H}indsight {T}ask {R}elabelling: {E}xperience {R}eplay for {S}parse {R}eward {M}eta-{R}{L}},
+  url           = {https://proceedings.neurips.cc/paper/2021/hash/1454ca2270599546dfcd2a3700e4d2f1-Abstract.html},
+  year          = {2021}
+}
+
+@article{Liu2022-tf,
+  author        = {Xiyuan Liu and
+                   Jia Wu and
+                   Senpeng Chen},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/ijon/LiuWC22.bib},
+  doi           = {10.1016/J.NEUCOM.2021.12.086},
+  journal       = {Neurocomputing},
+  pages         = {89--103},
+  timestamp     = {Wed, 16 Feb 2022 00:00:00 +0100},
+  title         = {{A} context-based meta-reinforcement learning approach to efficient hyperparameter optimization},
+  url           = {https://doi.org/10.1016/j.neucom.2021.12.086},
+  volume        = {478},
+  year          = {2022}
+}
+
+@inproceedings{Lee2020-rf,
+  author        = {Kimin Lee and
+                   Younggyo Seo and
+                   Seunghyun Lee and
+                   Honglak Lee and
+                   Jinwoo Shin},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/LeeSLLS20.bib},
+  booktitle     = {Proceedings of the 37th International Conference on Machine Learning,
+                   {ICML} 2020, 13-18 July 2020, Virtual Event},
+  pages         = {5757--5766},
+  publisher     = {{PMLR}},
+  series        = {Proceedings of Machine Learning Research},
+  timestamp     = {Tue, 15 Dec 2020 00:00:00 +0100},
+  title         = {{C}ontext-aware {D}ynamics {M}odel for {G}eneralization in {M}odel-Based {R}einforcement {L}earning},
+  url           = {http://proceedings.mlr.press/v119/lee20g.html},
+  volume        = {119},
+  year          = {2020}
+}
+
+@inproceedings{Lazaric2010-yh,
+  author        = {Alessandro Lazaric and
+                   Mohammad Ghavamzadeh},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/icml/LazaricG10.bib},
+  booktitle     = {Proceedings of the 27th International Conference on Machine Learning
+                   (ICML-10), June 21-24, 2010, Haifa, Israel},
+  editor        = {Johannes F{\"{u}}rnkranz and
+                   Thorsten Joachims},
+  pages         = {599--606},
+  publisher     = {Omnipress},
+  timestamp     = {Wed, 03 Apr 2019 01:00:00 +0200},
+  title         = {{B}ayesian {M}ulti-Task {R}einforcement {L}earning},
+  url           = {https://icml.cc/Conferences/2010/papers/269.pdf},
+  year          = {2010}
+}
+
+@article{Croitoru2022-di,
+  author        = {Florinel{-}Alin Croitoru and
+                   Vlad Hondru and
+                   Radu Tudor Ionescu and
+                   Mubarak Shah},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/pami/CroitoruHIS23.bib},
+  doi           = {10.1109/TPAMI.2023.3261988},
+  journal       = {{IEEE} Trans. Pattern Anal. Mach. Intell.},
+  number        = {9},
+  pages         = {10850--10869},
+  timestamp     = {Fri, 18 Aug 2023 01:00:00 +0200},
+  title         = {{D}iffusion {M}odels in {V}ision: {A} {S}urvey},
+  url           = {https://doi.org/10.1109/TPAMI.2023.3261988},
+  volume        = {45},
+  year          = {2023}
+}
+
+@article{He2019-ce,
+  author        = {Xu He and
+                   Jakub Sygnowski and
+                   Alexandre Galashov and
+                   Andrei A. Rusu and
+                   Yee Whye Teh and
+                   Razvan Pascanu},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-1906-05201.bib},
+  eprint        = {1906.05201},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Fri, 14 Jun 2019 01:00:00 +0200},
+  title         = {{T}ask {A}gnostic {C}ontinual {L}earning via {M}eta {L}earning},
+  url           = {http://arxiv.org/abs/1906.05201},
+  volume        = {abs/1906.05201},
+  year          = {2019}
+}
+
+@inproceedings{Fontaine2021-lg,
+  author        = {Matthew C. Fontaine and
+                   Stefanos Nikolaidis},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/FontaineN21.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 34: Annual Conference
+                   on Neural Information Processing Systems 2021, NeurIPS 2021, December
+                   6-14, 2021, virtual},
+  editor        = {Marc'Aurelio Ranzato and
+                   Alina Beygelzimer and
+                   Yann N. Dauphin and
+                   Percy Liang and
+                   Jennifer Wortman Vaughan},
+  pages         = {10040--10052},
+  timestamp     = {Tue, 03 May 2022 01:00:00 +0200},
+  title         = {{D}ifferentiable {Q}uality {D}iversity},
+  url           = {https://proceedings.neurips.cc/paper/2021/hash/532923f11ac97d3e7cb0130315b067dc-Abstract.html},
+  year          = {2021}
+}
+
+@article{Mouret2015-zw,
+  author        = {Jean{-}Baptiste Mouret and
+                   Jeff Clune},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/MouretC15.bib},
+  eprint        = {1504.04909},
+  eprinttype    = {arXiv},
+  journal       = {CoRR},
+  timestamp     = {Mon, 13 Aug 2018 01:00:00 +0200},
+  title         = {{I}lluminating search spaces by mapping elites},
+  url           = {http://arxiv.org/abs/1504.04909},
+  volume        = {abs/1504.04909},
+  year          = {2015}
+}
+
+@inproceedings{Schulman2015-lq,
+  author        = {John Schulman and
+                   Philipp Moritz and
+                   Sergey Levine and
+                   Michael I. Jordan and
+                   Pieter Abbeel},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/corr/SchulmanMLJA15.bib},
+  booktitle     = {4th International Conference on Learning Representations, {ICLR} 2016,
+                   San Juan, Puerto Rico, May 2-4, 2016, Conference Track Proceedings},
+  editor        = {Yoshua Bengio and
+                   Yann LeCun},
+  timestamp     = {Thu, 25 Jul 2019 01:00:00 +0200},
+  title         = {{H}igh-Dimensional {C}ontinuous {C}ontrol {U}sing {G}eneralized {A}dvantage {E}stimation},
+  url           = {http://arxiv.org/abs/1506.02438},
+  year          = {2016}
+}
+
+@inproceedings{Yang2021-kd,
+  author        = {Yaodong Yang and
+                   Jun Luo and
+                   Ying Wen and
+                   Oliver Slumbers and
+                   Daniel Graves and
+                   Haitham Bou{-}Ammar and
+                   Jun Wang and
+                   Matthew E. Taylor},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/atal/YangLWSGBWT21.bib},
+  booktitle     = {{AAMAS} '21: 20th International Conference on Autonomous Agents and
+                   Multiagent Systems, Virtual Event, United Kingdom, May 3-7, 2021},
+  doi           = {10.5555/3463952.3463963},
+  editor        = {Frank Dignum and
+                   Alessio Lomuscio and
+                   Ulle Endriss and
+                   Ann Now{\'{e}}},
+  pages         = {51--56},
+  publisher     = {{ACM}},
+  timestamp     = {Fri, 19 Aug 2022 01:00:00 +0200},
+  title         = {{D}iverse {A}uto-Curriculum is {C}ritical for {S}uccessful {R}eal-World {M}ultiagent {L}earning {S}ystems},
+  url           = {https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p51.pdf},
+  year          = {2021}
+}
+
+@InProceedings{Adaptive_Agent_Team2023-ml,
+  title = 	 {Human-Timescale Adaptation in an Open-Ended Task Space},
+  author =       {Bauer, Jakob and Baumli, Kate and Behbahani, Feryal and Bhoopchand, Avishkar and Bradley-Schmieg, Nathalie and Chang, Michael and Clay, Natalie and Collister, Adrian and Dasagi, Vibhavari and Gonzalez, Lucy and Gregor, Karol and Hughes, Edward and Kashem, Sheleem and Loks-Thompson, Maria and Openshaw, Hannah and Parker-Holder, Jack and Pathak, Shreya and Perez-Nieves, Nicolas and Rakicevic, Nemanja and Rockt\"{a}schel, Tim and Schroecker, Yannick and Singh, Satinder and Sygnowski, Jakub and Tuyls, Karl and York, Sarah and Zacherl, Alexander and Zhang, Lei M},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {1887--1935},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/bauer23a/bauer23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/bauer23a.html},
+  abstract = 	 {Foundation models have shown impressive adaptation and scalability in supervised and self-supervised learning problems, but so far these successes have not fully translated to reinforcement learning (RL). In this work, we demonstrate that training an RL agent at scale leads to a general in-context learning algorithm that can adapt to open-ended novel embodied 3D problems as quickly as humans. In a vast space of held-out environment dynamics, our adaptive agent (AdA) displays on-the-fly hypothesis-driven exploration, efficient exploitation of acquired knowledge, and can successfully be prompted with first-person demonstrations. Adaptation emerges from three ingredients: (1) meta-reinforcement learning across a vast, smooth and diverse task distribution, (2) a policy parameterised as a large-scale attention-based memory architecture, and (3) an effective automated curriculum that prioritises tasks at the frontier of an agent’s capabilities. We demonstrate characteristic scaling laws with respect to network size, memory length, and richness of the training task distribution. We believe our results lay the foundation for increasingly general and adaptive RL agents that perform well across ever-larger open-ended domains.}
+}
+
+
+@inproceedings{Portelas2020-yx,
+  author        = {R{\'{e}}my Portelas and
+                   C{\'{e}}dric Colas and
+                   Lilian Weng and
+                   Katja Hofmann and
+                   Pierre{-}Yves Oudeyer},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/ijcai/PortelasCWHO20.bib},
+  booktitle     = {Proceedings of the Twenty-Ninth International Joint Conference on
+                   Artificial Intelligence, {IJCAI} 2020},
+  doi           = {10.24963/IJCAI.2020/671},
+  editor        = {Christian Bessiere},
+  pages         = {4819--4825},
+  publisher     = {ijcai.org},
+  timestamp     = {Mon, 20 Jul 2020 12:38:52 +0200},
+  title         = {{A}utomatic {C}urriculum {L}earning {F}or {D}eep {RL:} {A} {S}hort {S}urvey},
+  url           = {https://doi.org/10.24963/ijcai.2020/671},
+  year          = {2020}
+}
+
+@article{Narvekar2020-py,
+  abstract      = {Reinforcement learning (RL) is a popular paradigm for addressing
+                   sequential decision tasks in which the agent has only limited
+                   environmental feedback. Despite many advances over the past
+                   three decades, learning in many domains still requires a large
+                   amount of interaction …},
+  author        = {Narvekar, S and Peng, B and Leonetti, M and Sinapov, J and
+                   {others}},
+  journal       = {J. Mach. Learn. Res.},
+  publisher     = {jmlr.org},
+  title         = {{C}urriculum learning for reinforcement learning domains: {A} framework and survey},
+  year          = {2020}
+}
+
+@article{Miconi2023-ly,
+  abstract      = {Open-endedness stands to benefit from the ability to
+                   generate an infinite variety of diverse, challenging
+                   environments. One particularly interesting type of challenge
+                   is meta-learning (``learning-to-learn''), a hallmark of
+                   intelligent behavior. However, the number of meta-learning
+                   environments in the literature is limited. Here we describe
+                   a parametrized space for simple meta-reinforcement learning
+                   (meta-RL) tasks with arbitrary stimuli. The parametrization
+                   allows us to randomly generate an arbitrary number of novel
+                   simple meta-learning tasks. The parametrization is
+                   expressive enough to include many well-known meta-RL tasks,
+                   such as bandit problems, the Harlow task, T-mazes, the Daw
+                   two-step task and others. Simple extensions allow it to
+                   capture tasks based on two-dimensional topological spaces,
+                   such as full mazes or find-the-spot domains. We describe a
+                   number of randomly generated meta-RL domains of varying
+                   complexity and discuss potential issues arising from random
+                   generation.},
+  archiveprefix = {arXiv},
+  author        = {Miconi, Thomas},
+  eprint        = {2302.05583},
+  month         = feb,
+  primaryclass  = {cs.LG},
+  title         = {{P}rocedural generation of meta-reinforcement learning tasks},
+  year          = {2023}
+}
+
+@ARTICLE{Tjanaka2021-ik,
+  title  = "pyribs: A bare-bones Python library for quality diversity
+            optimization",
+  author = "Tjanaka, B and Fontaine, M C and Zhang, Y and Sommerer, S and
+            {others}",
+  year   =  "2021"
+}
+
+
+@inproceedings{Jiang2021-ml,
+  author        = {Minqi Jiang and
+                   Michael Dennis and
+                   Jack Parker{-}Holder and
+                   Jakob N. Foerster and
+                   Edward Grefenstette and
+                   Tim Rockt{\"{a}}schel},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/nips/JiangDPFGR21.bib},
+  booktitle     = {Advances in Neural Information Processing Systems 34: Annual Conference
+                   on Neural Information Processing Systems 2021, NeurIPS 2021, December
+                   6-14, 2021, virtual},
+  editor        = {Marc'Aurelio Ranzato and
+                   Alina Beygelzimer and
+                   Yann N. Dauphin and
+                   Percy Liang and
+                   Jennifer Wortman Vaughan},
+  pages         = {1884--1897},
+  timestamp     = {Tue, 03 May 2022 01:00:00 +0200},
+  title         = {{R}eplay-Guided {A}dversarial {E}nvironment {D}esign},
+  url           = {https://proceedings.neurips.cc/paper/2021/hash/0e915db6326b6fb6a3c56546980a8c93-Abstract.html},
+  year          = {2021}
+}
+
+@article{Dennis2020-kj,
+  title={Emergent complexity and zero-shot transfer via unsupervised environment design},
+  author={Dennis, Michael and Jaques, Natasha and Vinitsky, Eugene and Bayen, Alexandre and Russell, Stuart and Critch, Andrew and Levine, Sergey},
+  journal={Advances in neural information processing systems},
+  volume={33},
+  pages={13049--13061},
+  year={2020}
+}
+
+@article{Parker-Holder2022-zs,
+  abstract      = {Training generally-capable agents with reinforcement learning
+                   (RL) remains a significant challenge. A promising avenue for
+                   improving the robustness of RL agents is through the use …},
+  author        = {Parker-Holder, J and Jiang, M and Dennis, M and {others}},
+  journal       = {International Conference on Machine
+Learning},
+  publisher     = {proceedings.mlr.press},
+  title         = {{E}volving curricula with regret-based environment design},
+  year          = {2022}
+}
+
+@article{McKee2022-ih,
+  author        = {Kevin R. McKee and
+                   Joel Z. Leibo and
+                   Charlie Beattie and
+                   Richard Everett},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/journals/aamas/McKeeLBE22.bib},
+  doi           = {10.1007/S10458-022-09548-8},
+  journal       = {Auton. Agents Multi Agent Syst.},
+  number        = {1},
+  pages         = {21},
+  timestamp     = {Fri, 29 Apr 2022 01:00:00 +0200},
+  title         = {{Q}uantifying the effects of environment and population diversity in multi-agent reinforcement learning},
+  url           = {https://doi.org/10.1007/s10458-022-09548-8},
+  volume        = {36},
+  year          = {2022}
+}
+
+@inproceedings{Fontaine2020-cl,
+  author        = {Matthew C. Fontaine and
+                   Stefanos Nikolaidis},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/rss/FontaineN21.bib},
+  booktitle     = {Robotics: Science and Systems XVII, Virtual Event, July 12-16, 2021},
+  doi           = {10.15607/RSS.2021.XVII.036},
+  editor        = {Dylan A. Shell and
+                   Marc Toussaint and
+                   M. Ani Hsieh},
+  timestamp     = {Sun, 12 Nov 2023 00:00:00 +0100},
+  title         = {{A} {Q}uality {D}iversity {A}pproach to {A}utomatically {G}enerating {H}uman-Robot {I}nteraction {S}cenarios in {S}hared {A}utonomy},
+  url           = {https://doi.org/10.15607/RSS.2021.XVII.036},
+  year          = {2021}
+}
+
+@inproceedings{Grigsby2023-mz,
+title={{AMAGO}: Scalable In-Context Reinforcement Learning for Adaptive Agents},
+author={Jake Grigsby and Linxi Fan and Yuke Zhu},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=M6XWoEdmwf}
+}
+
+@inproceedings{Khalifa_Bontrager_Earle_Togelius_2020,
+  author        = {Ahmed Khalifa and
+                   Philip Bontrager and
+                   Sam Earle and
+                   Julian Togelius},
+  bibsource     = {dblp computer science bibliography, https://dblp.org},
+  biburl        = {https://dblp.org/rec/conf/aiide/KhalifaBET20.bib},
+  booktitle     = {Proceedings of the Sixteenth {AAAI} Conference on Artificial Intelligence
+                   and Interactive Digital Entertainment, {AIIDE} 2020, virtual, October
+                   19-23, 2020},
+  editor        = {Levi Lelis and
+                   David Thue},
+  pages         = {95--101},
+  publisher     = {{AAAI} Press},
+  timestamp     = {Thu, 22 Dec 2022 00:00:00 +0100},
+  title         = {{PCGRL:} {P}rocedural {C}ontent {G}eneration via {R}einforcement {L}earning},
+  url           = {https://ojs.aaai.org/index.php/AIIDE/article/view/7416},
+  year          = {2020}
+}
+
+
+
+@INPROCEEDINGS{Liu2021-az,
+  title     = "Decoupling Exploration and Exploitation for {Meta-Reinforcement}
+               Learning without Sacrifices",
+  booktitle = "Proceedings of the 38th International Conference on Machine
+               Learning",
+  author    = "Liu, Evan Z and Raghunathan, Aditi and Liang, Percy and Finn,
+               Chelsea",
+  editor    = "Meila, Marina and Zhang, Tong",
+  abstract  = "The goal of meta-reinforcement learning (meta-RL) is to build
+               agents that can quickly learn new tasks by leveraging prior
+               experience on related tasks. Learning a new task often requires
+               both exploring to gather task-relevant information and
+               exploiting this information to solve the task. In principle,
+               optimal exploration and exploitation can be learned end-to-end
+               by simply maximizing task performance. However, such meta-RL
+               approaches struggle with local optima due to a chicken-and-egg
+               problem: learning to explore requires good exploitation to gauge
+               the exploration's utility, but learning to exploit requires
+               information gathered via exploration. Optimizing separate
+               objectives for exploration and exploitation can avoid this
+               problem, but prior meta-RL exploration objectives yield
+               suboptimal policies that gather information irrelevant to the
+               task. We alleviate both concerns by constructing an exploitation
+               objective that automatically identifies task-relevant
+               information and an exploration objective to recover only this
+               information. This avoids local optima in end-to-end training,
+               without sacrificing optimal exploration. Empirically, DREAM
+               substantially outperforms existing approaches on complex meta-RL
+               problems, such as sparse-reward 3D visual navigation. Videos of
+               DREAM: https://ezliu.github.io/dream/",
+  publisher = "PMLR",
+  volume    =  "139",
+  pages     = "6925--6935",
+  series    = "Proceedings of Machine Learning Research",
+  year      =  "2021"
+}

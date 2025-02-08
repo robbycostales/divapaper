@@ -1,0 +1,6194 @@
+[
+  {
+    "author": [
+      {
+        "family": "Arnold",
+        "given": "James"
+      },
+      {
+        "family": "Alexander",
+        "given": "Rob"
+      }
+    ],
+    "collection-title": "Lecture notes in computer science",
+    "container-title": "Lecture notes in computer science",
+    "key": "Arnold2013-qj",
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "page": "33-44",
+    "publisher": "Springer Berlin Heidelberg",
+    "publisher-place": "Berlin, Heidelberg",
+    "title": "Testing autonomous robot control software using procedural content generation",
+    "type": "chapter"
+  },
+  {
+    "abstract": "In this paper we propose a new method for generating test scenarios for black-box autonomous systems that demonstrate critical transitions in performance modes. This method provides a test engineer with key insights into the software’s decision-making engine and how those decisions affect transitions between performance modes. We achieve this via adaptive, simulation-based testing of the autonomous system where each sample represents a simulated scenario. The test scenario, i.e the system input, represents a given configuration of environmental or mission parameters and the resulting outputs are the system’s performance based on high-level success criteria. For realistic testing scenarios, the dimensionality of the configuration space and the computational expense of high-fidelity simulations precludes exhaustive or uniform sampling. Thus, we have developed specialized adaptive search algorithms designed to discover performance boundaries of the autonomy using a minimal number of samples. Further, unsupervised clustering techniques are presented that can group test scenarios by the resulting performance modes and sort them by those which are most effective at diagnosing changes in the autonomous system’s behavior. The result is a testing framework that gives the test engineer a set of diverse scenarios that exercises the decision boundaries of the autonomous system under test.",
+    "author": [
+      {
+        "family": "Mullins",
+        "given": "Galen E"
+      },
+      {
+        "family": "Stankiewicz",
+        "given": "Paul G"
+      },
+      {
+        "family": "Hawthorne",
+        "given": "R Chad"
+      },
+      {
+        "family": "Gupta",
+        "given": "Satyandra K"
+      }
+    ],
+    "container-title": "J. Syst. Softw.",
+    "key": "Mullins2018-wv",
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          3
+        ]
+      ]
+    },
+    "page": "197-215",
+    "publisher": "Elsevier BV",
+    "title": "Adaptive generation of challenging scenarios for testing and evaluation of autonomous vehicles",
+    "type": "article-journal",
+    "volume": "137"
+  },
+  {
+    "author": [
+      {
+        "family": "Abeysirigoonawardena",
+        "given": "Yasasa"
+      },
+      {
+        "family": "Shkurti",
+        "given": "Florian"
+      },
+      {
+        "family": "Dudek",
+        "given": "Gregory"
+      }
+    ],
+    "container-title": "2019 international conference on robotics and automation (ICRA)",
+    "key": "Abeysirigoonawardena2019-yx",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          5
+        ]
+      ]
+    },
+    "page": "8271-8277",
+    "publisher": "IEEE",
+    "title": "Generating adversarial driving scenarios in high-fidelity simulators",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Rocklage",
+        "given": "Elias"
+      },
+      {
+        "family": "Kraft",
+        "given": "Heiko"
+      },
+      {
+        "family": "Karatas",
+        "given": "Abdullah"
+      },
+      {
+        "family": "Seewig",
+        "given": "Jorg"
+      }
+    ],
+    "container-title": "2017 IEEE 20th international conference on intelligent transportation systems (ITSC)",
+    "key": "Rocklage2017-gc",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          10
+        ]
+      ]
+    },
+    "page": "476-483",
+    "publisher": "IEEE",
+    "title": "Automated scenario generation for regression testing of autonomous vehicles",
+    "type": "paper-conference"
+  },
+  {
+    "abstract": "Self-driving cars rely on software which needs to be thoroughly tested. Testing self-driving car software in real traffic is not only expensive but also dangerous, and has already caused fatalities. Virtual tests, in which self-driving car software is tested in computer simulations, offer a more efficient and safer alternative compared to naturalistic field operational tests. However, creating suitable test scenarios is laborious and difficult. In this paper we combine procedural content generation, a technique commonly employed in modern video games, and search-based testing, a testing technique proven to be effective in many domains, in order to automatically create challenging virtual scenarios for testing self-driving car soft- ware. Our AsFault prototype implements this approach to generate virtual roads for testing lane keeping, one of the defining features of autonomous driving. Evaluation on two different self-driving car software systems demonstrates that AsFault can generate effective virtual road networks that succeed in revealing software failures, which manifest as cars departing their lane. Compared to random testing AsFault was not only more efficient, but also caused up to twice as many lane departures.",
+    "author": [
+      {
+        "family": "Gambi",
+        "given": "Alessio"
+      },
+      {
+        "family": "Mueller",
+        "given": "Marc"
+      },
+      {
+        "family": "Fraser",
+        "given": "Gordon"
+      }
+    ],
+    "container-title": "Proceedings of the 28th ACM SIGSOFT international symposium on software testing and analysis",
+    "key": "Gambi2019-eq",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          7
+        ]
+      ]
+    },
+    "publisher": "ACM",
+    "publisher-place": "New York, NY, USA",
+    "title": "Automatically testing self-driving cars with search-based procedural content generation",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Sadigh",
+        "given": "Dorsa"
+      },
+      {
+        "family": "Sastry",
+        "given": "S Shankar"
+      },
+      {
+        "family": "Seshia",
+        "given": "Sanjit A"
+      }
+    ],
+    "container-title": "IFAC-PapersOnLine",
+    "key": "Sadigh2019-id",
+    "issue": "34",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "131-138",
+    "publisher": "Elsevier BV",
+    "title": "Verifying robustness of human-aware autonomous cars",
+    "type": "article-journal",
+    "volume": "51"
+  },
+  {
+    "DOI": "10.1145/3314221.3314633",
+    "ISBN": "9781450367127",
+    "URL": "https://doi.org/10.1145/3314221.3314633",
+    "abstract": "We propose a new probabilistic programming language for the design and analysis of perception systems, especially those based on machine learning. Specifically, we consider the problems of training a perception system to handle rare events, testing its performance under different conditions, and debugging failures. We show how a probabilistic programming language can help address these problems by specifying distributions encoding interesting types of inputs and sampling these to generate specialized training and test sets. More generally, such languages can be used for cyber-physical systems and robotics to write environment models, an essential prerequisite to any formal analysis. In this paper, we focus on systems like autonomous cars and robots, whose environment is a scene, a configuration of physical objects and agents. We design a domain-specific language, Scenic, for describing scenarios that are distributions over scenes. As a probabilistic programming language, Scenic allows assigning distributions to features of the scene, as well as declaratively imposing hard and soft constraints over the scene. We develop specialized techniques for sampling from the resulting distribution, taking advantage of the structure provided by Scenic’s domain-specific syntax. Finally, we apply Scenic in a case study on a convolutional neural network designed to detect cars in road images, improving its performance beyond that achieved by state-of-the-art synthetic data generation methods.",
+    "author": [
+      {
+        "family": "Fremont",
+        "given": "Daniel J."
+      },
+      {
+        "family": "Dreossi",
+        "given": "Tommaso"
+      },
+      {
+        "family": "Ghosh",
+        "given": "Shromona"
+      },
+      {
+        "family": "Yue",
+        "given": "Xiangyu"
+      },
+      {
+        "family": "Sangiovanni-Vincentelli",
+        "given": "Alberto L."
+      },
+      {
+        "family": "Seshia",
+        "given": "Sanjit A."
+      }
+    ],
+    "collection-title": "PLDI 2019",
+    "container-title": "Proceedings of the 40th ACM SIGPLAN conference on programming language design and implementation",
+    "key": "Fremont2018-ag",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "keyword": "synthetic data, scenario description language, probabilistic programming, fuzz testing, deep learning, automatic test generation",
+    "page": "63-78",
+    "publisher": "Association for Computing Machinery",
+    "publisher-place": "New York, NY, USA",
+    "title": "Scenic: A language for scenario specification and scene generation",
+    "title-short": "Scenic",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://proceedings.mlr.press/v164/zhou22a.html",
+    "abstract": "As robots are deployed in complex situations, engineers and end users must develop a holistic understanding of their behaviors, capabilities, and limitations. Some behaviors are directly optimized by the objective function. They often include success rate, completion time or energy consumption. Other behaviors – e.g., collision avoidance, trajectory smoothness or motion legibility – are typically emergent but equally important for safe and trustworthy deployment. Designing an objective which optimizes every aspect of robot behavior is hard. In this paper, we advocate for systematic analysis of a wide array of behaviors for holistic understanding of robot controllers and, to this end, propose a framework, RoCUS, which uses Bayesian posterior sampling to find situations where the robot controller exhibits user-specified behaviors, such as highly jerky motions. We use RoCUS to analyze three controller classes (deep learning models, rapidly exploring random trees and dynamical system formulations) on two domains (2D navigation and a 7 degree-of-freedom arm reaching), and uncover insights to further our understanding of these controllers and ultimately improve their designs.",
+    "author": [
+      {
+        "family": "Zhou",
+        "given": "Yilun"
+      },
+      {
+        "family": "Booth",
+        "given": "Serena"
+      },
+      {
+        "family": "Figueroa",
+        "given": "Nadia"
+      },
+      {
+        "family": "Shah",
+        "given": "Julie"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 5th conference on robot learning",
+    "editor": [
+      {
+        "family": "Faust",
+        "given": "Aleksandra"
+      },
+      {
+        "family": "Hsu",
+        "given": "David"
+      },
+      {
+        "family": "Neumann",
+        "given": "Gerhard"
+      }
+    ],
+    "key": "Zhou2020-js",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "850-860",
+    "publisher": "PMLR",
+    "title": "RoCUS: Robot controller understanding via sampling",
+    "title-short": "RoCUS",
+    "type": "paper-conference",
+    "volume": "164"
+  },
+  {
+    "abstract": "While the history of machine learning so far largely encompasses a series of problems posed by researchers and algorithms that learn their solutions, an important question is whether the problems themselves can be generated by the algorithm at the same time as they are being solved. Such a process would in effect build its own diverse and expanding curricula, and the solutions to problems at various stages would become stepping stones towards solving even more challenging problems later in the process. The Paired Open-Ended Trailblazer (POET) algorithm introduced in this paper does just that: it pairs the generation of environmental challenges and the optimization of agents to solve those challenges. It simultaneously explores many different paths through the space of possible problems and solutions and, critically, allows these stepping-stone solutions to transfer between problems if better, catalyzing innovation. The term open-ended signifies the intriguing potential for algorithms like POET to continue to create novel and increasingly complex capabilities without bound. Our results show that POET produces a diverse range of sophisticated behaviors that solve a wide range of environmental challenges, many of which cannot be solved by direct optimization alone, or even through a direct-path curriculum-building control algorithm introduced to highlight the critical role of open-endedness in solving ambitious challenges. The ability to transfer solutions from one environment to another proves essential to unlocking the full potential of the system as a whole, demonstrating the unpredictable nature of fortuitous stepping stones. We hope that POET will inspire a new push towards open-ended discovery across many domains, where algorithms like POET can blaze a trail through their interesting possible manifestations and solutions.",
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Rui"
+      },
+      {
+        "family": "Lehman",
+        "given": "Joel"
+      },
+      {
+        "family": "Clune",
+        "given": "Jeff"
+      },
+      {
+        "family": "Stanley",
+        "given": "Kenneth O"
+      }
+    ],
+    "container-title": "arXiv [cs.NE]",
+    "key": "Wang2019-en",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          1
+        ]
+      ]
+    },
+    "title": "Paired open-ended trailblazer (POET): Endlessly generating increasingly complex and diverse learning environments and their solutions",
+    "title-short": "Paired open-ended trailblazer (POET)",
+    "type": "article-journal"
+  },
+  {
+    "URL": "https://proceedings.mlr.press/v119/wang20l.html",
+    "abstract": "Creating open-ended algorithms, which generate their own never-ending stream of novel and appropriately challenging learning opportunities, could help to automate and accelerate progress in machine learning. A recent step in this direction is the Paired Open-Ended Trailblazer (POET), an algorithm that generates and solves its own challenges, and allows solutions to goal-switch between challenges to avoid local optima. However, the original POET was unable to demonstrate its full creative potential because of limitations of the algorithm itself and because of external issues including a limited problem space and lack of a universal progress measure. Importantly, both limitations pose impediments not only for POET, but for the pursuit of open-endedness in general. Here we introduce and empirically validate two new innovations to the original algorithm, as well as two external innovations designed to help elucidate its full potential. Together, these four advances enable the most open-ended algorithmic demonstration to date. The algorithmic innovations are (1) a domain-general measure of how meaningfully novel new challenges are, enabling the system to potentially create and solve interesting challenges endlessly, and (2) an efficient heuristic for determining when agents should goal-switch from one problem to another (helping open-ended search better scale). Outside the algorithm itself, to enable a more definitive demonstration of open-endedness, we introduce (3) a novel, more flexible way to encode environmental challenges, and (4) a generic measure of the extent to which a system continues to exhibit open-ended innovation. Enhanced POET produces a diverse range of sophisticated behaviors that solve a wide range of environmental challenges, many of which cannot be solved through other means.",
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Rui"
+      },
+      {
+        "family": "Lehman",
+        "given": "Joel"
+      },
+      {
+        "family": "Rawal",
+        "given": "Aditya"
+      },
+      {
+        "family": "Zhi",
+        "given": "Jiale"
+      },
+      {
+        "family": "Li",
+        "given": "Yulun"
+      },
+      {
+        "family": "Clune",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Stanley",
+        "given": "Kenneth"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 37th international conference on machine learning",
+    "editor": [
+      {
+        "family": "III",
+        "given": "Hal Daumé"
+      },
+      {
+        "family": "Singh",
+        "given": "Aarti"
+      }
+    ],
+    "key": "Wang2020-tw",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "9940-9951",
+    "publisher": "PMLR",
+    "title": "Enhanced POET: Open-ended reinforcement learning through unbounded invention of learning challenges and their solutions",
+    "title-short": "Enhanced POET",
+    "type": "paper-conference",
+    "volume": "119"
+  },
+  {
+    "author": [
+      {
+        "family": "Gabor",
+        "given": "Thomas"
+      },
+      {
+        "family": "Sedlmeier",
+        "given": "Andreas"
+      },
+      {
+        "family": "Kiermeier",
+        "given": "Marie"
+      },
+      {
+        "family": "Phan",
+        "given": "Thomy"
+      },
+      {
+        "family": "Henrich",
+        "given": "Marcel"
+      },
+      {
+        "family": "Pichlmair",
+        "given": "Monika"
+      },
+      {
+        "family": "Kempter",
+        "given": "Bernhard"
+      },
+      {
+        "family": "Klein",
+        "given": "Cornel"
+      },
+      {
+        "family": "Sauer",
+        "given": "Horst"
+      },
+      {
+        "family": "Ag",
+        "given": "Reiner Schmidsiemens"
+      },
+      {
+        "family": "Wieghardt",
+        "given": "Jan"
+      }
+    ],
+    "container-title": "Proceedings of the genetic and evolutionary computation conference",
+    "key": "Gabor2019-og",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          7
+        ]
+      ]
+    },
+    "publisher": "ACM",
+    "publisher-place": "New York, NY, USA",
+    "title": "Scenario co-evolution for reinforcement learning on a grid world smart factory domain",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Bossens",
+        "given": "David M"
+      },
+      {
+        "family": "Tarapore",
+        "given": "Danesh"
+      }
+    ],
+    "container-title": "IEEE Trans. Evol. Comput.",
+    "key": "Bossens2021-gq",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          4
+        ]
+      ]
+    },
+    "page": "346-357",
+    "publisher": "Institute of Electrical; Electronics Engineers (IEEE)",
+    "title": "QED: Using quality-environment-diversity to evolve resilient robot swarms",
+    "title-short": "QED",
+    "type": "article-journal",
+    "volume": "25"
+  },
+  {
+    "ISBN": "978-1-57735-849-7",
+    "abstract": "Open-endedness, a longstanding cornerstone of artificial life research, is the ability of systems to generate potentially unbounded ontologies of increasing novelty and complexity. Engineering generative systems displaying at least some degree of this ability is a goal with clear applications to procedural content generation in games. The Paired Open-Ended Trailblazer (POET) algorithm, heretofore explored only in a biped walking domain, is a coevolutionary system that simultaneously generates environments and agents that can solve them. This paper introduces a POET-Inspired Neuroevolu-tionary System for KreativitY (PINSKY) in games, which co-generates levels for multiple video games and agents that play them. This system leverages the General Video Game Artificial Intelligence (GVGAI) framework to enable co-generation of levels and agents for the 2D Atari-style games Zelda and Solar Fox. Results demonstrate the ability of PIN-SKY to generate curricula of game levels, opening up a promising new avenue for research at the intersection of procedural content generation and artificial life. At the same time, results in these challenging game domains highlight the limitations of the current algorithm and opportunities for improvement.",
+    "author": [
+      {
+        "family": "Dharna",
+        "given": "Aaron"
+      },
+      {
+        "family": "Togelius",
+        "given": "Julian"
+      },
+      {
+        "family": "Soros",
+        "given": "L. B."
+      }
+    ],
+    "collection-title": "AIIDE’20",
+    "container-title": "Proceedings of the sixteenth AAAI conference on artificial intelligence and interactive digital entertainment",
+    "key": "Dharna2020-uu",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "publisher": "AAAI Press",
+    "title": "Co-generation of game levels and game-playing agents",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Dharna",
+        "given": "Aaron"
+      },
+      {
+        "family": "Hoover",
+        "given": "Amy K"
+      },
+      {
+        "family": "Togelius",
+        "given": "Julian"
+      },
+      {
+        "family": "Soros",
+        "given": "Lisa B"
+      }
+    ],
+    "container-title": "IEEE Transactions on Games",
+    "key": "Dharna2022-on",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "157-170",
+    "publisher": "IEEE",
+    "title": "Transfer dynamics in emergent evolutionary curricula",
+    "type": "article-journal",
+    "volume": "15"
+  },
+  {
+    "abstract": "Quality-diversity (QD) algorithms search for a set of good solutions which cover a space as defined by behavior metrics. This simultaneous focus on quality and diversity with explicit metrics sets QD algorithms apart from standard single- and multi-objective evolutionary algorithms, as well as from diversity preservation approaches such as niching. These properties open up new avenues for artificial intelligence in games, in particular for procedural content generation. Creating multiple systematically varying solutions allows new approaches to creative human-AI interaction as well as adaptivity. In the last few years, a handful of applications of QD to procedural content generation and game playing have been proposed; we discuss these and propose challenges for future work.",
+    "author": [
+      {
+        "family": "Gravina",
+        "given": "Daniele"
+      },
+      {
+        "family": "Khalifa",
+        "given": "Ahmed"
+      },
+      {
+        "family": "Liapis",
+        "given": "Antonios"
+      },
+      {
+        "family": "Togelius",
+        "given": "Julian"
+      },
+      {
+        "family": "Yannakakis",
+        "given": "Georgios N"
+      }
+    ],
+    "container-title": "2019 IEEE conference on games (CoG)",
+    "key": "Gravina2019-qb",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          8
+        ]
+      ]
+    },
+    "keyword": "Sociology;Statistics;Games;Search problems;Partitioning algorithms;Extraterrestrial measurements;Procedural Content Generation;Quality Diversity;Evolutionary Computation;Expressivity",
+    "page": "1-8",
+    "publisher": "ieeexplore.ieee.org",
+    "title": "Procedural content generation through quality diversity",
+    "type": "paper-conference"
+  },
+  {
+    "abstract": "While deep reinforcement learning (RL) has fueled multiple high-profile successes in machine learning, it is held back from more widespread adoption by its often poor data efficiency and the limited generality of the policies it produces. A promising approach for alleviating these limitations is to cast the development of better RL algorithms as a machine learning problem itself in a process called meta-RL. Meta-RL is most commonly studied in a problem setting where, given a distribution of tasks, the goal is to learn a policy that is capable of adapting to any new task from the task distribution with as little data as possible. In this survey, we describe the meta-RL problem setting in detail as well as its major variations. We discuss how, at a high level, meta-RL research can be clustered based on the presence of a task distribution and the learning budget available for each individual task. Using these clusters, we then survey meta-RL algorithms and applications. We conclude by presenting the open problems on the path to making meta-RL part of the standard toolbox for a deep RL practitioner.",
+    "author": [
+      {
+        "family": "Beck",
+        "given": "Jacob"
+      },
+      {
+        "family": "Vuorio",
+        "given": "Risto"
+      },
+      {
+        "family": "Liu",
+        "given": "Evan Zheran"
+      },
+      {
+        "family": "Xiong",
+        "given": "Zheng"
+      },
+      {
+        "family": "Zintgraf",
+        "given": "Luisa"
+      },
+      {
+        "family": "Finn",
+        "given": "Chelsea"
+      },
+      {
+        "family": "Whiteson",
+        "given": "Shimon"
+      }
+    ],
+    "container-title": "arXiv [cs.LG]",
+    "key": "Beck2023-oy",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          1
+        ]
+      ]
+    },
+    "title": "A survey of meta-reinforcement learning",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "We have analyzed 127 publications for this review paper, which discuss applications of Reinforcement Learning (RL) in marketing, robotics, gaming, automated cars, natural language processing (NLP), internet of things security, recommendation systems, finance, and energy management. The optimization of energy use is critical in today’s environment. We mainly focus on the RL application for energy management. Traditional rule-based systems have a set of predefined rules. As a result, they may become rigid and unable to adjust to changing situations or unforeseen events. RL can overcome these drawbacks. RL learns by exploring the environment randomly and based on experience, it continues to expand its knowledge. Many researchers are working on RL-based energy management systems (EMS). RL is utilized in energy applications such as optimizing energy use in smart buildings, hybrid automobiles, smart grids, and managing renewable energy resources. RL-based energy management in renewable energy contributes to achieving net zero carbon emissions and a sustainable environment. In the context of energy management technology, RL can be utilized to optimize the regulation of energy systems, such as building heating, ventilation, and air conditioning (HVAC) systems, to reduce energy consumption while maintaining a comfortable atmosphere. EMS can be accomplished by teaching an RL agent to make judgments based on sensor data, such as temperature and occupancy, to modify the HVAC system settings. RL has proven beneficial in lowering energy usage in buildings and is an active research area in smart buildings. RL can be used to optimize energy management in hybrid electric vehicles (HEVs) by learning an optimal control policy to maximize battery life and fuel efficiency. RL has acquired a remarkable position in robotics, automated cars, and gaming applications. The majority of security-related applications operate in a simulated environment. The RL-based recommender systems provide good suggestions accuracy and diversity. This article assists the novice in comprehending the foundations of reinforcement learning and its applications.",
+    "author": [
+      {
+        "family": "Sivamayil",
+        "given": "Keerthana"
+      },
+      {
+        "family": "Rajasekar",
+        "given": "Elakkiya"
+      },
+      {
+        "family": "Aljafari",
+        "given": "Belqasem"
+      },
+      {
+        "family": "Nikolovski",
+        "given": "Srete"
+      },
+      {
+        "family": "Vairavasundaram",
+        "given": "Subramaniyaswamy"
+      },
+      {
+        "family": "Vairavasundaram",
+        "given": "Indragandhi"
+      }
+    ],
+    "container-title": "Energies",
+    "key": "Sivamayil2023-zc",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    },
+    "page": "1512",
+    "publisher": "MDPI AG",
+    "title": "A systematic study on reinforcement learning based applications",
+    "type": "article-journal",
+    "volume": "16"
+  },
+  {
+    "abstract": "The study of zero-shot generalisation (ZSG) in deep Reinforcement Learning (RL) aims to produce RL algorithms whose policies generalise well to novel unseen situations at deployment time, avoiding overfitting to their training environments. Tackling this is vital if we are to deploy reinforcement learning algorithms in real world scenarios, where the environment will be diverse, dynamic and unpredictable. This survey is an overview of this nascent field. We rely on a unifying formalism and terminology for discussing different ZSG problems, building upon previous works. We go on to categorise existing benchmarks for ZSG, as well as current methods for tackling these problems. Finally, we provide a critical discussion of the current state of the field, including recommendations for future work. Among other conclusions, we argue that taking a purely procedural content generation approach to benchmark design is not conducive to progress in ZSG, we suggest fast online adaptation and tackling RL-specific problems as some areas for future work on methods for ZSG, and we recommend building benchmarks in underexplored problem settings such as offline RL ZSG and reward-function variation.",
+    "author": [
+      {
+        "family": "Kirk",
+        "given": "Robert"
+      },
+      {
+        "family": "Zhang",
+        "given": "Amy"
+      },
+      {
+        "family": "Grefenstette",
+        "given": "Edward"
+      },
+      {
+        "family": "Rocktäschel",
+        "given": "Tim"
+      }
+    ],
+    "container-title": "jair",
+    "key": "Kirk2023-if",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          1
+        ]
+      ]
+    },
+    "keyword": "reinforcement learning; neural networks",
+    "page": "201-264",
+    "publisher": "jair.org",
+    "title": "A survey of zero-shot generalisation in deep reinforcement learning",
+    "type": "article-journal",
+    "volume": "76"
+  },
+  {
+    "abstract": "Deep reinforcement learning (DRL) integrates the feature representation ability of deep learning with the decision-making ability of reinforcement learning so that it can achieve powerful end-to-end learning control capabilities. In the past decade, DRL has made substantial advances in many tasks that require perceiving high-dimensional input and making optimal or near-optimal decisions. However, there are still many challenging problems in the theory and applications of DRL, especially in learning control tasks with limited samples, sparse rewards, and multiple agents. Researchers have proposed various solutions and new theories to solve these problems and promote the development of DRL. In addition, deep learning has stimulated the further development of many subfields of reinforcement learning, such as hierarchical reinforcement learning (HRL), multiagent reinforcement learning, and imitation learning. This article gives a comprehensive overview of the fundamental theories, key algorithms, and primary research domains of DRL. In addition to value-based and policy-based DRL algorithms, the advances in maximum entropy-based DRL are summarized. The future research topics of DRL are also analyzed and discussed.",
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Xu"
+      },
+      {
+        "family": "Wang",
+        "given": "Sen"
+      },
+      {
+        "family": "Liang",
+        "given": "Xingxing"
+      },
+      {
+        "family": "Zhao",
+        "given": "Dawei"
+      },
+      {
+        "family": "Huang",
+        "given": "Jincai"
+      },
+      {
+        "family": "Xu",
+        "given": "Xin"
+      },
+      {
+        "family": "Dai",
+        "given": "Bin"
+      },
+      {
+        "family": "Miao",
+        "given": "Qiguang"
+      }
+    ],
+    "container-title": "IEEE Trans. Neural Netw. Learn. Syst.",
+    "key": "Wang2024-wi",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          4
+        ]
+      ]
+    },
+    "page": "5064-5078",
+    "publisher": "Institute of Electrical; Electronics Engineers (IEEE)",
+    "title": "Deep reinforcement learning: A survey",
+    "title-short": "Deep reinforcement learning",
+    "type": "article-journal",
+    "volume": "35"
+  },
+  {
+    "abstract": "… BD, it succeeds to build a container of diverse behaviors. We also show that AURORA can be used, like any QD algorithm, to optimize the quality of the discovered behaviors. The …",
+    "author": [
+      {
+        "family": "Grillotti",
+        "given": "L"
+      },
+      {
+        "family": "Cully",
+        "given": "A"
+      }
+    ],
+    "container-title": "IEEE Trans. Evol. Comput.",
+    "key": "Grillotti2022-vm",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "publisher": "ieeexplore.ieee.org",
+    "title": "Unsupervised behavior discovery with quality-diversity optimization",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1109/LRA.2021.3139949",
+    "URL": "https://doi.org/10.1109/LRA.2021.3139949",
+    "author": [
+      {
+        "family": "Ren",
+        "given": "Allen Z."
+      },
+      {
+        "family": "Majumdar",
+        "given": "Anirudha"
+      }
+    ],
+    "container-title": "IEEE Robotics Autom. Lett.",
+    "key": "Ren2022-wq",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "1379-1386",
+    "title": "Distributionally Robust Policy Learning via Adversarial Environment Generation",
+    "type": "article-journal",
+    "volume": "7"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v139/jiang21b.html",
+    "author": [
+      {
+        "family": "Jiang",
+        "given": "Minqi"
+      },
+      {
+        "family": "Grefenstette",
+        "given": "Edward"
+      },
+      {
+        "family": "Rocktäschel",
+        "given": "Tim"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 38th international conference on machine learning, ICML 2021, 18-24 july 2021, virtual event",
+    "editor": [
+      {
+        "family": "Meila",
+        "given": "Marina"
+      },
+      {
+        "family": "Zhang",
+        "given": "Tong"
+      }
+    ],
+    "key": "Jiang2020-zr",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "4940-4950",
+    "publisher": "PMLR",
+    "title": "Prioritized Level Replay",
+    "type": "paper-conference",
+    "volume": "139"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=FmBegXJToY",
+    "author": [
+      {
+        "family": "Anand",
+        "given": "Ankesh"
+      },
+      {
+        "family": "Walker",
+        "given": "Jacob C."
+      },
+      {
+        "family": "Li",
+        "given": "Yazhe"
+      },
+      {
+        "family": "Vértes",
+        "given": "Eszter"
+      },
+      {
+        "family": "Schrittwieser",
+        "given": "Julian"
+      },
+      {
+        "family": "Ozair",
+        "given": "Sherjil"
+      },
+      {
+        "family": "Weber",
+        "given": "Theophane"
+      },
+      {
+        "family": "Hamrick",
+        "given": "Jessica B."
+      }
+    ],
+    "container-title": "The tenth international conference on learning representations, ICLR 2022, virtual event, april 25-29, 2022",
+    "key": "Anand2021-rw",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Procedural generalization by planning with self-supervised world models",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.48550/ARXIV.2206.03597",
+    "URL": "https://doi.org/10.48550/arXiv.2206.03597",
+    "author": [
+      {
+        "family": "Fu",
+        "given": "Haotian"
+      },
+      {
+        "family": "Yu",
+        "given": "Shangqun"
+      },
+      {
+        "family": "Tiwari",
+        "given": "Saket"
+      },
+      {
+        "family": "Konidaris",
+        "given": "George Dimitri"
+      },
+      {
+        "family": "Littman",
+        "given": "Michael"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Fu2022-ai",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Meta-learning Transferable Parameterized Skills",
+    "type": "article-journal",
+    "volume": "abs/2206.03597"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2110.02102",
+    "author": [
+      {
+        "family": "Benjamins",
+        "given": "Carolin"
+      },
+      {
+        "family": "Eimer",
+        "given": "Theresa"
+      },
+      {
+        "family": "Schubert",
+        "given": "Frederik"
+      },
+      {
+        "family": "Biedenkapp",
+        "given": "André"
+      },
+      {
+        "family": "Rosenhahn",
+        "given": "Bodo"
+      },
+      {
+        "family": "Hutter",
+        "given": "Frank"
+      },
+      {
+        "family": "Lindauer",
+        "given": "Marius"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Benjamins2021-cv",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "CARL: A Benchmark for Contextual and Adaptive Reinforcement Learning",
+    "type": "article-journal",
+    "volume": "abs/2110.02102"
+  },
+  {
+    "DOI": "10.1016/S0893-6080(02)00044-8",
+    "URL": "https://doi.org/10.1016/S0893-6080(02)00044-8",
+    "author": [
+      {
+        "family": "Doya",
+        "given": "Kenji"
+      }
+    ],
+    "container-title": "Neural Networks",
+    "key": "Doya2002-ep",
+    "issue": "4-6",
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    },
+    "page": "495-506",
+    "title": "Metalearning and neuromodulation",
+    "type": "article-journal",
+    "volume": "15"
+  },
+  {
+    "DOI": "10.1016/S0893-6080(02)00228-9",
+    "URL": "https://doi.org/10.1016/S0893-6080(02)00228-9",
+    "author": [
+      {
+        "family": "Schweighofer",
+        "given": "Nicolas"
+      },
+      {
+        "family": "Doya",
+        "given": "Kenji"
+      }
+    ],
+    "container-title": "Neural Networks",
+    "key": "Schweighofer2003-oz",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2003
+        ]
+      ]
+    },
+    "page": "5-9",
+    "title": "Meta-learning in Reinforcement Learning",
+    "type": "article-journal",
+    "volume": "16"
+  },
+  {
+    "URL": "http://arxiv.org/abs/1803.01118",
+    "author": [
+      {
+        "family": "Stadie",
+        "given": "Bradly C."
+      },
+      {
+        "family": "Yang",
+        "given": "Ge"
+      },
+      {
+        "family": "Houthooft",
+        "given": "Rein"
+      },
+      {
+        "family": "Chen",
+        "given": "Xi"
+      },
+      {
+        "family": "Duan",
+        "given": "Yan"
+      },
+      {
+        "family": "Wu",
+        "given": "Yuhuai"
+      },
+      {
+        "family": "Abbeel",
+        "given": "Pieter"
+      },
+      {
+        "family": "Sutskever",
+        "given": "Ilya"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Stadie2018-er",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "Some Considerations on Learning to Explore via Meta-reinforcement Learning",
+    "type": "article-journal",
+    "volume": "abs/1803.01118"
+  },
+  {
+    "DOI": "10.3233/FAIA200193",
+    "URL": "https://doi.org/10.3233/FAIA200193",
+    "author": [
+      {
+        "family": "Beaulieu",
+        "given": "Shawn"
+      },
+      {
+        "family": "Frati",
+        "given": "Lapo"
+      },
+      {
+        "family": "Miconi",
+        "given": "Thomas"
+      },
+      {
+        "family": "Lehman",
+        "given": "Joel"
+      },
+      {
+        "family": "Stanley",
+        "given": "Kenneth O."
+      },
+      {
+        "family": "Clune",
+        "given": "Jeff"
+      },
+      {
+        "family": "Cheney",
+        "given": "Nick"
+      }
+    ],
+    "collection-title": "Frontiers in artificial intelligence and applications",
+    "container-title": "ECAI 2020 - 24th european conference on artificial intelligence, 29 august-8 september 2020, santiago de compostela, spain, august 29 - september 8, 2020 - including 10th conference on prestigious applications of artificial intelligence (PAIS 2020)",
+    "editor": [
+      {
+        "family": "Giacomo",
+        "given": "Giuseppe De"
+      },
+      {
+        "family": "Catalá",
+        "given": "Alejandro"
+      },
+      {
+        "family": "Dilkina",
+        "given": "Bistra"
+      },
+      {
+        "family": "Milano",
+        "given": "Michela"
+      },
+      {
+        "family": "Barro",
+        "given": "Senén"
+      },
+      {
+        "family": "Bugarı́n",
+        "given": "Alberto"
+      },
+      {
+        "family": "Lang",
+        "given": "Jérôme"
+      }
+    ],
+    "key": "Beaulieu2020-pf",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "992-1001",
+    "publisher": "IOS Press",
+    "title": "Learning to Continually Learn",
+    "type": "paper-conference",
+    "volume": "325"
+  },
+  {
+    "URL": "http://arxiv.org/abs/1812.09113",
+    "author": [
+      {
+        "family": "Vecoven",
+        "given": "Nicolas"
+      },
+      {
+        "family": "Ernst",
+        "given": "Damien"
+      },
+      {
+        "family": "Drion",
+        "given": "Guillaume"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Vecoven2020-tq",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "Introducing Neuromodulation in Deep Neural Networks to Learn Adaptive Behaviours",
+    "type": "article-journal",
+    "volume": "abs/1812.09113"
+  },
+  {
+    "author": [
+      {
+        "family": "Zintgraf",
+        "given": "Luisa"
+      },
+      {
+        "family": "Shiarli",
+        "given": "Kyriacos"
+      },
+      {
+        "family": "Kurin",
+        "given": "Vitaly"
+      },
+      {
+        "family": "Hofmann",
+        "given": "Katja"
+      },
+      {
+        "family": "Whiteson",
+        "given": "Shimon"
+      }
+    ],
+    "container-title": "International conference on machine learning",
+    "key": "Zintgraf2019-sx",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "7693-7702",
+    "publisher": "PMLR",
+    "title": "Fast context adaptation via meta-learning",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2010.13957",
+    "author": [
+      {
+        "family": "Zhao",
+        "given": "Tony Z."
+      },
+      {
+        "family": "Nagabandi",
+        "given": "Anusha"
+      },
+      {
+        "family": "Rakelly",
+        "given": "Kate"
+      },
+      {
+        "family": "Finn",
+        "given": "Chelsea"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "noauthor_undated-pk",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "MELD: Meta-reinforcement Learning from Images via Latent State Models",
+    "type": "article-journal",
+    "volume": "abs/2010.13957"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v139/sarafian21a.html",
+    "author": [
+      {
+        "family": "Sarafian",
+        "given": "Elad"
+      },
+      {
+        "family": "Keynan",
+        "given": "Shai"
+      },
+      {
+        "family": "Kraus",
+        "given": "Sarit"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 38th international conference on machine learning, ICML 2021, 18-24 july 2021, virtual event",
+    "editor": [
+      {
+        "family": "Meila",
+        "given": "Marina"
+      },
+      {
+        "family": "Zhang",
+        "given": "Tong"
+      }
+    ],
+    "key": "Sarafian2021-ig",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "9301-9312",
+    "publisher": "PMLR",
+    "title": "Recomposing the Reinforcement Learning Building Blocks with Hypernetworks",
+    "type": "paper-conference",
+    "volume": "139"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=rkpACe1lx",
+    "author": [
+      {
+        "family": "Ha",
+        "given": "David"
+      },
+      {
+        "family": "Dai",
+        "given": "Andrew M."
+      },
+      {
+        "family": "Le",
+        "given": "Quoc V."
+      }
+    ],
+    "container-title": "5th international conference on learning representations, ICLR 2017, toulon, france, april 24-26, 2017, conference track proceedings",
+    "key": "Ha2016-wu",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "HyperNetworks",
+    "type": "paper-conference"
+  },
+  {
+    "abstract": "Driven by the recent technological advancements within the field of artificial intelligence research, deep learning has emerged as a promising representation learning technique across all of the machine learning classes, especially within the reinforcement learning arena. This new direction has given rise to the evolution of a new technological domain named deep reinforcement learning, which combines the representational learning power of deep learning with existing reinforcement learning methods. Undoubtedly, the inception of deep reinforcement learning has played a vital role in optimizing the performance of reinforcement learning-based intelligent agents with model-free based approaches. Although these methods could improve the performance of agents to a greater extent, they were mainly limited to systems that adopted reinforcement learning algorithms focused on learning a single task. At the same moment, the aforementioned approach was found to be relatively data-inefficient, particularly when reinforcement learning agents needed to interact with more complex and rich data environments. This is primarily due to the limited applicability of deep reinforcement learning algorithms to many scenarios across related tasks from the same environment. The objective of this paper is to survey the research challenges associated with multi-tasking within the deep reinforcement arena and present the state-of-the-art approaches by comparing and contrasting recent solutions, namely DISTRAL (DIStill & TRAnsfer Learning), IMPALA(Importance Weighted Actor-Learner Architecture) and PopArt that aim to address core challenges such as scalability, distraction dilemma, partial observability, catastrophic forgetting and negative knowledge transfer.",
+    "author": [
+      {
+        "family": "Vithayathil Varghese",
+        "given": "Nelson"
+      },
+      {
+        "family": "Mahmoud",
+        "given": "Qusay H"
+      }
+    ],
+    "container-title": "Electronics",
+    "key": "Vithayathil_Varghese2020-qc",
+    "issue": "9",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          8
+        ]
+      ]
+    },
+    "page": "1363",
+    "publisher": "Multidisciplinary Digital Publishing Institute",
+    "title": "A Survey of Multi-Task Deep Reinforcement Learning",
+    "type": "article-journal",
+    "volume": "9"
+  },
+  {
+    "URL": "https://proceedings.mlr.press/v162/zheng22c.html",
+    "author": [
+      {
+        "family": "Zheng",
+        "given": "Qinqing"
+      },
+      {
+        "family": "Zhang",
+        "given": "Amy"
+      },
+      {
+        "family": "Grover",
+        "given": "Aditya"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "International conference on machine learning, ICML 2022, 17-23 july 2022, baltimore, maryland, USA",
+    "editor": [
+      {
+        "family": "Chaudhuri",
+        "given": "Kamalika"
+      },
+      {
+        "family": "Jegelka",
+        "given": "Stefanie"
+      },
+      {
+        "family": "Song",
+        "given": "Le"
+      },
+      {
+        "family": "Szepesvári",
+        "given": "Csaba"
+      },
+      {
+        "family": "Niu",
+        "given": "Gang"
+      },
+      {
+        "family": "Sabato",
+        "given": "Sivan"
+      }
+    ],
+    "key": "Zheng2022-gc",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "27042-27059",
+    "publisher": "PMLR",
+    "title": "Online Decision Transformer",
+    "type": "paper-conference",
+    "volume": "162"
+  },
+  {
+    "URL": "http://papers.nips.cc/paper\\_files/paper/2022/hash/b2cac94f82928a85055987d9fd44753f-Abstract-Conference.html",
+    "author": [
+      {
+        "family": "Lee",
+        "given": "Kuang-Huei"
+      },
+      {
+        "family": "Nachum",
+        "given": "Ofir"
+      },
+      {
+        "family": "Yang",
+        "given": "Mengjiao"
+      },
+      {
+        "family": "Lee",
+        "given": "Lisa"
+      },
+      {
+        "family": "Freeman",
+        "given": "Daniel"
+      },
+      {
+        "family": "Guadarrama",
+        "given": "Sergio"
+      },
+      {
+        "family": "Fischer",
+        "given": "Ian"
+      },
+      {
+        "family": "Xu",
+        "given": "Winnie"
+      },
+      {
+        "family": "Jang",
+        "given": "Eric"
+      },
+      {
+        "family": "Michalewski",
+        "given": "Henryk"
+      },
+      {
+        "family": "Mordatch",
+        "given": "Igor"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 35: Annual conference on neural information processing systems 2022, NeurIPS 2022, new orleans, LA, USA, november 28 - december 9, 2022",
+    "editor": [
+      {
+        "family": "Koyejo",
+        "given": "Sanmi"
+      },
+      {
+        "family": "Mohamed",
+        "given": "S."
+      },
+      {
+        "family": "Agarwal",
+        "given": "A."
+      },
+      {
+        "family": "Belgrave",
+        "given": "Danielle"
+      },
+      {
+        "family": "Cho",
+        "given": "K."
+      },
+      {
+        "family": "Oh",
+        "given": "A."
+      }
+    ],
+    "key": "Lee2022-ya",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Multi-game Decision Transformers",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2021/hash/7f489f642a0ddb10272b5c31057f0663-Abstract.html",
+    "author": [
+      {
+        "family": "Chen",
+        "given": "Lili"
+      },
+      {
+        "family": "Lu",
+        "given": "Kevin"
+      },
+      {
+        "family": "Rajeswaran",
+        "given": "Aravind"
+      },
+      {
+        "family": "Lee",
+        "given": "Kimin"
+      },
+      {
+        "family": "Grover",
+        "given": "Aditya"
+      },
+      {
+        "family": "Laskin",
+        "given": "Michael"
+      },
+      {
+        "family": "Abbeel",
+        "given": "Pieter"
+      },
+      {
+        "family": "Srinivas",
+        "given": "Aravind"
+      },
+      {
+        "family": "Mordatch",
+        "given": "Igor"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 34: Annual conference on neural information processing systems 2021, NeurIPS 2021, december 6-14, 2021, virtual",
+    "editor": [
+      {
+        "family": "Ranzato",
+        "given": "Marc’Aurelio"
+      },
+      {
+        "family": "Beygelzimer",
+        "given": "Alina"
+      },
+      {
+        "family": "Dauphin",
+        "given": "Yann N."
+      },
+      {
+        "family": "Liang",
+        "given": "Percy"
+      },
+      {
+        "family": "Vaughan",
+        "given": "Jennifer Wortman"
+      }
+    ],
+    "key": "Chen2021-ag",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "15084-15097",
+    "title": "Decision Transformer: Reinforcement Learning via Sequence Modeling",
+    "title-short": "Decision Transformer",
+    "type": "paper-conference"
+  },
+  {
+    "abstract": "Deep reinforcement learning (deep RL) has been successful in learning sophisticated behaviors automatically; however, the learning process requires a huge number of trials. In contrast, animals can learn new tasks in just a few trials, benefiting from their prior knowledge about the world. This paper seeks to bridge this gap. Rather than designing a “fast” reinforcement learning algorithm, we propose to represent it as a recurrent neural network (RNN) and learn it from data. In our proposed method, RL$^2$, the algorithm is encoded in the weights of the RNN, which are learned slowly through a general-purpose (“slow”) RL algorithm. The RNN receives all information a typical RL algorithm would receive, including observations, actions, rewards, and termination flags; and it retains its state across episodes in a given Markov Decision Process (MDP). The activations of the RNN store the state of the “fast” RL algorithm on the current (previously unseen) MDP. We evaluate RL$^2$ experimentally on both small-scale and large-scale problems. On the small-scale side, we train it to solve randomly generated multi-arm bandit problems and finite MDPs. After RL$^2$ is trained, its performance on new MDPs is close to human-designed algorithms with optimality guarantees. On the large-scale side, we test RL$^2$ on a vision-based navigation task and show that it scales up to high-dimensional problems.",
+    "author": [
+      {
+        "family": "Duan",
+        "given": "Yan"
+      },
+      {
+        "family": "Schulman",
+        "given": "John"
+      },
+      {
+        "family": "Chen",
+        "given": "Xi"
+      },
+      {
+        "family": "Bartlett",
+        "given": "Peter L"
+      },
+      {
+        "family": "Sutskever",
+        "given": "Ilya"
+      },
+      {
+        "family": "Abbeel",
+        "given": "Pieter"
+      }
+    ],
+    "container-title": "arXiv:1611.02779 [cs, stat]",
+    "key": "Duan2016-ip",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          11
+        ]
+      ]
+    },
+    "title": "RL$^2$: Fast Reinforcement Learning via Slow Reinforcement Learning",
+    "title-short": "RL$^2$",
+    "type": "article-journal"
+  },
+  {
+    "URL": "https://mindmodeling.org/cogsci2017/papers/0252/index.html",
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Jane"
+      },
+      {
+        "family": "Kurth-Nelson",
+        "given": "Zeb"
+      },
+      {
+        "family": "Soyer",
+        "given": "Hubert"
+      },
+      {
+        "family": "Leibo",
+        "given": "Joel Z."
+      },
+      {
+        "family": "Tirumala",
+        "given": "Dhruva"
+      },
+      {
+        "family": "Munos",
+        "given": "Rémi"
+      },
+      {
+        "family": "Blundell",
+        "given": "Charles"
+      },
+      {
+        "family": "Kumaran",
+        "given": "Dharshan"
+      },
+      {
+        "family": "Botvinick",
+        "given": "Matt M."
+      }
+    ],
+    "container-title": "Proceedings of the 39th annual meeting of the cognitive science society, CogSci 2017, london, UK, 16-29 july 2017",
+    "editor": [
+      {
+        "family": "Gunzelmann",
+        "given": "Glenn"
+      },
+      {
+        "family": "Howes",
+        "given": "Andrew"
+      },
+      {
+        "family": "Tenbrink",
+        "given": "Thora"
+      },
+      {
+        "family": "Davelaar",
+        "given": "Eddy J."
+      }
+    ],
+    "key": "Wang2016-tj",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "publisher": "cognitivesciencesociety.org",
+    "title": "Learning to reinforcement learn",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v70/finn17a.html",
+    "author": [
+      {
+        "family": "Finn",
+        "given": "Chelsea"
+      },
+      {
+        "family": "Abbeel",
+        "given": "Pieter"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 34th international conference on machine learning, ICML 2017, sydney, NSW, australia, 6-11 august 2017",
+    "editor": [
+      {
+        "family": "Precup",
+        "given": "Doina"
+      },
+      {
+        "family": "Teh",
+        "given": "Yee Whye"
+      }
+    ],
+    "key": "Finn2017-rr",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "1126-1135",
+    "publisher": "PMLR",
+    "title": "Model-agnostic Meta-learning for Fast Adaptation of Deep Networks",
+    "type": "paper-conference",
+    "volume": "70"
+  },
+  {
+    "DOI": "10.1609/AAAI.V34I04.5989",
+    "URL": "https://doi.org/10.1609/aaai.v34i04.5989",
+    "author": [
+      {
+        "family": "Perez",
+        "given": "Christian F."
+      },
+      {
+        "family": "Such",
+        "given": "Felipe Petroski"
+      },
+      {
+        "family": "Karaletsos",
+        "given": "Theofanis"
+      }
+    ],
+    "container-title": "The thirty-fourth AAAI conference on artificial intelligence, AAAI 2020, the thirty-second innovative applications of artificial intelligence conference, IAAI 2020, the tenth AAAI symposium on educational advances in artificial intelligence, EAAI 2020, new york, NY, USA, february 7-12, 2020",
+    "key": "Perez2020-ts",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "5403-5411",
+    "publisher": "AAAI Press",
+    "title": "Generalized Hidden Parameter MDPs: Transferable Model-based RL in a Handful of Trials",
+    "title-short": "Generalized Hidden Parameter MDPs",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v97/rakelly19a.html",
+    "author": [
+      {
+        "family": "Rakelly",
+        "given": "Kate"
+      },
+      {
+        "family": "Zhou",
+        "given": "Aurick"
+      },
+      {
+        "family": "Finn",
+        "given": "Chelsea"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      },
+      {
+        "family": "Quillen",
+        "given": "Deirdre"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 36th international conference on machine learning, ICML 2019, 9-15 june 2019, long beach, california, USA",
+    "editor": [
+      {
+        "family": "Chaudhuri",
+        "given": "Kamalika"
+      },
+      {
+        "family": "Salakhutdinov",
+        "given": "Ruslan"
+      }
+    ],
+    "key": "Rakelly2019-cz",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "5331-5340",
+    "publisher": "PMLR",
+    "title": "Efficient Off-policy Meta-reinforcement Learning via Probabilistic Context Variables",
+    "type": "paper-conference",
+    "volume": "97"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v100/yu20a.html",
+    "author": [
+      {
+        "family": "Yu",
+        "given": "Tianhe"
+      },
+      {
+        "family": "Quillen",
+        "given": "Deirdre"
+      },
+      {
+        "family": "He",
+        "given": "Zhanpeng"
+      },
+      {
+        "family": "Julian",
+        "given": "Ryan"
+      },
+      {
+        "family": "Hausman",
+        "given": "Karol"
+      },
+      {
+        "family": "Finn",
+        "given": "Chelsea"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "3rd annual conference on robot learning, CoRL 2019, osaka, japan, october 30 - november 1, 2019, proceedings",
+    "editor": [
+      {
+        "family": "Kaelbling",
+        "given": "Leslie Pack"
+      },
+      {
+        "family": "Kragic",
+        "given": "Danica"
+      },
+      {
+        "family": "Sugiura",
+        "given": "Komei"
+      }
+    ],
+    "key": "Yu2019-ef",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "1094-1100",
+    "publisher": "PMLR",
+    "title": "Meta-World: A Benchmark and Evaluation for Multi-task and Meta Reinforcement Learning",
+    "title-short": "Meta-World",
+    "type": "paper-conference",
+    "volume": "100"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html",
+    "author": [
+      {
+        "family": "Vaswani",
+        "given": "Ashish"
+      },
+      {
+        "family": "Shazeer",
+        "given": "Noam"
+      },
+      {
+        "family": "Parmar",
+        "given": "Niki"
+      },
+      {
+        "family": "Uszkoreit",
+        "given": "Jakob"
+      },
+      {
+        "family": "Jones",
+        "given": "Llion"
+      },
+      {
+        "family": "Gomez",
+        "given": "Aidan N."
+      },
+      {
+        "family": "Kaiser",
+        "given": "Lukasz"
+      },
+      {
+        "family": "Polosukhin",
+        "given": "Illia"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 30: Annual conference on neural information processing systems 2017, december 4-9, 2017, long beach, CA, USA",
+    "editor": [
+      {
+        "family": "Guyon",
+        "given": "Isabelle"
+      },
+      {
+        "dropping-particle": "von",
+        "family": "Luxburg",
+        "given": "Ulrike"
+      },
+      {
+        "family": "Bengio",
+        "given": "Samy"
+      },
+      {
+        "family": "Wallach",
+        "given": "Hanna M."
+      },
+      {
+        "family": "Fergus",
+        "given": "Rob"
+      },
+      {
+        "family": "Vishwanathan",
+        "given": "S. V. N."
+      },
+      {
+        "family": "Garnett",
+        "given": "Roman"
+      }
+    ],
+    "key": "Vaswani2017-ev",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "5998-6008",
+    "title": "Attention is All you Need",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://ojs.aaai.org/index.php/AIIDE/article/view/7416",
+    "author": [
+      {
+        "family": "Khalifa",
+        "given": "Ahmed"
+      },
+      {
+        "family": "Bontrager",
+        "given": "Philip"
+      },
+      {
+        "family": "Earle",
+        "given": "Sam"
+      },
+      {
+        "family": "Togelius",
+        "given": "Julian"
+      }
+    ],
+    "container-title": "Proceedings of the sixteenth AAAI conference on artificial intelligence and interactive digital entertainment, AIIDE 2020, virtual, october 19-23, 2020",
+    "editor": [
+      {
+        "family": "Lelis",
+        "given": "Levi"
+      },
+      {
+        "family": "Thue",
+        "given": "David"
+      }
+    ],
+    "key": "Khalifa2020-ub",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "95-101",
+    "publisher": "AAAI Press",
+    "title": "PCGRL: Procedural Content Generation via Reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2008.02598",
+    "author": [
+      {
+        "family": "Dorfman",
+        "given": "Ron"
+      },
+      {
+        "family": "Tamar",
+        "given": "Aviv"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Dorfman2020-ei",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Offline Meta Reinforcement Learning",
+    "type": "article-journal",
+    "volume": "abs/2008.02598"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v70/oh17a.html",
+    "author": [
+      {
+        "family": "Oh",
+        "given": "Junhyuk"
+      },
+      {
+        "family": "Singh",
+        "given": "Satinder"
+      },
+      {
+        "family": "Lee",
+        "given": "Honglak"
+      },
+      {
+        "family": "Kohli",
+        "given": "Pushmeet"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 34th international conference on machine learning, ICML 2017, sydney, NSW, australia, 6-11 august 2017",
+    "editor": [
+      {
+        "family": "Precup",
+        "given": "Doina"
+      },
+      {
+        "family": "Teh",
+        "given": "Yee Whye"
+      }
+    ],
+    "key": "Oh2017-xp",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "2661-2670",
+    "publisher": "PMLR",
+    "title": "Zero-shot Task Generalization with Multi-task Deep Reinforcement Learning",
+    "type": "paper-conference",
+    "volume": "70"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2010.01112",
+    "author": [
+      {
+        "family": "Li",
+        "given": "Lanqing"
+      },
+      {
+        "family": "Yang",
+        "given": "Rui"
+      },
+      {
+        "family": "Luo",
+        "given": "Dijun"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Li2020-vp",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Efficient Fully-offline Meta-reinforcement Learning via Distance Metric Learning and Behavior Regularization",
+    "type": "article-journal",
+    "volume": "abs/2010.01112"
+  },
+  {
+    "DOI": "10.1609/AAAI.V35I8.16914",
+    "URL": "https://doi.org/10.1609/aaai.v35i8.16914",
+    "author": [
+      {
+        "family": "Fu",
+        "given": "Haotian"
+      },
+      {
+        "family": "Tang",
+        "given": "Hongyao"
+      },
+      {
+        "family": "Hao",
+        "given": "Jianye"
+      },
+      {
+        "family": "Chen",
+        "given": "Chen"
+      },
+      {
+        "family": "Feng",
+        "given": "Xidong"
+      },
+      {
+        "family": "Li",
+        "given": "Dong"
+      },
+      {
+        "family": "Liu",
+        "given": "Wulong"
+      }
+    ],
+    "container-title": "Thirty-fifth AAAI conference on artificial intelligence, AAAI 2021, thirty-third conference on innovative applications of artificial intelligence, IAAI 2021, the eleventh symposium on educational advances in artificial intelligence, EAAI 2021, virtual event, february 2-9, 2021",
+    "key": "Fu2020-ic",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "7457-7465",
+    "publisher": "AAAI Press",
+    "title": "Towards Effective Context for Meta-reinforcement Learning: An Approach based on Contrastive Learning",
+    "title-short": "Towards Effective Context for Meta-reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2017/hash/350db081a661525235354dd3e19b8c05-Abstract.html",
+    "author": [
+      {
+        "family": "Barreto",
+        "given": "André"
+      },
+      {
+        "family": "Dabney",
+        "given": "Will"
+      },
+      {
+        "family": "Munos",
+        "given": "Rémi"
+      },
+      {
+        "family": "Hunt",
+        "given": "Jonathan J."
+      },
+      {
+        "family": "Schaul",
+        "given": "Tom"
+      },
+      {
+        "family": "Silver",
+        "given": "David"
+      },
+      {
+        "dropping-particle": "van",
+        "family": "Hasselt",
+        "given": "Hado"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 30: Annual conference on neural information processing systems 2017, december 4-9, 2017, long beach, CA, USA",
+    "editor": [
+      {
+        "family": "Guyon",
+        "given": "Isabelle"
+      },
+      {
+        "dropping-particle": "von",
+        "family": "Luxburg",
+        "given": "Ulrike"
+      },
+      {
+        "family": "Bengio",
+        "given": "Samy"
+      },
+      {
+        "family": "Wallach",
+        "given": "Hanna M."
+      },
+      {
+        "family": "Fergus",
+        "given": "Rob"
+      },
+      {
+        "family": "Vishwanathan",
+        "given": "S. V. N."
+      },
+      {
+        "family": "Garnett",
+        "given": "Roman"
+      }
+    ],
+    "key": "Barreto2016-is",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "4055-4065",
+    "title": "Successor Features for Transfer in Reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v119/cobbe20a.html",
+    "author": [
+      {
+        "family": "Cobbe",
+        "given": "Karl"
+      },
+      {
+        "family": "Hesse",
+        "given": "Christopher"
+      },
+      {
+        "family": "Hilton",
+        "given": "Jacob"
+      },
+      {
+        "family": "Schulman",
+        "given": "John"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 37th international conference on machine learning, ICML 2020, 13-18 july 2020, virtual event",
+    "key": "Cobbe2019-cm",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "2048-2056",
+    "publisher": "PMLR",
+    "title": "Leveraging Procedural Generation to Benchmark Reinforcement Learning",
+    "type": "paper-conference",
+    "volume": "119"
+  },
+  {
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Jane X"
+      },
+      {
+        "family": "King",
+        "given": "Michael"
+      },
+      {
+        "family": "Porcel",
+        "given": "Nicolas Pierre Mickael"
+      },
+      {
+        "family": "Kurth-Nelson",
+        "given": "Zeb"
+      },
+      {
+        "family": "Zhu",
+        "given": "Tina"
+      },
+      {
+        "family": "Deck",
+        "given": "Charlie"
+      },
+      {
+        "family": "Choy",
+        "given": "Peter"
+      },
+      {
+        "family": "Cassin",
+        "given": "Mary"
+      },
+      {
+        "family": "Reynolds",
+        "given": "Malcolm"
+      },
+      {
+        "family": "Song",
+        "given": "H Francis"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "container-title": "Thirty-fifth conference on neural information processing systems datasets and benchmarks track (round 2)",
+    "key": "Wang2021-jm",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Alchemy: A benchmark and analysis toolkit for meta-reinforcement learning agents",
+    "title-short": "Alchemy",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2018/hash/4de754248c196c85ee4fbdcee89179bd-Abstract.html",
+    "author": [
+      {
+        "family": "Gupta",
+        "given": "Abhishek"
+      },
+      {
+        "family": "Mendonca",
+        "given": "Russell"
+      },
+      {
+        "family": "Liu",
+        "given": "Yuxuan"
+      },
+      {
+        "family": "Abbeel",
+        "given": "Pieter"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 31: Annual conference on neural information processing systems 2018, NeurIPS 2018, december 3-8, 2018, montréal, canada",
+    "editor": [
+      {
+        "family": "Bengio",
+        "given": "Samy"
+      },
+      {
+        "family": "Wallach",
+        "given": "Hanna M."
+      },
+      {
+        "family": "Larochelle",
+        "given": "Hugo"
+      },
+      {
+        "family": "Grauman",
+        "given": "Kristen"
+      },
+      {
+        "family": "Cesa-Bianchi",
+        "given": "Nicolò"
+      },
+      {
+        "family": "Garnett",
+        "given": "Roman"
+      }
+    ],
+    "key": "noauthor_undated-ob",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "5307-5316",
+    "title": "Meta-reinforcement Learning of Structured Exploration Strategies",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=HyzdRiR9Y7",
+    "author": [
+      {
+        "family": "Dehghani",
+        "given": "Mostafa"
+      },
+      {
+        "family": "Gouws",
+        "given": "Stephan"
+      },
+      {
+        "family": "Vinyals",
+        "given": "Oriol"
+      },
+      {
+        "family": "Uszkoreit",
+        "given": "Jakob"
+      },
+      {
+        "family": "Kaiser",
+        "given": "Lukasz"
+      }
+    ],
+    "container-title": "7th international conference on learning representations, ICLR 2019, new orleans, LA, USA, may 6-9, 2019",
+    "key": "Dehghani2018-tm",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Universal Transformers",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v139/sodhani21a.html",
+    "author": [
+      {
+        "family": "Sodhani",
+        "given": "Shagun"
+      },
+      {
+        "family": "Zhang",
+        "given": "Amy"
+      },
+      {
+        "family": "Pineau",
+        "given": "Joelle"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 38th international conference on machine learning, ICML 2021, 18-24 july 2021, virtual event",
+    "editor": [
+      {
+        "family": "Meila",
+        "given": "Marina"
+      },
+      {
+        "family": "Zhang",
+        "given": "Tong"
+      }
+    ],
+    "key": "Sodhani2021-ij",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "9767-9779",
+    "publisher": "PMLR",
+    "title": "Multi-task Reinforcement Learning with Context-based Representations",
+    "type": "paper-conference",
+    "volume": "139"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2001.04025",
+    "author": [
+      {
+        "family": "Ma",
+        "given": "Chen"
+      },
+      {
+        "family": "Ashley",
+        "given": "Dylan R."
+      },
+      {
+        "family": "Wen",
+        "given": "Junfeng"
+      },
+      {
+        "family": "Bengio",
+        "given": "Yoshua"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Ma2020-zg",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Universal Successor Features for Transfer Reinforcement Learning",
+    "type": "article-journal",
+    "volume": "abs/2001.04025"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2019/hash/d5a28f81834b6df2b6db6d3e5e2635c7-Abstract.html",
+    "author": [
+      {
+        "family": "Jabri",
+        "given": "Allan"
+      },
+      {
+        "family": "Hsu",
+        "given": "Kyle"
+      },
+      {
+        "family": "Gupta",
+        "given": "Abhishek"
+      },
+      {
+        "family": "Eysenbach",
+        "given": "Ben"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      },
+      {
+        "family": "Finn",
+        "given": "Chelsea"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 32: Annual conference on neural information processing systems 2019, NeurIPS 2019, december 8-14, 2019, vancouver, BC, canada",
+    "editor": [
+      {
+        "family": "Wallach",
+        "given": "Hanna M."
+      },
+      {
+        "family": "Larochelle",
+        "given": "Hugo"
+      },
+      {
+        "family": "Beygelzimer",
+        "given": "Alina"
+      },
+      {
+        "family": "d’Alché-Buc",
+        "given": "Florence"
+      },
+      {
+        "family": "Fox",
+        "given": "Emily B."
+      },
+      {
+        "family": "Garnett",
+        "given": "Roman"
+      }
+    ],
+    "key": "Jabri2019-mb",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "10519-10530",
+    "title": "Unsupervised Curricula for Visual Meta-reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=SJeD3CEFPH",
+    "author": [
+      {
+        "family": "Fakoor",
+        "given": "Rasool"
+      },
+      {
+        "family": "Chaudhari",
+        "given": "Pratik"
+      },
+      {
+        "family": "Soatto",
+        "given": "Stefano"
+      },
+      {
+        "family": "Smola",
+        "given": "Alexander J."
+      }
+    ],
+    "container-title": "8th international conference on learning representations, ICLR 2020, addis ababa, ethiopia, april 26-30, 2020",
+    "key": "Fakoor2019-gu",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Meta-Q-learning",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.24963/IJCAI.2019/387",
+    "URL": "https://doi.org/10.24963/ijcai.2019/387",
+    "author": [
+      {
+        "family": "Lan",
+        "given": "Lin"
+      },
+      {
+        "family": "Li",
+        "given": "Zhenguo"
+      },
+      {
+        "family": "Guan",
+        "given": "Xiaohong"
+      },
+      {
+        "family": "Wang",
+        "given": "Pinghui"
+      }
+    ],
+    "container-title": "Proceedings of the twenty-eighth international joint conference on artificial intelligence, IJCAI 2019, macao, china, august 10-16, 2019",
+    "editor": [
+      {
+        "family": "Kraus",
+        "given": "Sarit"
+      }
+    ],
+    "key": "Lan2019-ny",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "2794-2800",
+    "publisher": "ijcai.org",
+    "title": "Meta Reinforcement Learning with Task Embedding and Shared Policy",
+    "type": "paper-conference"
+  },
+  {
+    "abstract": "In this article, we aim to provide a literature review of different formulations and approaches to continual reinforcement learning (RL), also known as lifelong or non-stationary RL. We begin by discussing our perspective on why RL is a natural fit for studying continual …",
+    "author": [
+      {
+        "family": "Khetarpal",
+        "given": "K"
+      },
+      {
+        "family": "Riemer",
+        "given": "M"
+      },
+      {
+        "family": "Rish",
+        "given": "I"
+      },
+      {
+        "family": "Precup",
+        "given": "D"
+      }
+    ],
+    "container-title": "arXiv preprint arXiv:2012.13490",
+    "key": "Khetarpal2020-ql",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "keyword": "Current projects/PCG-MetaRL Project",
+    "publisher": "arxiv.org",
+    "title": "Towards continual reinforcement learning: A review and perspectives",
+    "title-short": "Towards continual reinforcement learning",
+    "type": "article-journal"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2111.09794",
+    "author": [
+      {
+        "family": "Kirk",
+        "given": "Robert"
+      },
+      {
+        "family": "Zhang",
+        "given": "Amy"
+      },
+      {
+        "family": "Grefenstette",
+        "given": "Edward"
+      },
+      {
+        "family": "Rocktäschel",
+        "given": "Tim"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Kirk2021-jx",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "A Survey of Generalisation in Deep Reinforcement Learning",
+    "type": "article-journal",
+    "volume": "abs/2111.09794"
+  },
+  {
+    "DOI": "10.15607/RSS.2021.XVII.038",
+    "URL": "https://doi.org/10.15607/RSS.2021.XVII.038",
+    "author": [
+      {
+        "family": "Fontaine",
+        "given": "Matthew C."
+      },
+      {
+        "family": "Hsu",
+        "given": "Ya-Chuan"
+      },
+      {
+        "family": "Zhang",
+        "given": "Yulun"
+      },
+      {
+        "family": "Tjanaka",
+        "given": "Bryon"
+      },
+      {
+        "family": "Nikolaidis",
+        "given": "Stefanos"
+      }
+    ],
+    "container-title": "Robotics: Science and systems XVII, virtual event, july 12-16, 2021",
+    "editor": [
+      {
+        "family": "Shell",
+        "given": "Dylan A."
+      },
+      {
+        "family": "Toussaint",
+        "given": "Marc"
+      },
+      {
+        "family": "Hsieh",
+        "given": "M. Ani"
+      }
+    ],
+    "key": "Fontaine2021-re",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "On the Importance of Environments in Human-robot Coordination",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v139/abdolshah21a.html",
+    "author": [
+      {
+        "family": "Abdolshah",
+        "given": "Majid"
+      },
+      {
+        "family": "Le",
+        "given": "Hung"
+      },
+      {
+        "family": "Karimpanal",
+        "given": "Thommen George"
+      },
+      {
+        "family": "Gupta",
+        "given": "Sunil"
+      },
+      {
+        "family": "Rana",
+        "given": "Santu"
+      },
+      {
+        "family": "Venkatesh",
+        "given": "Svetha"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 38th international conference on machine learning, ICML 2021, 18-24 july 2021, virtual event",
+    "editor": [
+      {
+        "family": "Meila",
+        "given": "Marina"
+      },
+      {
+        "family": "Zhang",
+        "given": "Tong"
+      }
+    ],
+    "key": "noauthor_undated-ma",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "1-9",
+    "publisher": "PMLR",
+    "title": "A New Representation of Successor Features for Transfer across Dissimilar Environments",
+    "type": "paper-conference",
+    "volume": "139"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v139/zintgraf21a.html",
+    "author": [
+      {
+        "family": "Zintgraf",
+        "given": "Luisa M."
+      },
+      {
+        "family": "Feng",
+        "given": "Leo"
+      },
+      {
+        "family": "Lu",
+        "given": "Cong"
+      },
+      {
+        "family": "Igl",
+        "given": "Maximilian"
+      },
+      {
+        "family": "Hartikainen",
+        "given": "Kristian"
+      },
+      {
+        "family": "Hofmann",
+        "given": "Katja"
+      },
+      {
+        "family": "Whiteson",
+        "given": "Shimon"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 38th international conference on machine learning, ICML 2021, 18-24 july 2021, virtual event",
+    "editor": [
+      {
+        "family": "Meila",
+        "given": "Marina"
+      },
+      {
+        "family": "Zhang",
+        "given": "Tong"
+      }
+    ],
+    "key": "Zintgraf2020-xt",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "12991-13001",
+    "publisher": "PMLR",
+    "title": "Exploration in Approximate Hyper-state Space for Meta Reinforcement Learning",
+    "type": "paper-conference",
+    "volume": "139"
+  },
+  {
+    "DOI": "10.1609/AAAI.V33I01.33013796",
+    "URL": "https://doi.org/10.1609/aaai.v33i01.33013796",
+    "author": [
+      {
+        "family": "Hessel",
+        "given": "Matteo"
+      },
+      {
+        "family": "Soyer",
+        "given": "Hubert"
+      },
+      {
+        "family": "Espeholt",
+        "given": "Lasse"
+      },
+      {
+        "family": "Czarnecki",
+        "given": "Wojciech"
+      },
+      {
+        "family": "Schmitt",
+        "given": "Simon"
+      },
+      {
+        "dropping-particle": "van",
+        "family": "Hasselt",
+        "given": "Hado"
+      }
+    ],
+    "container-title": "The thirty-third AAAI conference on artificial intelligence, AAAI 2019, the thirty-first innovative applications of artificial intelligence conference, IAAI 2019, the ninth AAAI symposium on educational advances in artificial intelligence, EAAI 2019, honolulu, hawaii, USA, january 27 - february 1, 2019",
+    "key": "Hessel2019-hw",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "3796-3803",
+    "publisher": "AAAI Press",
+    "title": "Multi-task Deep Reinforcement Learning with PopArt",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=Hkl9JlBYvr",
+    "author": [
+      {
+        "family": "Zintgraf",
+        "given": "Luisa M."
+      },
+      {
+        "family": "Shiarlis",
+        "given": "Kyriacos"
+      },
+      {
+        "family": "Igl",
+        "given": "Maximilian"
+      },
+      {
+        "family": "Schulze",
+        "given": "Sebastian"
+      },
+      {
+        "family": "Gal",
+        "given": "Yarin"
+      },
+      {
+        "family": "Hofmann",
+        "given": "Katja"
+      },
+      {
+        "family": "Whiteson",
+        "given": "Shimon"
+      }
+    ],
+    "container-title": "8th international conference on learning representations, ICLR 2020, addis ababa, ethiopia, april 26-30, 2020",
+    "key": "Zintgraf2019-uo",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "VariBAD: A Very Good Method for Bayes-adaptive Deep RL via Meta-learning",
+    "title-short": "VariBAD",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=S1lOTC4tDS",
+    "author": [
+      {
+        "family": "Hafner",
+        "given": "Danijar"
+      },
+      {
+        "family": "Lillicrap",
+        "given": "Timothy P."
+      },
+      {
+        "family": "Ba",
+        "given": "Jimmy"
+      },
+      {
+        "family": "Norouzi",
+        "given": "Mohammad"
+      }
+    ],
+    "container-title": "8th international conference on learning representations, ICLR 2020, addis ababa, ethiopia, april 26-30, 2020",
+    "key": "Hafner2019-wn",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Dream to Control: Learning Behaviors by Latent Imagination",
+    "title-short": "Dream to Control",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=S1evHerYPr",
+    "author": [
+      {
+        "family": "Kirsch",
+        "given": "Louis"
+      },
+      {
+        "dropping-particle": "van",
+        "family": "Steenkiste",
+        "given": "Sjoerd"
+      },
+      {
+        "family": "Schmidhuber",
+        "given": "Jürgen"
+      }
+    ],
+    "container-title": "8th international conference on learning representations, ICLR 2020, addis ababa, ethiopia, april 26-30, 2020",
+    "key": "Kirsch2019-bu",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Improving Generalization in Meta Reinforcement Learning using Learned Objectives",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://proceedings.mlr.press/v157/hiraoka21a.html",
+    "author": [
+      {
+        "family": "Hiraoka",
+        "given": "Takuya"
+      },
+      {
+        "family": "Imagawa",
+        "given": "Takahisa"
+      },
+      {
+        "family": "Tangkaratt",
+        "given": "Voot"
+      },
+      {
+        "family": "Osa",
+        "given": "Takayuki"
+      },
+      {
+        "family": "Onishi",
+        "given": "Takashi"
+      },
+      {
+        "family": "Tsuruoka",
+        "given": "Yoshimasa"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Asian conference on machine learning, ACML 2021, 17-19 november 2021, virtual event",
+    "editor": [
+      {
+        "family": "Balasubramanian",
+        "given": "Vineeth N."
+      },
+      {
+        "family": "Tsang",
+        "given": "Ivor W."
+      }
+    ],
+    "key": "Hiraoka2020-bc",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "129-144",
+    "publisher": "PMLR",
+    "title": "Meta-Model-based Meta-policy Optimization",
+    "type": "paper-conference",
+    "volume": "157"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2006.08170",
+    "author": [
+      {
+        "family": "Zhang",
+        "given": "Jin"
+      },
+      {
+        "family": "Wang",
+        "given": "Jianhao"
+      },
+      {
+        "family": "Hu",
+        "given": "Hao"
+      },
+      {
+        "family": "Chen",
+        "given": "Yingfeng"
+      },
+      {
+        "family": "Fan",
+        "given": "Changjie"
+      },
+      {
+        "family": "Zhang",
+        "given": "Chongjie"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "noauthor_undated-yt",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Learn to Effectively Explore in Context-based Meta-RL",
+    "type": "article-journal",
+    "volume": "abs/2006.08170"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=HyxAfnA5tm",
+    "author": [
+      {
+        "family": "Nagabandi",
+        "given": "Anusha"
+      },
+      {
+        "family": "Finn",
+        "given": "Chelsea"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      }
+    ],
+    "container-title": "7th international conference on learning representations, ICLR 2019, new orleans, LA, USA, may 6-9, 2019",
+    "key": "Nagabandi2018-zd",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Deep Online Learning Via Meta-Learning: Continual Adaptation for Model-based RL",
+    "title-short": "Deep Online Learning Via Meta-Learning",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2017/hash/9e82757e9a1c12cb710ad680db11f6f1-Abstract.html",
+    "author": [
+      {
+        "family": "Racanière",
+        "given": "Sébastien"
+      },
+      {
+        "family": "Weber",
+        "given": "Theophane"
+      },
+      {
+        "family": "Reichert",
+        "given": "David P."
+      },
+      {
+        "family": "Buesing",
+        "given": "Lars"
+      },
+      {
+        "family": "Guez",
+        "given": "Arthur"
+      },
+      {
+        "family": "Rezende",
+        "given": "Danilo Jimenez"
+      },
+      {
+        "family": "Badia",
+        "given": "Adrià Puigdomènech"
+      },
+      {
+        "family": "Vinyals",
+        "given": "Oriol"
+      },
+      {
+        "family": "Heess",
+        "given": "Nicolas"
+      },
+      {
+        "family": "Li",
+        "given": "Yujia"
+      },
+      {
+        "family": "Pascanu",
+        "given": "Razvan"
+      },
+      {
+        "family": "Battaglia",
+        "given": "Peter W."
+      },
+      {
+        "family": "Hassabis",
+        "given": "Demis"
+      },
+      {
+        "family": "Silver",
+        "given": "David"
+      },
+      {
+        "family": "Wierstra",
+        "given": "Daan"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 30: Annual conference on neural information processing systems 2017, december 4-9, 2017, long beach, CA, USA",
+    "editor": [
+      {
+        "family": "Guyon",
+        "given": "Isabelle"
+      },
+      {
+        "dropping-particle": "von",
+        "family": "Luxburg",
+        "given": "Ulrike"
+      },
+      {
+        "family": "Bengio",
+        "given": "Samy"
+      },
+      {
+        "family": "Wallach",
+        "given": "Hanna M."
+      },
+      {
+        "family": "Fergus",
+        "given": "Rob"
+      },
+      {
+        "family": "Vishwanathan",
+        "given": "S. V. N."
+      },
+      {
+        "family": "Garnett",
+        "given": "Roman"
+      }
+    ],
+    "key": "Racaniere2017-no",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "5690-5701",
+    "title": "Imagination-augmented Agents for Deep Reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=P7OVkHEoHOZ",
+    "author": [
+      {
+        "family": "Wan",
+        "given": "Michael"
+      },
+      {
+        "family": "Peng",
+        "given": "Jian"
+      },
+      {
+        "family": "Gangwani",
+        "given": "Tanmay"
+      }
+    ],
+    "container-title": "The tenth international conference on learning representations, ICLR 2022, virtual event, april 25-29, 2022",
+    "key": "Wan2021-pk",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Hindsight Foresight Relabeling for Meta-reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2107.00630",
+    "author": [
+      {
+        "family": "Kingma",
+        "given": "Diederik P."
+      },
+      {
+        "family": "Salimans",
+        "given": "Tim"
+      },
+      {
+        "family": "Poole",
+        "given": "Ben"
+      },
+      {
+        "family": "Ho",
+        "given": "Jonathan"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Kingma2021-ug",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Variational Diffusion Models",
+    "type": "article-journal",
+    "volume": "abs/2107.00630"
+  },
+  {
+    "abstract": "The goal of meta-reinforcement learning (meta-RL) is to build agents that can quickly learn new tasks by leveraging prior experience on related tasks. Learning a new task often …",
+    "author": [
+      {
+        "family": "Liu",
+        "given": "E Z"
+      },
+      {
+        "family": "Raghunathan",
+        "given": "A"
+      },
+      {
+        "family": "Liang",
+        "given": "P"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "container-title": "on Machine Learning",
+    "key": "Liu2021-nz",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "keyword": "dozens;Current projects/PCG-MetaRL Project",
+    "publisher": "proceedings.mlr.press",
+    "title": "Decoupling exploration and exploitation for meta-reinforcement learning without sacrifices",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1038/S42256-020-0208-Z",
+    "URL": "https://doi.org/10.1038/s42256-020-0208-z",
+    "author": [
+      {
+        "family": "Risi",
+        "given": "Sebastian"
+      },
+      {
+        "family": "Togelius",
+        "given": "Julian"
+      }
+    ],
+    "container-title": "Nat. Mach. Intell.",
+    "key": "Risi2020-pz",
+    "issue": "8",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "428-436",
+    "title": "Increasing generality in machine learning through procedural content generation",
+    "type": "article-journal",
+    "volume": "2"
+  },
+  {
+    "URL": "http://arxiv.org/abs/1905.06424",
+    "author": [
+      {
+        "family": "Humplik",
+        "given": "Jan"
+      },
+      {
+        "family": "Galashov",
+        "given": "Alexandre"
+      },
+      {
+        "family": "Hasenclever",
+        "given": "Leonard"
+      },
+      {
+        "family": "Ortega",
+        "given": "Pedro A."
+      },
+      {
+        "family": "Teh",
+        "given": "Yee Whye"
+      },
+      {
+        "family": "Heess",
+        "given": "Nicolas"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Humplik2019-jp",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "title": "Meta reinforcement learning as task inference",
+    "type": "article-journal",
+    "volume": "abs/1905.06424"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2019/hash/30de24287a6d8f07b37c716ad51623a7-Abstract.html",
+    "author": [
+      {
+        "family": "Yu",
+        "given": "Lantao"
+      },
+      {
+        "family": "Yu",
+        "given": "Tianhe"
+      },
+      {
+        "family": "Finn",
+        "given": "Chelsea"
+      },
+      {
+        "family": "Ermon",
+        "given": "Stefano"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 32: Annual conference on neural information processing systems 2019, NeurIPS 2019, december 8-14, 2019, vancouver, BC, canada",
+    "editor": [
+      {
+        "family": "Wallach",
+        "given": "Hanna M."
+      },
+      {
+        "family": "Larochelle",
+        "given": "Hugo"
+      },
+      {
+        "family": "Beygelzimer",
+        "given": "Alina"
+      },
+      {
+        "family": "d’Alché-Buc",
+        "given": "Florence"
+      },
+      {
+        "family": "Fox",
+        "given": "Emily B."
+      },
+      {
+        "family": "Garnett",
+        "given": "Roman"
+      }
+    ],
+    "key": "Yu2019-rf",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "11749-11760",
+    "title": "Meta-inverse Reinforcement Learning with Probabilistic Context Variables",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2021/hash/248024541dbda1d3fd75fe49d1a4df4d-Abstract.html",
+    "author": [
+      {
+        "family": "Dorfman",
+        "given": "Ron"
+      },
+      {
+        "family": "Shenfeld",
+        "given": "Idan"
+      },
+      {
+        "family": "Tamar",
+        "given": "Aviv"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 34: Annual conference on neural information processing systems 2021, NeurIPS 2021, december 6-14, 2021, virtual",
+    "editor": [
+      {
+        "family": "Ranzato",
+        "given": "Marc’Aurelio"
+      },
+      {
+        "family": "Beygelzimer",
+        "given": "Alina"
+      },
+      {
+        "family": "Dauphin",
+        "given": "Yann N."
+      },
+      {
+        "family": "Liang",
+        "given": "Percy"
+      },
+      {
+        "family": "Vaughan",
+        "given": "Jennifer Wortman"
+      }
+    ],
+    "key": "Dorfman2021-ro",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "4607-4618",
+    "title": "Offline Meta Reinforcement Learning - Identifiability Challenges and Effective Data Collection Strategies",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "http://papers.nips.cc/paper\\_files/paper/2022/hash/a60c43ba078b723d3d517d28c50ded4c-Abstract-Conference.html",
+    "author": [
+      {
+        "family": "Ajay",
+        "given": "Anurag"
+      },
+      {
+        "family": "Gupta",
+        "given": "Abhishek"
+      },
+      {
+        "family": "Ghosh",
+        "given": "Dibya"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      },
+      {
+        "family": "Agrawal",
+        "given": "Pulkit"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 35: Annual conference on neural information processing systems 2022, NeurIPS 2022, new orleans, LA, USA, november 28 - december 9, 2022",
+    "editor": [
+      {
+        "family": "Koyejo",
+        "given": "Sanmi"
+      },
+      {
+        "family": "Mohamed",
+        "given": "S."
+      },
+      {
+        "family": "Agarwal",
+        "given": "A."
+      },
+      {
+        "family": "Belgrave",
+        "given": "Danielle"
+      },
+      {
+        "family": "Cho",
+        "given": "K."
+      },
+      {
+        "family": "Oh",
+        "given": "A."
+      }
+    ],
+    "key": "Ajay2022-bk",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Distributionally Adaptive Meta Reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://proceedings.mlr.press/v205/beck23a.html",
+    "author": [
+      {
+        "family": "Beck",
+        "given": "Jacob"
+      },
+      {
+        "family": "Jackson",
+        "given": "Matthew Thomas"
+      },
+      {
+        "family": "Vuorio",
+        "given": "Risto"
+      },
+      {
+        "family": "Whiteson",
+        "given": "Shimon"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Conference on robot learning, CoRL 2022, 14-18 december 2022, auckland, new zealand",
+    "editor": [
+      {
+        "family": "Liu",
+        "given": "Karen"
+      },
+      {
+        "family": "Kulic",
+        "given": "Dana"
+      },
+      {
+        "family": "Ichnowski",
+        "given": "Jeffrey"
+      }
+    ],
+    "key": "Beck2022-fv",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "1478-1487",
+    "publisher": "PMLR",
+    "title": "Hypernetworks in Meta-reinforcement Learning",
+    "type": "paper-conference",
+    "volume": "205"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2002.07956",
+    "author": [
+      {
+        "family": "Mehta",
+        "given": "Bhairav"
+      },
+      {
+        "family": "Deleu",
+        "given": "Tristan"
+      },
+      {
+        "family": "Raparthy",
+        "given": "Sharath Chandra"
+      },
+      {
+        "family": "Pal",
+        "given": "Christopher J."
+      },
+      {
+        "family": "Paull",
+        "given": "Liam"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Mehta2020-hr",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Curriculum in Gradient-based Meta-reinforcement Learning",
+    "type": "article-journal",
+    "volume": "abs/2002.07956"
+  },
+  {
+    "DOI": "10.1007/978-3-319-42716-4",
+    "ISBN": "978-3-319-42714-0",
+    "URL": "https://doi.org/10.1007/978-3-319-42716-4",
+    "author": [
+      {
+        "family": "Shaker",
+        "given": "Noor"
+      },
+      {
+        "family": "Togelius",
+        "given": "Julian"
+      },
+      {
+        "family": "Nelson",
+        "given": "Mark J."
+      }
+    ],
+    "collection-title": "Computational synthesis and creative systems",
+    "key": "Shaker2016-bp",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "publisher": "Springer",
+    "title": "Procedural Content Generation in Games",
+    "type": "book"
+  },
+  {
+    "abstract": "… In the setting of meta - RL , we assume the tasks are represented as a mixture of “base tasks”, … We start in Section 2 to introduce recent advances in context-based meta - RL , then we …",
+    "author": [
+      {
+        "family": "Ren",
+        "given": "Hongyu"
+      },
+      {
+        "family": "Garg",
+        "given": "Animesh"
+      },
+      {
+        "family": "Anandkumar",
+        "given": "Anima"
+      }
+    ],
+    "key": "Ren2019-go",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "keyword": "Current projects/PCG-MetaRL Project",
+    "note": "Accessed: 2023-1-9",
+    "publisher": "https://skillsworkshop.ai/uploads/1/2/1/5/121527312/meta-rl.pdf; skillsworkshop.ai",
+    "title": "Context-based meta-reinforcement learning with structured latent space",
+    "type": ""
+  },
+  {
+    "DOI": "10.1609/AAAI.V37I9.26313",
+    "URL": "https://doi.org/10.1609/aaai.v37i9.26313",
+    "author": [
+      {
+        "family": "Yun",
+        "given": "Won Joon"
+      },
+      {
+        "family": "Park",
+        "given": "Jihong"
+      },
+      {
+        "family": "Kim",
+        "given": "Joongheon"
+      }
+    ],
+    "container-title": "Thirty-seventh AAAI conference on artificial intelligence, AAAI 2023, thirty-fifth conference on innovative applications of artificial intelligence, IAAI 2023, thirteenth symposium on educational advances in artificial intelligence, EAAI 2023, washington, DC, USA, february 7-14, 2023",
+    "editor": [
+      {
+        "family": "Williams",
+        "given": "Brian"
+      },
+      {
+        "family": "Chen",
+        "given": "Yiling"
+      },
+      {
+        "family": "Neville",
+        "given": "Jennifer"
+      }
+    ],
+    "key": "Yun2022-zc",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "page": "11087-11095",
+    "publisher": "AAAI Press",
+    "title": "Quantum Multi-agent Meta Reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=S1VWjiRcKX",
+    "author": [
+      {
+        "family": "Borsa",
+        "given": "Diana"
+      },
+      {
+        "family": "Barreto",
+        "given": "André"
+      },
+      {
+        "family": "Quan",
+        "given": "John"
+      },
+      {
+        "family": "Mankowitz",
+        "given": "Daniel J."
+      },
+      {
+        "dropping-particle": "van",
+        "family": "Hasselt",
+        "given": "Hado"
+      },
+      {
+        "family": "Munos",
+        "given": "Rémi"
+      },
+      {
+        "family": "Silver",
+        "given": "David"
+      },
+      {
+        "family": "Schaul",
+        "given": "Tom"
+      }
+    ],
+    "container-title": "7th international conference on learning representations, ICLR 2019, new orleans, LA, USA, may 6-9, 2019",
+    "key": "Borsa2018-ep",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Universal Successor Features Approximators",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2021/hash/e48e13207341b6bffb7fb1622282247b-Abstract.html",
+    "author": [
+      {
+        "family": "Lee",
+        "given": "Suyoung"
+      },
+      {
+        "family": "Chung",
+        "given": "Sae-Young"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 34: Annual conference on neural information processing systems 2021, NeurIPS 2021, december 6-14, 2021, virtual",
+    "editor": [
+      {
+        "family": "Ranzato",
+        "given": "Marc’Aurelio"
+      },
+      {
+        "family": "Beygelzimer",
+        "given": "Alina"
+      },
+      {
+        "family": "Dauphin",
+        "given": "Yann N."
+      },
+      {
+        "family": "Liang",
+        "given": "Percy"
+      },
+      {
+        "family": "Vaughan",
+        "given": "Jennifer Wortman"
+      }
+    ],
+    "key": "Lee2021-yn",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "27222-27235",
+    "title": "Improving Generalization in Meta-RL with Imaginary Tasks from Latent Dynamics Mixture",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2202.11960",
+    "author": [
+      {
+        "family": "Arulkumaran",
+        "given": "Kai"
+      },
+      {
+        "family": "Ashley",
+        "given": "Dylan R."
+      },
+      {
+        "family": "Schmidhuber",
+        "given": "Jürgen"
+      },
+      {
+        "family": "Srivastava",
+        "given": "Rupesh Kumar"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Arulkumaran2022-no",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "All You Need Is Supervised Learning: From Imitation Learning to Meta-RL With Upside Down RL",
+    "title-short": "All You Need Is Supervised Learning",
+    "type": "article-journal",
+    "volume": "abs/2202.11960"
+  },
+  {
+    "DOI": "10.1109/ACCESS.2022.3170582",
+    "URL": "https://doi.org/10.1109/ACCESS.2022.3170582",
+    "author": [
+      {
+        "family": "Imagawa",
+        "given": "Takahisa"
+      },
+      {
+        "family": "Hiraoka",
+        "given": "Takuya"
+      },
+      {
+        "family": "Tsuruoka",
+        "given": "Yoshimasa"
+      }
+    ],
+    "container-title": "IEEE Access",
+    "key": "Imagawa2022-bb",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "49494-49507",
+    "title": "Off-policy Meta-reinforcement Learning With Belief-based Task Inference",
+    "type": "article-journal",
+    "volume": "10"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2102.10774",
+    "abstract": "Meta-learning for offline reinforcement learning (OMRL) is an understudied problem with tremendous potential impact by enabling RL algorithms in many real-world applications. A popular solution to the problem is to infer task identity as augmented state using a context-based encoder, for which efficient learning of robust task representations remains an open challenge. In this work, we provably improve upon one of the SOTA OMRL algorithms, FOCAL, by incorporating intra-task attention mechanism and inter-task contrastive learning objectives, to robustify task representation learning against sparse reward and distribution shift. Theoretical analysis and experiments are presented to demonstrate the superior performance and robustness of our end-to-end and model-free framework compared to prior algorithms across multiple meta-RL benchmarks.",
+    "author": [
+      {
+        "family": "Li",
+        "given": "Lanqing"
+      },
+      {
+        "family": "Huang",
+        "given": "Yuanhao"
+      },
+      {
+        "family": "Chen",
+        "given": "Mingzhe"
+      },
+      {
+        "family": "Luo",
+        "given": "Siteng"
+      },
+      {
+        "family": "Luo",
+        "given": "Dijun"
+      },
+      {
+        "family": "Huang",
+        "given": "Junzhou"
+      }
+    ],
+    "key": "Li2021-df",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          2
+        ]
+      ]
+    },
+    "keyword": "Current projects/PCG-MetaRL Project",
+    "title": "Provably Improved Context-Based Offline Meta-RL with Attention and Contrastive Learning",
+    "type": "article-journal"
+  },
+  {
+    "URL": "http://papers.nips.cc/paper\\_files/paper/2022/hash/a951f595184aec1bb885ce165b47209a-Abstract-Conference.html",
+    "author": [
+      {
+        "family": "Zhao",
+        "given": "Mandi"
+      },
+      {
+        "family": "Abbeel",
+        "given": "Pieter"
+      },
+      {
+        "family": "James",
+        "given": "Stephen"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 35: Annual conference on neural information processing systems 2022, NeurIPS 2022, new orleans, LA, USA, november 28 - december 9, 2022",
+    "editor": [
+      {
+        "family": "Koyejo",
+        "given": "Sanmi"
+      },
+      {
+        "family": "Mohamed",
+        "given": "S."
+      },
+      {
+        "family": "Agarwal",
+        "given": "A."
+      },
+      {
+        "family": "Belgrave",
+        "given": "Danielle"
+      },
+      {
+        "family": "Cho",
+        "given": "K."
+      },
+      {
+        "family": "Oh",
+        "given": "A."
+      }
+    ],
+    "key": "Mandi2022-tf",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "On the Effectiveness of Fine-tuning Versus Meta-reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.1016/J.NEUNET.2022.04.003",
+    "URL": "https://doi.org/10.1016/j.neunet.2022.04.003",
+    "author": [
+      {
+        "family": "Ben-Iwhiwhu",
+        "given": "Eseoghene"
+      },
+      {
+        "family": "Dick",
+        "given": "Jeffery"
+      },
+      {
+        "family": "Ketz",
+        "given": "Nicholas A."
+      },
+      {
+        "family": "Pilly",
+        "given": "Praveen K."
+      },
+      {
+        "family": "Soltoggio",
+        "given": "Andrea"
+      }
+    ],
+    "container-title": "Neural Networks",
+    "key": "Ben-Iwhiwhu2022-hh",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "70-79",
+    "title": "Context meta-reinforcement learning via neuromodulation",
+    "type": "article-journal",
+    "volume": "152"
+  },
+  {
+    "abstract": "The transformer architecture and variants presented a remarkable success across many machine learning tasks in recent years. This success is intrinsically related to the capability of handling long sequences and the presence of context-dependent weights from the attention mechanism. We argue that these capabilities suit the central role of a Meta-Reinforcement Learning algorithm. Indeed, a meta-RL agent needs to infer the task from a sequence of trajectories. Furthermore, it requires a fast adaptation strategy to adapt its policy for a new task - which can be achieved using the self-attention mechanism. In this work, we present TrMRL (Transformers for Meta-Reinforcement Learning), a meta-RL agent that mimics the memory reinstatement mechanism using the transformer architecture. It associates the recent past of working memories to build an episodic memory recursively through the transformer layers. We show that the self-attention computes a consensus representation that minimizes the Bayes Risk at each layer and provides meaningful features to compute the best actions. We conducted experiments in high-dimensional continuous control environments for locomotion and dexterous manipulation. Results show that TrMRL presents comparable or superior asymptotic performance, sample efficiency, and out-of-distribution generalization compared to the baselines in these environments.",
+    "author": [
+      {
+        "family": "Melo",
+        "given": "Luckeciano C"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 39th international conference on machine learning",
+    "editor": [
+      {
+        "family": "Chaudhuri",
+        "given": "Kamalika"
+      },
+      {
+        "family": "Jegelka",
+        "given": "Stefanie"
+      },
+      {
+        "family": "Song",
+        "given": "Le"
+      },
+      {
+        "family": "Szepesvari",
+        "given": "Csaba"
+      },
+      {
+        "family": "Niu",
+        "given": "Gang"
+      },
+      {
+        "family": "Sabato",
+        "given": "Sivan"
+      }
+    ],
+    "key": "Melo2022-ky",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "keyword": "Current projects/PCG-MetaRL Project",
+    "page": "15340-15359",
+    "publisher": "PMLR",
+    "title": "Transformers are Meta-Reinforcement Learners",
+    "type": "paper-conference",
+    "volume": "162"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2105.06660",
+    "author": [
+      {
+        "family": "Akuzawa",
+        "given": "Kei"
+      },
+      {
+        "family": "Iwasawa",
+        "given": "Yusuke"
+      },
+      {
+        "family": "Matsuo",
+        "given": "Yutaka"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Akuzawa2021-bi",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Estimating Disentangled Belief about Hidden State and Hidden Task for Meta-RL",
+    "type": "article-journal",
+    "volume": "abs/2105.06660"
+  },
+  {
+    "DOI": "10.48550/ARXIV.2207.14723",
+    "URL": "https://doi.org/10.48550/arXiv.2207.14723",
+    "author": [
+      {
+        "family": "Han",
+        "given": "Xu"
+      },
+      {
+        "family": "Wu",
+        "given": "Feng"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Han2022-dp",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Meta Reinforcement Learning with Successor Feature Based Context",
+    "type": "article-journal",
+    "volume": "abs/2207.14723"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2101.04750",
+    "author": [
+      {
+        "family": "Peng",
+        "given": "Matt"
+      },
+      {
+        "family": "Zhu",
+        "given": "Banghua"
+      },
+      {
+        "family": "Jiao",
+        "given": "Jiantao"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Peng2021-sv",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Linear Representation Meta-reinforcement Learning for Instant Adaptation",
+    "type": "article-journal",
+    "volume": "abs/2101.04750"
+  },
+  {
+    "URL": "https://proceedings.mlr.press/v162/pong22a.html",
+    "author": [
+      {
+        "family": "Pong",
+        "given": "Vitchyr H."
+      },
+      {
+        "family": "Nair",
+        "given": "Ashvin"
+      },
+      {
+        "family": "Smith",
+        "given": "Laura M."
+      },
+      {
+        "family": "Huang",
+        "given": "Catherine"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "International conference on machine learning, ICML 2022, 17-23 july 2022, baltimore, maryland, USA",
+    "editor": [
+      {
+        "family": "Chaudhuri",
+        "given": "Kamalika"
+      },
+      {
+        "family": "Jegelka",
+        "given": "Stefanie"
+      },
+      {
+        "family": "Song",
+        "given": "Le"
+      },
+      {
+        "family": "Szepesvári",
+        "given": "Csaba"
+      },
+      {
+        "family": "Niu",
+        "given": "Gang"
+      },
+      {
+        "family": "Sabato",
+        "given": "Sivan"
+      }
+    ],
+    "key": "Pong2022-el",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "17811-17829",
+    "publisher": "PMLR",
+    "title": "Offline Meta-reinforcement Learning with Online Self-supervision",
+    "type": "paper-conference",
+    "volume": "162"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=jeLW-Fh9bV",
+    "author": [
+      {
+        "family": "Nam",
+        "given": "Taewook"
+      },
+      {
+        "family": "Sun",
+        "given": "Shao-Hua"
+      },
+      {
+        "family": "Pertsch",
+        "given": "Karl"
+      },
+      {
+        "family": "Hwang",
+        "given": "Sung Ju"
+      },
+      {
+        "family": "Lim",
+        "given": "Joseph J."
+      }
+    ],
+    "container-title": "The tenth international conference on learning representations, ICLR 2022, virtual event, april 25-29, 2022",
+    "key": "Nam2022-ho",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Skill-based Meta-reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.48550/ARXIV.2210.04209",
+    "URL": "https://doi.org/10.48550/arXiv.2210.04209",
+    "author": [
+      {
+        "family": "Mu",
+        "given": "Yao"
+      },
+      {
+        "family": "Zhuang",
+        "given": "Yuzheng"
+      },
+      {
+        "family": "Ni",
+        "given": "Fei"
+      },
+      {
+        "family": "Wang",
+        "given": "Bin"
+      },
+      {
+        "family": "Chen",
+        "given": "Jianyu"
+      },
+      {
+        "family": "Hao",
+        "given": "Jianye"
+      },
+      {
+        "family": "Luo",
+        "given": "Ping"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Mu2022-rc",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Decomposed Mutual Information Optimization for Generalized Context in Meta-reinforcement Learning",
+    "type": "article-journal",
+    "volume": "abs/2210.04209"
+  },
+  {
+    "DOI": "10.48550/ARXIV.2208.11535",
+    "URL": "https://doi.org/10.48550/arXiv.2208.11535",
+    "author": [
+      {
+        "family": "Pinon",
+        "given": "Brieuc"
+      },
+      {
+        "family": "Delvenne",
+        "given": "Jean-Charles"
+      },
+      {
+        "family": "Jungers",
+        "given": "Raphaël M."
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Pinon2022-sg",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "A model-based approach to meta-reinforcement Learning: Transformers and tree search",
+    "title-short": "A model-based approach to meta-reinforcement Learning",
+    "type": "article-journal",
+    "volume": "abs/2208.11535"
+  },
+  {
+    "URL": "http://papers.nips.cc/paper\\_files/paper/2022/hash/5833b4daf5b076dd1cdb362b163dff0c-Abstract-Conference.html",
+    "author": [
+      {
+        "family": "Rimon",
+        "given": "Zohar"
+      },
+      {
+        "family": "Tamar",
+        "given": "Aviv"
+      },
+      {
+        "family": "Adler",
+        "given": "Gilad"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 35: Annual conference on neural information processing systems 2022, NeurIPS 2022, new orleans, LA, USA, november 28 - december 9, 2022",
+    "editor": [
+      {
+        "family": "Koyejo",
+        "given": "Sanmi"
+      },
+      {
+        "family": "Mohamed",
+        "given": "S."
+      },
+      {
+        "family": "Agarwal",
+        "given": "A."
+      },
+      {
+        "family": "Belgrave",
+        "given": "Danielle"
+      },
+      {
+        "family": "Cho",
+        "given": "K."
+      },
+      {
+        "family": "Oh",
+        "given": "A."
+      }
+    ],
+    "key": "Rimon2022-dr",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Meta Reinforcement Learning with Finite Training Tasks - a Density Estimation Approach",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.1109/IROS47612.2022.9981250",
+    "URL": "https://doi.org/10.1109/IROS47612.2022.9981250",
+    "author": [
+      {
+        "family": "Rohani",
+        "given": "Seyed Roozbeh Razavi"
+      },
+      {
+        "family": "Hedayatian",
+        "given": "Saeed"
+      },
+      {
+        "family": "Baghshah",
+        "given": "Mahdieh Soleymani"
+      }
+    ],
+    "container-title": "IEEE/RSJ international conference on intelligent robots and systems, IROS 2022, kyoto, japan, october 23-27, 2022",
+    "key": "Razavi_Rohani2022-bc",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "9048-9053",
+    "publisher": "IEEE",
+    "title": "BIMRL: Brain Inspired Meta Reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "http://papers.nips.cc/paper\\_files/paper/2022/hash/d0cf89927acd9136d27ebf08f9e8a888-Abstract-Conference.html",
+    "author": [
+      {
+        "family": "Fu",
+        "given": "Haotian"
+      },
+      {
+        "family": "Yu",
+        "given": "Shangqun"
+      },
+      {
+        "family": "Littman",
+        "given": "Michael"
+      },
+      {
+        "family": "Konidaris",
+        "given": "George"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 35: Annual conference on neural information processing systems 2022, NeurIPS 2022, new orleans, LA, USA, november 28 - december 9, 2022",
+    "editor": [
+      {
+        "family": "Koyejo",
+        "given": "Sanmi"
+      },
+      {
+        "family": "Mohamed",
+        "given": "S."
+      },
+      {
+        "family": "Agarwal",
+        "given": "A."
+      },
+      {
+        "family": "Belgrave",
+        "given": "Danielle"
+      },
+      {
+        "family": "Cho",
+        "given": "K."
+      },
+      {
+        "family": "Oh",
+        "given": "A."
+      }
+    ],
+    "key": "Fu2022-cx",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Model-based Lifelong Reinforcement Learning with Bayesian Exploration",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "http://papers.nips.cc/paper\\_files/paper/2022/hash/b0b1cfc8ede53f452cabf8b9cf4eef76-Abstract-Conference.html",
+    "author": [
+      {
+        "family": "Mu",
+        "given": "Yao"
+      },
+      {
+        "family": "Zhuang",
+        "given": "Yuzheng"
+      },
+      {
+        "family": "Ni",
+        "given": "Fei"
+      },
+      {
+        "family": "Wang",
+        "given": "Bin"
+      },
+      {
+        "family": "Chen",
+        "given": "Jianyu"
+      },
+      {
+        "family": "Hao",
+        "given": "Jianye"
+      },
+      {
+        "family": "Luo",
+        "given": "Ping"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 35: Annual conference on neural information processing systems 2022, NeurIPS 2022, new orleans, LA, USA, november 28 - december 9, 2022",
+    "editor": [
+      {
+        "family": "Koyejo",
+        "given": "Sanmi"
+      },
+      {
+        "family": "Mohamed",
+        "given": "S."
+      },
+      {
+        "family": "Agarwal",
+        "given": "A."
+      },
+      {
+        "family": "Belgrave",
+        "given": "Danielle"
+      },
+      {
+        "family": "Cho",
+        "given": "K."
+      },
+      {
+        "family": "Oh",
+        "given": "A."
+      }
+    ],
+    "key": "Mu2022-xj",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "DOMINO: Decomposed Mutual Information Optimization for Generalized Context in Meta-reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v139/xie21c.html",
+    "author": [
+      {
+        "family": "Xie",
+        "given": "Annie"
+      },
+      {
+        "family": "Harrison",
+        "given": "James"
+      },
+      {
+        "family": "Finn",
+        "given": "Chelsea"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 38th international conference on machine learning, ICML 2021, 18-24 july 2021, virtual event",
+    "editor": [
+      {
+        "family": "Meila",
+        "given": "Marina"
+      },
+      {
+        "family": "Zhang",
+        "given": "Tong"
+      }
+    ],
+    "key": "Xie2021-qq",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "11393-11403",
+    "publisher": "PMLR",
+    "title": "Deep Reinforcement Learning amidst Continual Structured Non-stationarity",
+    "type": "paper-conference",
+    "volume": "139"
+  },
+  {
+    "DOI": "10.1162/NECO\\_A\\_01357",
+    "URL": "https://doi.org/10.1162/neco\\_a\\_01357",
+    "author": [
+      {
+        "family": "Sajid",
+        "given": "Noor"
+      },
+      {
+        "family": "Ball",
+        "given": "Philip J."
+      },
+      {
+        "family": "Parr",
+        "given": "Thomas"
+      },
+      {
+        "family": "Friston",
+        "given": "Karl J."
+      }
+    ],
+    "container-title": "Neural Comput.",
+    "key": "Sajid2021-fh",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "674-712",
+    "title": "Active Inference: Demystified and Compared",
+    "title-short": "Active Inference",
+    "type": "article-journal",
+    "volume": "33"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=Ysuv-WOFeKR",
+    "author": [
+      {
+        "family": "Singh",
+        "given": "Avi"
+      },
+      {
+        "family": "Liu",
+        "given": "Huihan"
+      },
+      {
+        "family": "Zhou",
+        "given": "Gaoyue"
+      },
+      {
+        "family": "Yu",
+        "given": "Albert"
+      },
+      {
+        "family": "Rhinehart",
+        "given": "Nicholas"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      }
+    ],
+    "container-title": "9th international conference on learning representations, ICLR 2021, virtual event, austria, may 3-7, 2021",
+    "key": "Singh2020-cx",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Parrot: Data-driven Behavioral Priors for Reinforcement Learning",
+    "title-short": "Parrot",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v139/ball21a.html",
+    "author": [
+      {
+        "family": "Ball",
+        "given": "Philip J."
+      },
+      {
+        "family": "Lu",
+        "given": "Cong"
+      },
+      {
+        "family": "Parker-Holder",
+        "given": "Jack"
+      },
+      {
+        "family": "Roberts",
+        "given": "Stephen J."
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 38th international conference on machine learning, ICML 2021, 18-24 july 2021, virtual event",
+    "editor": [
+      {
+        "family": "Meila",
+        "given": "Marina"
+      },
+      {
+        "family": "Zhang",
+        "given": "Tong"
+      }
+    ],
+    "key": "Ball2021-ac",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "619-629",
+    "publisher": "PMLR",
+    "title": "Augmented World Models Facilitate Zero-shot Dynamics Generalization From a Single Offline Environment",
+    "type": "paper-conference",
+    "volume": "139"
+  },
+  {
+    "DOI": "10.5555/3463952.3464210",
+    "URL": "https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p1712.pdf",
+    "author": [
+      {
+        "family": "Zintgraf",
+        "given": "Luisa M."
+      },
+      {
+        "family": "Devlin",
+        "given": "Sam"
+      },
+      {
+        "family": "Ciosek",
+        "given": "Kamil"
+      },
+      {
+        "family": "Whiteson",
+        "given": "Shimon"
+      },
+      {
+        "family": "Hofmann",
+        "given": "Katja"
+      }
+    ],
+    "container-title": "AAMAS ’21: 20th international conference on autonomous agents and multiagent systems, virtual event, united kingdom, may 3-7, 2021",
+    "editor": [
+      {
+        "family": "Dignum",
+        "given": "Frank"
+      },
+      {
+        "family": "Lomuscio",
+        "given": "Alessio"
+      },
+      {
+        "family": "Endriss",
+        "given": "Ulle"
+      },
+      {
+        "family": "Nowé",
+        "given": "Ann"
+      }
+    ],
+    "key": "Zintgraf2021-rq",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "1712-1714",
+    "publisher": "ACM",
+    "title": "Deep Interactive Bayesian Reinforcement Learning via Meta-learning",
+    "type": "paper-conference"
+  },
+  {
+    "abstract": "Meta-reinforcement learning has the potential to enable artificial agents to master new skills with improved sample-efficiency by leveraging previous learning experience in tasks that are diverse but share common structure. Our focus is to study the application of such algorithms to task distributions where the function that controls the dynamics of the environment is the main factor of variation. We start by providing an introductory background for related fields, including deep reinforcement learning, variational inference, and meta-learning. Then, we conduct a non-systematic review of the state-of-the-art algorithms for meta-reinforcement learning and perform an empirical investigation of PEARL, a method that combines soft actor-critic with latent task variables. Based on our review, we propose and implement two algorithmic modifications for PEARL: one that aims to improve the meta-training sample complexity by automatically adjusting a critical hyperparameter, and a second one focused on improving the meta-testing asymptotic performance by fine-tuning the policy during adaptation. Using a new multi-task environment suite for simulated robotics continuous control tasks, we compare the original version of PEARL and our proposed modifications, obtaining favourable results. Finally, we ponder our findings and suggest future research directions.",
+    "author": [
+      {
+        "family": "Retyk",
+        "given": "Federico"
+      }
+    ],
+    "genre": "PhD thesis",
+    "key": "Retyk2021-be",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          4
+        ]
+      ]
+    },
+    "keyword": "meta-aprenentatge; aprenentatge per reforç; off-policy; aprenentatge profund; inferència variacional; locomoció robòtica; meta-learning; reinforcement learning; deep learning; variational inference; robotic locomotion; Master thesis;Current projects/PCG-MetaRL Project",
+    "publisher": "Universitat Politècnica de Catalunya",
+    "title": "On Meta-Reinforcement Learning in task distributions with varying dynamics",
+    "type": "thesis"
+  },
+  {
+    "abstract": "Reinforcement Learning (RL) is a way to train artificial agents to autonomously interact with the world. In practice however, RL still has limitations that prohibit the deployment of RL agents in many real world settings. This is because RL takes long, typically requires human oversight, and produces specialised agents that can behave unexpected in unfamiliar situations. This thesis is motivated by the goal of making RL agents more flexible, robust, and safe to deploy in the real world. We develop agents capable of Fast Adaptation, i.e., agents that can learn new tasks efficiently. To this end, we use Meta Reinforcement Learning (Meta-RL), where we teach agents not only to act autonomously, but to learn autonomously. We propose four novel Meta-RL methods based on the intuition that adapting fast can be divided into “task inference” (understanding the task) and “task solving” (solving the task). We hypothesise that this split can simplify optimisation and thus improve performance, and is more amenable to downstream tasks. To implement this, we propose a context-based approach, where the agent conditions on a context that represents its current knowledge about the task. The agent can then use this to decide whether to learn more about the task, or try and solve it. In Chapter 5, we use a deterministic context and establish that this can indeed improve performance and adequately captures the task. In the subsequent chapters, we then introduce Bayesian reasoning over the context, to enable decision-making under task uncertainty. By combining Meta-RL, context-based learning, and approximate variational inference, we develop methods to compute approximately Bayes-optimal agents for single-agent settings (Chapter 6) and multi-agent settings (Chapter 7). Finally, Chapter 8 addresses the challenge of meta-learning with sparse rewards, which is an important setting for many real-world applications. We observe that existing Meta-RL methods can fail entirely if rewards are sparse, and propose a way to overcome this by encouraging the agent to explore during meta-training. We conclude the thesis with a reflection on the work presented in the context of current developments, and a discussion of open questions. In summary, the contributions in this thesis significantly advance the field of Fast Adaptation via Meta-RL. The agents develop in this thesis can adapt faster than any previous methods across a variety of tasks, and we can compute approximately Bayes-optimal policies for much more complex task distributions than previously possible. We hope that this helps drive forward Meta-RL research and, in the long term, using RL to address important real world challenges.",
+    "author": [
+      {
+        "family": "Zintgraf",
+        "given": "L"
+      }
+    ],
+    "genre": "PhD thesis",
+    "key": "Zintgraf2022-ws",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "keyword": "Current projects/PCG-MetaRL Project",
+    "publisher": "University of Oxford; ora.ox.ac.uk",
+    "title": "Fast adaptation via meta reinforcement learning",
+    "type": "thesis"
+  },
+  {
+    "DOI": "10.48550/ARXIV.2210.02594",
+    "URL": "https://doi.org/10.48550/arXiv.2210.02594",
+    "author": [
+      {
+        "family": "Kwon",
+        "given": "Jeongyeol"
+      },
+      {
+        "family": "Efroni",
+        "given": "Yonathan"
+      },
+      {
+        "family": "Caramanis",
+        "given": "Constantine"
+      },
+      {
+        "family": "Mannor",
+        "given": "Shie"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Kwon2022-nq",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Reward-mixing MDPs with a Few Latent Contexts are Learnable",
+    "type": "article-journal",
+    "volume": "abs/2210.02594"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2012/hash/35051070e572e47d2c26c241ab88307f-Abstract.html",
+    "author": [
+      {
+        "family": "Guez",
+        "given": "Arthur"
+      },
+      {
+        "family": "Silver",
+        "given": "David"
+      },
+      {
+        "family": "Dayan",
+        "given": "Peter"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 25: 26th annual conference on neural information processing systems 2012. Proceedings of a meeting held december 3-6, 2012, lake tahoe, nevada, united states",
+    "editor": [
+      {
+        "family": "Bartlett",
+        "given": "Peter L."
+      },
+      {
+        "family": "Pereira",
+        "given": "Fernando C. N."
+      },
+      {
+        "family": "Burges",
+        "given": "Christopher J. C."
+      },
+      {
+        "family": "Bottou",
+        "given": "Léon"
+      },
+      {
+        "family": "Weinberger",
+        "given": "Kilian Q."
+      }
+    ],
+    "key": "Guez2012-gz",
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "page": "1034-1042",
+    "title": "Efficient Bayes-adaptive Reinforcement Learning using Sample-based Search",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2021/hash/f514cec81cb148559cf475e7426eed5e-Abstract.html",
+    "author": [
+      {
+        "family": "Agarwal",
+        "given": "Rishabh"
+      },
+      {
+        "family": "Schwarzer",
+        "given": "Max"
+      },
+      {
+        "family": "Castro",
+        "given": "Pablo Samuel"
+      },
+      {
+        "family": "Courville",
+        "given": "Aaron C."
+      },
+      {
+        "family": "Bellemare",
+        "given": "Marc G."
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 34: Annual conference on neural information processing systems 2021, NeurIPS 2021, december 6-14, 2021, virtual",
+    "editor": [
+      {
+        "family": "Ranzato",
+        "given": "Marc’Aurelio"
+      },
+      {
+        "family": "Beygelzimer",
+        "given": "Alina"
+      },
+      {
+        "family": "Dauphin",
+        "given": "Yann N."
+      },
+      {
+        "family": "Liang",
+        "given": "Percy"
+      },
+      {
+        "family": "Vaughan",
+        "given": "Jennifer Wortman"
+      }
+    ],
+    "key": "Agarwal2021-pb",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "29304-29320",
+    "title": "Deep Reinforcement Learning at the Edge of the Statistical Precipice",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Bhatt",
+        "given": "Varun"
+      },
+      {
+        "family": "Tjanaka",
+        "given": "Bryon"
+      },
+      {
+        "family": "Fontaine",
+        "given": "Matthew"
+      },
+      {
+        "family": "Nikolaidis",
+        "given": "Stefanos"
+      }
+    ],
+    "container-title": "Advances in Neural Information Processing Systems",
+    "key": "Bhatt2022-cu",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "37762-37777",
+    "title": "Deep surrogate assisted generation of environments",
+    "type": "article-journal",
+    "volume": "35"
+  },
+  {
+    "DOI": "10.1007/S00521-020-05383-8",
+    "URL": "https://doi.org/10.1007/s00521-020-05383-8",
+    "author": [
+      {
+        "family": "Liu",
+        "given": "Jialin"
+      },
+      {
+        "family": "Snodgrass",
+        "given": "Sam"
+      },
+      {
+        "family": "Khalifa",
+        "given": "Ahmed"
+      },
+      {
+        "family": "Risi",
+        "given": "Sebastian"
+      },
+      {
+        "family": "Yannakakis",
+        "given": "Georgios N."
+      },
+      {
+        "family": "Togelius",
+        "given": "Julian"
+      }
+    ],
+    "container-title": "Neural Comput. Appl.",
+    "key": "Liu2021-rw",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "19-37",
+    "title": "Deep learning for procedural content generation",
+    "type": "article-journal",
+    "volume": "33"
+  },
+  {
+    "DOI": "10.1109/ICRA48506.2021.9560734",
+    "URL": "https://doi.org/10.1109/ICRA48506.2021.9560734",
+    "author": [
+      {
+        "family": "Okada",
+        "given": "Masashi"
+      },
+      {
+        "family": "Taniguchi",
+        "given": "Tadahiro"
+      }
+    ],
+    "container-title": "IEEE international conference on robotics and automation, ICRA 2021, xi’an, china, may 30 - june 5, 2021",
+    "key": "Okada2021-bk",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "4209-4215",
+    "publisher": "IEEE",
+    "title": "Dreaming: Model-based Reinforcement Learning by Latent Imagination without Reconstruction",
+    "title-short": "Dreaming",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2021/hash/1454ca2270599546dfcd2a3700e4d2f1-Abstract.html",
+    "author": [
+      {
+        "family": "Packer",
+        "given": "Charles"
+      },
+      {
+        "family": "Abbeel",
+        "given": "Pieter"
+      },
+      {
+        "family": "Gonzalez",
+        "given": "Joseph E."
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 34: Annual conference on neural information processing systems 2021, NeurIPS 2021, december 6-14, 2021, virtual",
+    "editor": [
+      {
+        "family": "Ranzato",
+        "given": "Marc’Aurelio"
+      },
+      {
+        "family": "Beygelzimer",
+        "given": "Alina"
+      },
+      {
+        "family": "Dauphin",
+        "given": "Yann N."
+      },
+      {
+        "family": "Liang",
+        "given": "Percy"
+      },
+      {
+        "family": "Vaughan",
+        "given": "Jennifer Wortman"
+      }
+    ],
+    "key": "Packer2021-jx",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "2466-2477",
+    "title": "Hindsight Task Relabelling: Experience Replay for Sparse Reward Meta-RL",
+    "title-short": "Hindsight Task Relabelling",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.1016/J.NEUCOM.2021.12.086",
+    "URL": "https://doi.org/10.1016/j.neucom.2021.12.086",
+    "author": [
+      {
+        "family": "Liu",
+        "given": "Xiyuan"
+      },
+      {
+        "family": "Wu",
+        "given": "Jia"
+      },
+      {
+        "family": "Chen",
+        "given": "Senpeng"
+      }
+    ],
+    "container-title": "Neurocomputing",
+    "key": "Liu2022-tf",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "89-103",
+    "title": "A context-based meta-reinforcement learning approach to efficient hyperparameter optimization",
+    "type": "article-journal",
+    "volume": "478"
+  },
+  {
+    "URL": "http://proceedings.mlr.press/v119/lee20g.html",
+    "author": [
+      {
+        "family": "Lee",
+        "given": "Kimin"
+      },
+      {
+        "family": "Seo",
+        "given": "Younggyo"
+      },
+      {
+        "family": "Lee",
+        "given": "Seunghyun"
+      },
+      {
+        "family": "Lee",
+        "given": "Honglak"
+      },
+      {
+        "family": "Shin",
+        "given": "Jinwoo"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 37th international conference on machine learning, ICML 2020, 13-18 july 2020, virtual event",
+    "key": "Lee2020-rf",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "5757-5766",
+    "publisher": "PMLR",
+    "title": "Context-aware Dynamics Model for Generalization in Model-based Reinforcement Learning",
+    "type": "paper-conference",
+    "volume": "119"
+  },
+  {
+    "URL": "https://icml.cc/Conferences/2010/papers/269.pdf",
+    "author": [
+      {
+        "family": "Lazaric",
+        "given": "Alessandro"
+      },
+      {
+        "family": "Ghavamzadeh",
+        "given": "Mohammad"
+      }
+    ],
+    "container-title": "Proceedings of the 27th international conference on machine learning (ICML-10), june 21-24, 2010, haifa, israel",
+    "editor": [
+      {
+        "family": "Fürnkranz",
+        "given": "Johannes"
+      },
+      {
+        "family": "Joachims",
+        "given": "Thorsten"
+      }
+    ],
+    "key": "Lazaric2010-yh",
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "page": "599-606",
+    "publisher": "Omnipress",
+    "title": "Bayesian Multi-task Reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.1109/TPAMI.2023.3261988",
+    "URL": "https://doi.org/10.1109/TPAMI.2023.3261988",
+    "author": [
+      {
+        "family": "Croitoru",
+        "given": "Florinel-Alin"
+      },
+      {
+        "family": "Hondru",
+        "given": "Vlad"
+      },
+      {
+        "family": "Ionescu",
+        "given": "Radu Tudor"
+      },
+      {
+        "family": "Shah",
+        "given": "Mubarak"
+      }
+    ],
+    "container-title": "IEEE Trans. Pattern Anal. Mach. Intell.",
+    "key": "Croitoru2022-di",
+    "issue": "9",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "page": "10850-10869",
+    "title": "Diffusion Models in Vision: A Survey",
+    "title-short": "Diffusion Models in Vision",
+    "type": "article-journal",
+    "volume": "45"
+  },
+  {
+    "URL": "http://arxiv.org/abs/1906.05201",
+    "author": [
+      {
+        "family": "He",
+        "given": "Xu"
+      },
+      {
+        "family": "Sygnowski",
+        "given": "Jakub"
+      },
+      {
+        "family": "Galashov",
+        "given": "Alexandre"
+      },
+      {
+        "family": "Rusu",
+        "given": "Andrei A."
+      },
+      {
+        "family": "Teh",
+        "given": "Yee Whye"
+      },
+      {
+        "family": "Pascanu",
+        "given": "Razvan"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "He2019-ce",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "title": "Task Agnostic Continual Learning via Meta Learning",
+    "type": "article-journal",
+    "volume": "abs/1906.05201"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2021/hash/532923f11ac97d3e7cb0130315b067dc-Abstract.html",
+    "author": [
+      {
+        "family": "Fontaine",
+        "given": "Matthew C."
+      },
+      {
+        "family": "Nikolaidis",
+        "given": "Stefanos"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 34: Annual conference on neural information processing systems 2021, NeurIPS 2021, december 6-14, 2021, virtual",
+    "editor": [
+      {
+        "family": "Ranzato",
+        "given": "Marc’Aurelio"
+      },
+      {
+        "family": "Beygelzimer",
+        "given": "Alina"
+      },
+      {
+        "family": "Dauphin",
+        "given": "Yann N."
+      },
+      {
+        "family": "Liang",
+        "given": "Percy"
+      },
+      {
+        "family": "Vaughan",
+        "given": "Jennifer Wortman"
+      }
+    ],
+    "key": "Fontaine2021-lg",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "10040-10052",
+    "title": "Differentiable Quality Diversity",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "http://arxiv.org/abs/1504.04909",
+    "author": [
+      {
+        "family": "Mouret",
+        "given": "Jean-Baptiste"
+      },
+      {
+        "family": "Clune",
+        "given": "Jeff"
+      }
+    ],
+    "container-title": "CoRR",
+    "key": "Mouret2015-zw",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "title": "Illuminating search spaces by mapping elites",
+    "type": "article-journal",
+    "volume": "abs/1504.04909"
+  },
+  {
+    "URL": "http://arxiv.org/abs/1506.02438",
+    "author": [
+      {
+        "family": "Schulman",
+        "given": "John"
+      },
+      {
+        "family": "Moritz",
+        "given": "Philipp"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      },
+      {
+        "family": "Jordan",
+        "given": "Michael I."
+      },
+      {
+        "family": "Abbeel",
+        "given": "Pieter"
+      }
+    ],
+    "container-title": "4th international conference on learning representations, ICLR 2016, san juan, puerto rico, may 2-4, 2016, conference track proceedings",
+    "editor": [
+      {
+        "family": "Bengio",
+        "given": "Yoshua"
+      },
+      {
+        "family": "LeCun",
+        "given": "Yann"
+      }
+    ],
+    "key": "Schulman2015-lq",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "title": "High-dimensional Continuous Control Using Generalized Advantage Estimation",
+    "type": "paper-conference"
+  },
+  {
+    "DOI": "10.5555/3463952.3463963",
+    "URL": "https://www.ifaamas.org/Proceedings/aamas2021/pdfs/p51.pdf",
+    "author": [
+      {
+        "family": "Yang",
+        "given": "Yaodong"
+      },
+      {
+        "family": "Luo",
+        "given": "Jun"
+      },
+      {
+        "family": "Wen",
+        "given": "Ying"
+      },
+      {
+        "family": "Slumbers",
+        "given": "Oliver"
+      },
+      {
+        "family": "Graves",
+        "given": "Daniel"
+      },
+      {
+        "family": "Bou-Ammar",
+        "given": "Haitham"
+      },
+      {
+        "family": "Wang",
+        "given": "Jun"
+      },
+      {
+        "family": "Taylor",
+        "given": "Matthew E."
+      }
+    ],
+    "container-title": "AAMAS ’21: 20th international conference on autonomous agents and multiagent systems, virtual event, united kingdom, may 3-7, 2021",
+    "editor": [
+      {
+        "family": "Dignum",
+        "given": "Frank"
+      },
+      {
+        "family": "Lomuscio",
+        "given": "Alessio"
+      },
+      {
+        "family": "Endriss",
+        "given": "Ulle"
+      },
+      {
+        "family": "Nowé",
+        "given": "Ann"
+      }
+    ],
+    "key": "Yang2021-kd",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "51-56",
+    "publisher": "ACM",
+    "title": "Diverse Auto-curriculum is Critical for Successful Real-world Multiagent Learning Systems",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://proceedings.mlr.press/v202/bauer23a.html",
+    "abstract": "Foundation models have shown impressive adaptation and scalability in supervised and self-supervised learning problems, but so far these successes have not fully translated to reinforcement learning (RL). In this work, we demonstrate that training an RL agent at scale leads to a general in-context learning algorithm that can adapt to open-ended novel embodied 3D problems as quickly as humans. In a vast space of held-out environment dynamics, our adaptive agent (AdA) displays on-the-fly hypothesis-driven exploration, efficient exploitation of acquired knowledge, and can successfully be prompted with first-person demonstrations. Adaptation emerges from three ingredients: (1) meta-reinforcement learning across a vast, smooth and diverse task distribution, (2) a policy parameterised as a large-scale attention-based memory architecture, and (3) an effective automated curriculum that prioritises tasks at the frontier of an agent’s capabilities. We demonstrate characteristic scaling laws with respect to network size, memory length, and richness of the training task distribution. We believe our results lay the foundation for increasingly general and adaptive RL agents that perform well across ever-larger open-ended domains.",
+    "author": [
+      {
+        "family": "Bauer",
+        "given": "Jakob"
+      },
+      {
+        "family": "Baumli",
+        "given": "Kate"
+      },
+      {
+        "family": "Behbahani",
+        "given": "Feryal"
+      },
+      {
+        "family": "Bhoopchand",
+        "given": "Avishkar"
+      },
+      {
+        "family": "Bradley-Schmieg",
+        "given": "Nathalie"
+      },
+      {
+        "family": "Chang",
+        "given": "Michael"
+      },
+      {
+        "family": "Clay",
+        "given": "Natalie"
+      },
+      {
+        "family": "Collister",
+        "given": "Adrian"
+      },
+      {
+        "family": "Dasagi",
+        "given": "Vibhavari"
+      },
+      {
+        "family": "Gonzalez",
+        "given": "Lucy"
+      },
+      {
+        "family": "Gregor",
+        "given": "Karol"
+      },
+      {
+        "family": "Hughes",
+        "given": "Edward"
+      },
+      {
+        "family": "Kashem",
+        "given": "Sheleem"
+      },
+      {
+        "family": "Loks-Thompson",
+        "given": "Maria"
+      },
+      {
+        "family": "Openshaw",
+        "given": "Hannah"
+      },
+      {
+        "family": "Parker-Holder",
+        "given": "Jack"
+      },
+      {
+        "family": "Pathak",
+        "given": "Shreya"
+      },
+      {
+        "family": "Perez-Nieves",
+        "given": "Nicolas"
+      },
+      {
+        "family": "Rakicevic",
+        "given": "Nemanja"
+      },
+      {
+        "family": "Rocktäschel",
+        "given": "Tim"
+      },
+      {
+        "family": "Schroecker",
+        "given": "Yannick"
+      },
+      {
+        "family": "Singh",
+        "given": "Satinder"
+      },
+      {
+        "family": "Sygnowski",
+        "given": "Jakub"
+      },
+      {
+        "family": "Tuyls",
+        "given": "Karl"
+      },
+      {
+        "family": "York",
+        "given": "Sarah"
+      },
+      {
+        "family": "Zacherl",
+        "given": "Alexander"
+      },
+      {
+        "family": "Zhang",
+        "given": "Lei M"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 40th international conference on machine learning",
+    "editor": [
+      {
+        "family": "Krause",
+        "given": "Andreas"
+      },
+      {
+        "family": "Brunskill",
+        "given": "Emma"
+      },
+      {
+        "family": "Cho",
+        "given": "Kyunghyun"
+      },
+      {
+        "family": "Engelhardt",
+        "given": "Barbara"
+      },
+      {
+        "family": "Sabato",
+        "given": "Sivan"
+      },
+      {
+        "family": "Scarlett",
+        "given": "Jonathan"
+      }
+    ],
+    "key": "Adaptive_Agent_Team2023-ml",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "page": "1887-1935",
+    "publisher": "PMLR",
+    "title": "Human-timescale adaptation in an open-ended task space",
+    "type": "paper-conference",
+    "volume": "202"
+  },
+  {
+    "DOI": "10.24963/IJCAI.2020/671",
+    "URL": "https://doi.org/10.24963/ijcai.2020/671",
+    "author": [
+      {
+        "family": "Portelas",
+        "given": "Rémy"
+      },
+      {
+        "family": "Colas",
+        "given": "Cédric"
+      },
+      {
+        "family": "Weng",
+        "given": "Lilian"
+      },
+      {
+        "family": "Hofmann",
+        "given": "Katja"
+      },
+      {
+        "family": "Oudeyer",
+        "given": "Pierre-Yves"
+      }
+    ],
+    "container-title": "Proceedings of the twenty-ninth international joint conference on artificial intelligence, IJCAI 2020",
+    "editor": [
+      {
+        "family": "Bessiere",
+        "given": "Christian"
+      }
+    ],
+    "key": "Portelas2020-yx",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "4819-4825",
+    "publisher": "ijcai.org",
+    "title": "Automatic Curriculum Learning For Deep RL: A Short Survey",
+    "type": "paper-conference"
+  },
+  {
+    "abstract": "Reinforcement learning (RL) is a popular paradigm for addressing sequential decision tasks in which the agent has only limited environmental feedback. Despite many advances over the past three decades, learning in many domains still requires a large amount of interaction …",
+    "author": [
+      {
+        "family": "Narvekar",
+        "given": "S"
+      },
+      {
+        "family": "Peng",
+        "given": "B"
+      },
+      {
+        "family": "Leonetti",
+        "given": "M"
+      },
+      {
+        "family": "Sinapov",
+        "given": "J"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "container-title": "J. Mach. Learn. Res.",
+    "key": "Narvekar2020-py",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "publisher": "jmlr.org",
+    "title": "Curriculum learning for reinforcement learning domains: A framework and survey",
+    "title-short": "Curriculum learning for reinforcement learning domains",
+    "type": "article-journal"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2302.05583",
+    "abstract": "Open-endedness stands to benefit from the ability to generate an infinite variety of diverse, challenging environments. One particularly interesting type of challenge is meta-learning (“learning-to-learn”), a hallmark of intelligent behavior. However, the number of meta-learning environments in the literature is limited. Here we describe a parametrized space for simple meta-reinforcement learning (meta-RL) tasks with arbitrary stimuli. The parametrization allows us to randomly generate an arbitrary number of novel simple meta-learning tasks. The parametrization is expressive enough to include many well-known meta-RL tasks, such as bandit problems, the Harlow task, T-mazes, the Daw two-step task and others. Simple extensions allow it to capture tasks based on two-dimensional topological spaces, such as full mazes or find-the-spot domains. We describe a number of randomly generated meta-RL domains of varying complexity and discuss potential issues arising from random generation.",
+    "author": [
+      {
+        "family": "Miconi",
+        "given": "Thomas"
+      }
+    ],
+    "key": "Miconi2023-ly",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          2
+        ]
+      ]
+    },
+    "title": "Procedural generation of meta-reinforcement learning tasks",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Tjanaka",
+        "given": "B"
+      },
+      {
+        "family": "Fontaine",
+        "given": "M C"
+      },
+      {
+        "family": "Zhang",
+        "given": "Y"
+      },
+      {
+        "family": "Sommerer",
+        "given": "S"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "key": "Tjanaka2021-ik",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Pyribs: A bare-bones python library for quality diversity optimization",
+    "title-short": "Pyribs",
+    "type": "article-journal"
+  },
+  {
+    "URL": "https://proceedings.neurips.cc/paper/2021/hash/0e915db6326b6fb6a3c56546980a8c93-Abstract.html",
+    "author": [
+      {
+        "family": "Jiang",
+        "given": "Minqi"
+      },
+      {
+        "family": "Dennis",
+        "given": "Michael"
+      },
+      {
+        "family": "Parker-Holder",
+        "given": "Jack"
+      },
+      {
+        "family": "Foerster",
+        "given": "Jakob N."
+      },
+      {
+        "family": "Grefenstette",
+        "given": "Edward"
+      },
+      {
+        "family": "Rocktäschel",
+        "given": "Tim"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems 34: Annual conference on neural information processing systems 2021, NeurIPS 2021, december 6-14, 2021, virtual",
+    "editor": [
+      {
+        "family": "Ranzato",
+        "given": "Marc’Aurelio"
+      },
+      {
+        "family": "Beygelzimer",
+        "given": "Alina"
+      },
+      {
+        "family": "Dauphin",
+        "given": "Yann N."
+      },
+      {
+        "family": "Liang",
+        "given": "Percy"
+      },
+      {
+        "family": "Vaughan",
+        "given": "Jennifer Wortman"
+      }
+    ],
+    "key": "Jiang2021-ml",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "1884-1897",
+    "title": "Replay-guided Adversarial Environment Design",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Dennis",
+        "given": "Michael"
+      },
+      {
+        "family": "Jaques",
+        "given": "Natasha"
+      },
+      {
+        "family": "Vinitsky",
+        "given": "Eugene"
+      },
+      {
+        "family": "Bayen",
+        "given": "Alexandre"
+      },
+      {
+        "family": "Russell",
+        "given": "Stuart"
+      },
+      {
+        "family": "Critch",
+        "given": "Andrew"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      }
+    ],
+    "container-title": "Advances in neural information processing systems",
+    "key": "Dennis2020-kj",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "13049-13061",
+    "title": "Emergent complexity and zero-shot transfer via unsupervised environment design",
+    "type": "article-journal",
+    "volume": "33"
+  },
+  {
+    "abstract": "Training generally-capable agents with reinforcement learning (RL) remains a significant challenge. A promising avenue for improving the robustness of RL agents is through the use …",
+    "author": [
+      {
+        "family": "Parker-Holder",
+        "given": "J"
+      },
+      {
+        "family": "Jiang",
+        "given": "M"
+      },
+      {
+        "family": "Dennis",
+        "given": "M"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "container-title": "International Conference on Machine Learning",
+    "key": "Parker-Holder2022-zs",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "publisher": "proceedings.mlr.press",
+    "title": "Evolving curricula with regret-based environment design",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1007/S10458-022-09548-8",
+    "URL": "https://doi.org/10.1007/s10458-022-09548-8",
+    "author": [
+      {
+        "family": "McKee",
+        "given": "Kevin R."
+      },
+      {
+        "family": "Leibo",
+        "given": "Joel Z."
+      },
+      {
+        "family": "Beattie",
+        "given": "Charlie"
+      },
+      {
+        "family": "Everett",
+        "given": "Richard"
+      }
+    ],
+    "container-title": "Auton. Agents Multi Agent Syst.",
+    "key": "McKee2022-ih",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "21",
+    "title": "Quantifying the effects of environment and population diversity in multi-agent reinforcement learning",
+    "type": "article-journal",
+    "volume": "36"
+  },
+  {
+    "DOI": "10.15607/RSS.2021.XVII.036",
+    "URL": "https://doi.org/10.15607/RSS.2021.XVII.036",
+    "author": [
+      {
+        "family": "Fontaine",
+        "given": "Matthew C."
+      },
+      {
+        "family": "Nikolaidis",
+        "given": "Stefanos"
+      }
+    ],
+    "container-title": "Robotics: Science and systems XVII, virtual event, july 12-16, 2021",
+    "editor": [
+      {
+        "family": "Shell",
+        "given": "Dylan A."
+      },
+      {
+        "family": "Toussaint",
+        "given": "Marc"
+      },
+      {
+        "family": "Hsieh",
+        "given": "M. Ani"
+      }
+    ],
+    "key": "Fontaine2020-cl",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "A Quality Diversity Approach to Automatically Generating Human-robot Interaction Scenarios in Shared Autonomy",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://openreview.net/forum?id=M6XWoEdmwf",
+    "author": [
+      {
+        "family": "Grigsby",
+        "given": "Jake"
+      },
+      {
+        "family": "Fan",
+        "given": "Linxi"
+      },
+      {
+        "family": "Zhu",
+        "given": "Yuke"
+      }
+    ],
+    "container-title": "The twelfth international conference on learning representations",
+    "key": "Grigsby2023-mz",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "AMAGO: Scalable in-context reinforcement learning for adaptive agents",
+    "title-short": "AMAGO",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://ojs.aaai.org/index.php/AIIDE/article/view/7416",
+    "author": [
+      {
+        "family": "Khalifa",
+        "given": "Ahmed"
+      },
+      {
+        "family": "Bontrager",
+        "given": "Philip"
+      },
+      {
+        "family": "Earle",
+        "given": "Sam"
+      },
+      {
+        "family": "Togelius",
+        "given": "Julian"
+      }
+    ],
+    "container-title": "Proceedings of the sixteenth AAAI conference on artificial intelligence and interactive digital entertainment, AIIDE 2020, virtual, october 19-23, 2020",
+    "editor": [
+      {
+        "family": "Lelis",
+        "given": "Levi"
+      },
+      {
+        "family": "Thue",
+        "given": "David"
+      }
+    ],
+    "key": "Khalifa_Bontrager_Earle_Togelius_2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "95-101",
+    "publisher": "AAAI Press",
+    "title": "PCGRL: Procedural Content Generation via Reinforcement Learning",
+    "type": "paper-conference"
+  },
+  {
+    "abstract": "The goal of meta-reinforcement learning (meta-RL) is to build agents that can quickly learn new tasks by leveraging prior experience on related tasks. Learning a new task often requires both exploring to gather task-relevant information and exploiting this information to solve the task. In principle, optimal exploration and exploitation can be learned end-to-end by simply maximizing task performance. However, such meta-RL approaches struggle with local optima due to a chicken-and-egg problem: learning to explore requires good exploitation to gauge the exploration’s utility, but learning to exploit requires information gathered via exploration. Optimizing separate objectives for exploration and exploitation can avoid this problem, but prior meta-RL exploration objectives yield suboptimal policies that gather information irrelevant to the task. We alleviate both concerns by constructing an exploitation objective that automatically identifies task-relevant information and an exploration objective to recover only this information. This avoids local optima in end-to-end training, without sacrificing optimal exploration. Empirically, DREAM substantially outperforms existing approaches on complex meta-RL problems, such as sparse-reward 3D visual navigation. Videos of DREAM: https://ezliu.github.io/dream/",
+    "author": [
+      {
+        "family": "Liu",
+        "given": "Evan Z"
+      },
+      {
+        "family": "Raghunathan",
+        "given": "Aditi"
+      },
+      {
+        "family": "Liang",
+        "given": "Percy"
+      },
+      {
+        "family": "Finn",
+        "given": "Chelsea"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "Proceedings of the 38th international conference on machine learning",
+    "editor": [
+      {
+        "family": "Meila",
+        "given": "Marina"
+      },
+      {
+        "family": "Zhang",
+        "given": "Tong"
+      }
+    ],
+    "key": "Liu2021-az",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "6925-6935",
+    "publisher": "PMLR",
+    "title": "Decoupling exploration and exploitation for Meta-Reinforcement learning without sacrifices",
+    "type": "paper-conference",
+    "volume": "139"
+  }
+]

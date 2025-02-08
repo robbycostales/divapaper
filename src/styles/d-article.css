@@ -1,0 +1,194 @@
+/*
+ * Copyright 2018 The Distill Template Authors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+ :root {
+  --background-color: #121212;
+  --text-color: #bcbcbc;
+  --muted-text-color: rgba(191, 191, 191, 0.6);
+  --link-color: #bb86fc;
+  --link-hover-color: #ffffff;
+  --border-color: rgba(255, 255, 255, 0.2);
+  --highlight-green: #03dac6;
+  --highlight-blue: #2196f3;
+  --highlight-orange: #ffb74d;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+d-article {
+  contain: layout style;
+  overflow-x: hidden;
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+  color: var(--text-color);
+}
+
+d-article > * {
+  grid-column: text;
+}
+
+@media(min-width: 768px) {
+  d-article {
+    font-size: 16px;
+  }
+}
+
+@media(min-width: 1024px) {
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+}
+
+/* H2 */
+d-article h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25em;
+  margin: 2rem 0 1.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+  color: var(--text-color);
+}
+
+@media(min-width: 1024px) {
+  d-article h2 {
+    font-size: 36px;
+  }
+}
+
+/* H3 */
+d-article h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  color: var(--text-color);
+}
+
+@media(min-width: 1024px) {
+  d-article h3 {
+    font-size: 20px;
+  }
+}
+
+/* H4 */
+d-article h4 {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.4em;
+  color: var(--muted-text-color);
+}
+
+d-article a {
+  color: var(--link-color);
+}
+
+d-article a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+d-article p,
+d-article ul,
+d-article ol,
+d-article blockquote {
+  margin-top: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+d-article blockquote {
+  border-left: 2px solid var(--border-color);
+  padding-left: 2em;
+  font-style: italic;
+  color: var(--muted-text-color);
+}
+
+d-article ul,
+d-article ol {
+  padding-left: 24px;
+}
+
+d-article li {
+  margin-bottom: 1em;
+}
+
+d-article li:last-child {
+  margin-bottom: 0;
+}
+
+d-article pre {
+  font-size: 14px;
+  margin-bottom: 20px;
+  background-color: #1f1f1f;
+  color: var(--text-color);
+  padding: 10px;
+  border: 1px solid var(--border-color);
+}
+
+d-article hr {
+  grid-column: screen;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+d-article section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+d-article span.equation-mimic {
+  font-family: georgia;
+  font-size: 115%;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+d-article table {
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+d-article table th {
+  border-bottom: 1px solid var(--border-color);
+}
+
+d-article table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+d-article table th,
+d-article table td {
+  font-size: 15px;
+  padding: 2px 8px;
+}
+
+d-article .citation {
+  color: #bb86fc;
+  cursor: pointer;
+}
