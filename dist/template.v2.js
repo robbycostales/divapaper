@@ -2633,10 +2633,10 @@ d-appendix > distill-appendix {
     <div>
       <h3>Links</h3>
       <p>
-        <a href="https://arxiv.org/abs/2401.XXXXX">📄 Paper (arXiv)</a> 
+        <a href="https://arxiv.org/abs/2411.04466">📄 Paper (arXiv)</a> 
       </p>
       <p>
-        <a href="https://github.com/your-username/your-repo">👾 Code (Github)</a>
+        <a href="https://github.com/robbycostales/diva">👾 Code (Github)</a>
       </p>
     </div>
   </div>
